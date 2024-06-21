@@ -1,3 +1,5 @@
+import LAYIN from "../../src/assets/Img/pr0ducts/LAY_IN.png";
+
 export const links = [
   {
     id: 1,
@@ -58,7 +60,7 @@ export const links = [
 export const tilesData = [
   {
     id: 1,
-    image: "../../src/assets/Img/pr0ducts/LAY_IN.png",
+    image: LAYIN,
     line: "Standard Metal Ceiling",
     material: "Metal",
     productType: "AEROLITE LAY IN",
