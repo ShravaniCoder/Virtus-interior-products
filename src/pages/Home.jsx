@@ -16,31 +16,31 @@ const Home = () => {
   const data = [
     {
       id: 1,
-      bgImg: "../../src/img/homepage/img1.png",
+      bgImg: "../../src/assets/Img/homepage/img1.png",
       title: "",
       desc: "",
     },
     {
       id: 2,
-      bgImg: "../../src/img/homepage/Img2.png",
+      bgImg: "../../src/assets/Img/homepage/Img2.png",
       title: "",
       desc: "",
     },
     {
       id: 3,
-      bgImg: "../../src/img/homepage/img1.png",
+      bgImg: "../../src/assets/Img/homepage/img1.png",
       title: "",
       desc: "",
     },
     {
       id: 4,
-      bgImg: "../../src/img/homepage/img1.png",
+      bgImg: "../../src/assets/Img/homepage/img1.png",
       title: "",
       desc: "",
     },
     {
       id: 5,
-      bgImg: "../../src/img/homepage/img1.png",
+      bgImg: "../../src/assets/Img/homepage/img1.png",
       title: "",
       desc: "",
     },

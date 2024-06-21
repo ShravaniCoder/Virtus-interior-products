@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 import { RxCross2 } from "react-icons/rx";
 import { links } from "../Data/Info";
 import { IoIosMenu } from "react-icons/io";
-import logo from "../../src/img/nav/logo1.png";
+import logo from "../../src/assets/Img/nav/logo1.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
