@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Layout from "../components/Layout";
+import banner from "../../src/assets/Img/clientsimg/banner.jpg";
 
 const Clients = () => {
   return (
@@ -15,7 +16,7 @@ const Clients = () => {
         </div>
         <img
           className="h-[30vh] md:h-[40vh] w-[100%] object-cover"
-          src="../../src/assets/Img/clientsimg/banner.jpg"
+          src={banner}
           alt="banner"
         />
       </section>

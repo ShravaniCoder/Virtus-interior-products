@@ -2,6 +2,8 @@ import Layout from "../components/Layout";
 import { PiPhoneTransferFill } from "react-icons/pi";
 import { BiLogoGmail } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import banner from "../../src/assets/Img/contact/banner.png";
+
 
 const ContactUs = () => {
   return (
@@ -17,7 +19,7 @@ const ContactUs = () => {
         </div>
         <img
           className="h-[30vh] md:h-[40vh] w-[100%] object-cover"
-          src="../../src/assets/Img/contact/banner.png"
+          src={banner}
           alt="banner"
         />
       </section>

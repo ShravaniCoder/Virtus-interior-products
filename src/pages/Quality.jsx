@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Layout from "../components/Layout";
+import banner from "../../src/assets/Img/quality/banner.jpg";
 
 const Quality = () => {
   return (
@@ -15,7 +16,7 @@ const Quality = () => {
         </div>
         <img
           className="h-[30vh] md:h-[40vh] w-[100%] object-cover"
-          src="../../src/assets/Img/quality/banner.jpg"
+          src={banner}
           alt="banner"
         />
       </section>
