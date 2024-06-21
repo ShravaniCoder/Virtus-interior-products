@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Layout from "../../components/Layout";
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
 import LayIn from "../../../src/assets/Img/pr0ducts/Lay-In.jpg";
-
+import LAYIN from "../../../src/assets/Img/pr0ducts/LAY_IN.png";
 
 
 
@@ -47,7 +47,7 @@ const Product_LayIn = () => {
             </div>
             <div className="md:w-[50%]">
               <img
-                src="../../src/assets/Img/pr0ducts/LAY_IN.png"
+                src={LAYIN}
                 alt="Lay-In"
                 className="w-full h-auto md:h-[65vh]"
               />
