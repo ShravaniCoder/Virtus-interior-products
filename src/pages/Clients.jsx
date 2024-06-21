@@ -15,7 +15,7 @@ const Clients = () => {
         </div>
         <img
           className="h-[30vh] md:h-[40vh] w-[100%] object-cover"
-          src="../../src/imgs/clientsimg/banner.jpg"
+          src="../../src/assets/Img/clientsimg/banner.jpg"
           alt="banner"
         />
       </section>

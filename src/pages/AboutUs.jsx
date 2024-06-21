@@ -16,7 +16,7 @@ const AboutUs = () => {
         </div>
         <img
           className="h-[30vh] md:h-[40vh] w-[100%] object-cover"
-          src="../../src/imgs/about/banner.png"
+          src="../../src/assets/Img/about/banner.png"
           alt="banner"
         />
       </section>

@@ -15,7 +15,7 @@ const Quality = () => {
         </div>
         <img
           className="h-[30vh] md:h-[40vh] w-[100%] object-cover"
-          src="../../src/imgs/quality/banner.jpg"
+          src="../../src/assets/Img/quality/banner.jpg"
           alt="banner"
         />
       </section>

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const ContactUs = () => {
   return (
-    <Layout >
+    <Layout>
       <section className="mb-10 relative flex items-center bg-[#807f7c] font-lato">
         <div className="absolute lg:left-0 text-left px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-36 z-10">
           <h1 className="lg:text-5xl uppercase text-xl font-semibold text-white p-4 animate-slide-down">
@@ -17,7 +17,7 @@ const ContactUs = () => {
         </div>
         <img
           className="h-[30vh] md:h-[40vh] w-[100%] object-cover"
-          src="../../src/imgs/contact/banner.png"
+          src="../../src/assets/Img/contact/banner.png"
           alt="banner"
         />
       </section>

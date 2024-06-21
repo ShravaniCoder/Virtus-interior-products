@@ -15,11 +15,10 @@ const Features = () => {
         </div>
         <img
           className="h-[30vh] md:h-[40vh] w-[100%] object-cover"
-          src="../../src/imgs/features/banner.png"
+          src="../../src/assets/Img/features/banner.png"
           alt="banner"
         />
       </section>
-      
     </Layout>
   );
 };
