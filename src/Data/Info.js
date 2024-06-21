@@ -1,4 +1,9 @@
 import LAYIN from "../../src/assets/Img/pr0ducts/LAY_IN.png";
+import OpenCell from "../../src/assets/Img/pr0ducts/OpenCell.png";
+import ClipIn from "../../src/assets/Img/pr0ducts/ClipIn.png";
+import Channeled from "../../src/assets/Img/pr0ducts/Channeled.png";
+import Baffle from "../../src/assets/Img/pr0ducts/Baffle.png";
+
 
 export const links = [
   {
@@ -87,7 +92,7 @@ export const tilesData = [
   },
   {
     id: 4,
-    image: "../../src/assets/Img/pr0ducts/OpenCell.png",
+    image: OpenCell,
     line: "Standard Metal Ceiling",
     material: "Metal",
     productType: "AEROLITE OPEN CELL",
@@ -96,7 +101,7 @@ export const tilesData = [
   },
   {
     id: 5,
-    image: "../../src/assets/Img/pr0ducts/ClipIn.png",
+    image: ClipIn,
     line: "Standard Metal Ceiling",
     material: "Metal",
     productType: "AEROLITE CLIP IN",
@@ -114,7 +119,7 @@ export const tilesData = [
   },
   {
     id: 7,
-    image: "../../src/assets/Img/pr0ducts/Channeled.png",
+    image: Channeled,
     line: "Acoustics",
     material: "Metal",
     productType: "Channeled wood works",
@@ -159,7 +164,7 @@ export const tilesData = [
   },
   {
     id: 1,
-    image: "../../src/assets/Img/pr0ducts/Baffle.png",
+    image: Baffle,
     line: "Standard Metal Ceiling",
     material: "Metal",
     productType: "AEROLITE BAFFLE CEILING SYSTEM",
