@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Layout from "../../components/Layout";
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
-import LayIn from "../../../src/assets/Img/pr0ducts/LAY_IN.png";
+import LayIn from "../../../src/assets/Img/pr0ducts/Lay-In.jpg";
 
 
 
