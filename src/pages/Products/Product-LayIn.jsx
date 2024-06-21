@@ -3,7 +3,9 @@ import Layout from "../../components/Layout";
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
 import LayIn from "../../../src/assets/Img/pr0ducts/Lay-In.jpg";
 import LAYIN from "../../../src/assets/Img/pr0ducts/LAY_IN.png";
-
+import Box1 from "../../../src/assets/Img/pr0ducts/box1.png";
+import Box2 from "../../../src/assets/Img/pr0ducts/box2.png";
+import Box3 from "../../../src/assets/Img/pr0ducts/box3.png";
 
 
 const Product_LayIn = () => {
@@ -75,11 +77,7 @@ const Product_LayIn = () => {
                 <tr>
                   <td className="px-4 py-2 border border-gray-300">
                     <div className="flex justify-center items-center">
-                      <img
-                        src="../../../src/imgs/pr0ducts/box1.png"
-                        alt="Lay-In"
-                        className="w-32 h-20"
-                      />
+                      <img src={Box1} alt="Lay-In" className="w-32 h-20" />
                     </div>
                   </td>
                   <td className="px-4 py-2 border border-gray-300">
@@ -91,7 +89,7 @@ const Product_LayIn = () => {
                   <td className="px-4 py-2 border border-gray-300">
                     <div className="flex flex-col items-center">
                       <img
-                        src="../../../src/imgs/pr0ducts/box2.png"
+                        src={Box2}
                         alt="Lay-In"
                         className="w-32 h-20"
                       />
@@ -101,7 +99,7 @@ const Product_LayIn = () => {
                   <td className="px-4 py-2 border border-gray-300">
                     <div className="flex flex-col items-center">
                       <img
-                        src="../../../src/imgs/pr0ducts/box3.png"
+                        src={Box3}
                         alt="Lay-In"
                         className="w-32 h-20"
                       />
