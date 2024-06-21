@@ -16,35 +16,34 @@ const Home = () => {
   const data = [
     {
       id: 1,
-      bgImg: "/img1.png",
+      bgImg: "../../public/homepage/img1.png",
       title: "",
       desc: "",
     },
     {
       id: 2,
-      bgImg: "/img2.png",
+      bgImg: "../../public/homepage/img1.png",
       title: "",
       desc: "",
     },
     {
       id: 3,
-      bgImg: "/img3.png",
+      bgImg: "../../public/homepage/img1.png",
       title: "",
       desc: "",
     },
     {
       id: 4,
-      bgImg: "/img4.png",
+      bgImg: "../../public/homepage/img1.png",
       title: "",
       desc: "",
     },
     {
       id: 5,
-      bgImg: "/img5.png",
+      bgImg: "../../public/homepage/img1.png",
       title: "",
       desc: "",
     },
-   
   ];
 
   return (

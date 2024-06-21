@@ -58,7 +58,7 @@ export const links = [
 export const tilesData = [
   {
     id: 1,
-    image: "../../src/imgs/pr0ducts/LAY_IN.png",
+    image: "../../public/pr0ducts/LAY_IN.png",
     line: "Standard Metal Ceiling",
     material: "Metal",
     productType: "AEROLITE LAY IN",
@@ -85,7 +85,7 @@ export const tilesData = [
   },
   {
     id: 4,
-    image: "../../src/imgs/pr0ducts/OpenCell.png",
+    image: "../../public/pr0ducts/OpenCell.png",
     line: "Standard Metal Ceiling",
     material: "Metal",
     productType: "AEROLITE OPEN CELL",
@@ -94,7 +94,7 @@ export const tilesData = [
   },
   {
     id: 5,
-    image: "../../src/imgs/pr0ducts/ClipIn.png",
+    image: "../../public/pr0ducts/ClipIn.png",
     line: "Standard Metal Ceiling",
     material: "Metal",
     productType: "AEROLITE CLIP IN",
@@ -112,7 +112,7 @@ export const tilesData = [
   },
   {
     id: 7,
-    image: "../../src/imgs/pr0ducts/Channeled.png",
+    image: "../../public/pr0ducts/Channeled.png",
     line: "Acoustics",
     material: "Metal",
     productType: "Channeled wood works",
@@ -157,7 +157,7 @@ export const tilesData = [
   },
   {
     id: 1,
-    image: "../../src/imgs/pr0ducts/Baffle.png",
+    image: "../../public/pr0ducts/Baffle.png",
     line: "Standard Metal Ceiling",
     material: "Metal",
     productType: "AEROLITE BAFFLE CEILING SYSTEM",
