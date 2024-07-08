@@ -152,8 +152,17 @@ export const tilesData = [
     image: Baffle,
     line: "Standard Metal Ceiling",
     material: "Metal",
-    productType: "Aerolite Baffle Ceiling System",
+    productType: "Aerolite Baffle",
     button: "View Property",
     link: "/product_Baffle",
+  },
+  {
+    id: 12,
+    image: Baffle,
+    line: "Standard Metal Ceiling",
+    material: "Metal",
+    productType: "TRIANGULAR Open Cell",
+    button: "View Property",
+    link: "/product_TringularOpenCell",
   },
 ];

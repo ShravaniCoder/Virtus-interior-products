@@ -11,6 +11,8 @@ const productTypes = {
     "Aerolite Lay In",
     "Aerolite Clip In",
     "Aerolite Open Cell",
+    "Aerolite Baffle",
+    "TRIANGULAR Open Cell",
   ],
   Acoustics: [
     "Aerolite wood works linear",

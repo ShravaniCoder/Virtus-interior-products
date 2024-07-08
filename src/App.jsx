@@ -17,6 +17,7 @@ import Product_FPlank from "./pages/Products/Product_FPlank";
 import Products_Corridor from "./pages/Products/Products_Corridor";
 import Product_PawlHook from "./pages/Products/Product_PawlHook";
 import Product_Baffle from "./pages/Products/Product_Baffle";
+import Product_Tringular from "./pages/Products/Product_Tringular";
 
 function App() {
   const router = createBrowserRouter([
@@ -108,6 +109,11 @@ function App() {
     {
       path: "/product_Baffle",
       element: <Product_Baffle />
+    },
+    // Tringular Open Cell
+    {
+      path: "/product_TringularOpenCell",
+      element: <Product_Tringular />
     }
   ]);
   return (
