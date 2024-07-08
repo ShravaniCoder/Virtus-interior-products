@@ -23,7 +23,7 @@ const Quality = () => {
       </section>
       <section className="p-2 md:px-[2rem] lg:px-[2rem] xl:px-36 font-montserrat">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-10">
-          <div>
+          <div className="border p-4 shadow-xl rounded-br-2xl rounded-tl-2xl bg-[#fffffc]">
             <h1 className="font-semibold text-lg">
               Quality Assurance from Aerolite
             </h1>

@@ -18,6 +18,7 @@ import Products_Corridor from "./pages/Products/Products_Corridor";
 import Product_PawlHook from "./pages/Products/Product_PawlHook";
 import Product_Baffle from "./pages/Products/Product_Baffle";
 import Product_Tringular from "./pages/Products/Product_Tringular";
+import Advantage from "./pages/Advantage";
 
 function App() {
   const router = createBrowserRouter([
@@ -39,6 +40,11 @@ function App() {
     {
       path: "/features",
       element: <Features />,
+    },
+    //advantage
+    {
+      path: "/advantage",
+      element: <Advantage />
     },
     //quality
     {
@@ -108,13 +114,13 @@ function App() {
     // Baffle
     {
       path: "/product_Baffle",
-      element: <Product_Baffle />
+      element: <Product_Baffle />,
     },
     // Tringular Open Cell
     {
       path: "/product_TringularOpenCell",
-      element: <Product_Tringular />
-    }
+      element: <Product_Tringular />,
+    },
   ]);
   return (
     <div className="w-full overflow-hidden font-roboto">

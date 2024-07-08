@@ -8,6 +8,9 @@ export default {
         montserrat: ["Montserrat"],
         lato: ["Lato"],
       },
+      borderRadius: {
+        extraLarge: "7rem",
+      },
       listStyleType: {
         none: "none",
         disc: "disc",
