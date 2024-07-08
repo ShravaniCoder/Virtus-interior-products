@@ -16,7 +16,7 @@ import Product_Chenneled from "./pages/Products/Product_Chenneled";
 import Product_FPlank from "./pages/Products/Product_FPlank";
 import Products_Corridor from "./pages/Products/Products_Corridor";
 import Product_PawlHook from "./pages/Products/Product_PawlHook";
-import ProductWallCladding from "./pages/Products/ProductWallCladding";
+import Product_Baffle from "./pages/Products/Product_Baffle";
 
 function App() {
   const router = createBrowserRouter([
@@ -104,11 +104,11 @@ function App() {
       path: "/product_Custom-pawl-&-hook-on-system",
       element: <Product_PawlHook />,
     },
-    //Wall Cladding
+    // Baffle
     {
-      path: "/product_Wall-Cladding",
-      element: <ProductWallCladding />
-    },
+      path: "/product_Baffle",
+      element: <Product_Baffle />
+    }
   ]);
   return (
     <div className="w-full overflow-hidden font-roboto">

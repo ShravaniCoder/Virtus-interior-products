@@ -7,8 +7,12 @@ import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const productTypes = {
-  "Standard Metal Ceiling": ["LayIn", "ClipIn", "OpenCell"],
-  "Acoustics": [
+  "Standard Metal Ceiling": [
+    "Aerolite Lay In",
+    "Aerolite Clip In",
+    "Aerolite Open Cell",
+  ],
+  Acoustics: [
     "Aerolite wood works linear",
     "Aerolite wood works grille",
     "Channeled wood works",
@@ -18,7 +22,6 @@ const productTypes = {
     "F-plancks",
     "Corridor planks",
     "Custom pawl & hook on system",
-    "Wall cladding",
   ],
 };
 

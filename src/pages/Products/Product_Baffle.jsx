@@ -1,16 +1,14 @@
-
-
 import { Link } from "react-router-dom";
 import Layout from "../../components/Layout";
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
-import Clip1 from "../../../src/assets/Img/pr0ducts/Clip1.png";
-import CLIPIN from "../../../src/assets/Img/pr0ducts/ClipIn.png";
-import Box1 from "../../../src/assets/Img/pr0ducts/ClipBox1.png";
+import Baffle1 from "../../../src/assets/Img/pr0ducts/Baffle1.png";
+import Baffle from "../../../src/assets/Img/pr0ducts/Baffle.png";
+import Box1 from "../../../src/assets/Img/pr0ducts/box1.png";
 import Box2 from "../../../src/assets/Img/pr0ducts/box2.png";
 import Box3 from "../../../src/assets/Img/pr0ducts/box3.png";
 
 
-const Product_ClipIn = () => {
+const Product_Baffle = () => {
   return (
     <Layout>
       <div className="bg-[#f7f7f7]">
@@ -28,7 +26,7 @@ const Product_ClipIn = () => {
                   Standard Metal Ceiling
                 </h2>
                 <h1 className="md:text-5xl text-4xl font-semibold pt-2 pb-4 ">
-                  AEROLITE CLIP IN
+                  AEROLITE BAFFLE
                 </h1>
                 <div className="px-3 py-1 border-b-8 border-l-8 border-[#FAC40B] w-56 half-top-border ">
                   <h2 className="text-sm md:text-xl text-[#0B2B3c] mt-2 font-bold">
@@ -37,22 +35,20 @@ const Product_ClipIn = () => {
                 </div>
 
                 <ul className="px-5 md:px-0 list-square py-4 text-lg">
-                  <li>Interior and exterior applications</li>
-                  <li>Transportation & Airports</li>
-                  <li>Educational</li>
-                  <li>Healthcare</li>
-                  <li>Commercial Buildings</li>
-                  <li>Hi-Rise & Office</li>
-                  <li>Financial & Banking</li>
-                  <li>Malls & Residential</li>
-                  <li>Kitchen & Dietary</li>
-                  <li>Laundry</li>
+                  <li>Airports</li>
+                  <li>Bus Terminals</li>
+                  <li>Railway Stations</li>
+                  <li>Corridors</li>
+                  <li>Retail</li>
+                  <li>Reception</li>
+                  <li>Lobbies</li>
+                  <li>Banquets</li>
                 </ul>
               </div>
             </div>
             <div className="md:w-[50%]">
               <img
-                src={CLIPIN}
+                src={Baffle}
                 alt="Lay-In"
                 className="w-full h-auto md:h-[65vh]"
               />
@@ -66,7 +62,7 @@ const Product_ClipIn = () => {
             <table className="min-w-full bg-white border border-black">
               <thead>
                 <tr>
-                  <th className="px-4 py-2 border border-gray-300">CLIP IN</th>
+                  <th className="px-4 py-2 border border-gray-300">LAY-IN</th>
                   <th className="px-4 py-2 border border-gray-300">PLAIN</th>
                   <th className="px-4 py-2 border border-gray-300">
                     STANDARD PERFORATED
@@ -78,8 +74,8 @@ const Product_ClipIn = () => {
               </thead>
               <tbody>
                 <tr>
-                  <td className="px-4 py-2 border border-gray-300">
-                    <div className="flex justify-center items-center">
+                  <td className="px-2 py-2 border border-gray-300">
+                    <div className="flex flex-col justify-center items-center">
                       <img src={Box1} alt="Lay-In" className="w-32 h-20" />
                     </div>
                   </td>
@@ -173,17 +169,24 @@ const Product_ClipIn = () => {
               </h2>
             </div>
             <ul className="list-square py-4 px-5 text-lg">
-              <li>Concealed ceiling design</li>
-              <li>Wide range of standard perforation patterns</li>
-              <li>Wide range of wooden patterns.</li>
-              <li>Durable and washable polyester powder finish</li>
-              <li>Robust and easy to clean.</li>
-              <li>High sound absorption and sound attenuation</li>
-              <li>Environment friendly and recyclable</li>
+              <li>A wide range of design options</li>
+              <li>Can be customized to your needs</li>
+              <li>Available in numerous RAL colors and wood grain colors</li>
+              <li>
+                Choose from a range of widths and heights which can be installed
+                at a varied spacing
+              </li>
+              <li>Open space for integrated ceiling solution</li>
+              <li>Easy installation with standard carriers</li>
+              <li>
+                Easy to install and offer easy access to maintenance and the
+                installation of additional services such as lighting, sprinklers
+                and climate control systems.
+              </li>
             </ul>
           </div>
           <div className="md:w-[50%] ">
-            <img src={Clip1} alt="Lay-In" className="w-full h-auto" />
+            <img src={Baffle1} alt="Lay-In" className="w-full h-auto" />
           </div>
         </div>
       </section>
@@ -191,4 +194,6 @@ const Product_ClipIn = () => {
   );
 };
 
-export default Product_ClipIn;
+export default Product_Baffle;
+
+

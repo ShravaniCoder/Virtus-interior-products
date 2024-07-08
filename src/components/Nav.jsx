@@ -44,7 +44,7 @@ const Nav = () => {
 
             {link.sublink && activeIndex === index && (
               <div className="w-[100%]">
-                <ul className="absolute top-full left-0 w-44 bg-white animate-nav-up py-2 border-t">
+                <ul className="absolute top-full left-0 w-44 bg-white animate-nav-up py-2">
                   {link.sublink.map((sublink, subIndex) => (
                     <li
                       key={subIndex}

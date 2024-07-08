@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Layout from "../../components/Layout";
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
-import LayIn from "../../../src/assets/Img/pr0ducts/Lay-In.jpg";
+import Lay1 from "../../../src/assets/Img/pr0ducts/Lay1.png"
 import LAYIN from "../../../src/assets/Img/pr0ducts/LAY_IN.png";
 import Box1 from "../../../src/assets/Img/pr0ducts/box1.png";
 import Box2 from "../../../src/assets/Img/pr0ducts/box2.png";
@@ -75,9 +75,10 @@ const Product_LayIn = () => {
               </thead>
               <tbody>
                 <tr>
-                  <td className="px-4 py-2 border border-gray-300">
-                    <div className="flex justify-center items-center">
+                  <td className="px-2 py-2 border border-gray-300">
+                    <div className="flex flex-col justify-center items-center">
                       <img src={Box1} alt="Lay-In" className="w-32 h-20" />
+                     
                     </div>
                   </td>
                   <td className="px-4 py-2 border border-gray-300">
@@ -88,21 +89,13 @@ const Product_LayIn = () => {
                   </td>
                   <td className="px-4 py-2 border border-gray-300">
                     <div className="flex flex-col items-center">
-                      <img
-                        src={Box2}
-                        alt="Lay-In"
-                        className="w-32 h-20"
-                      />
+                      <img src={Box2} alt="Lay-In" className="w-32 h-20" />
                       <p>2.5mm dia. Holes 16% Open area square pitch</p>
                     </div>
                   </td>
                   <td className="px-4 py-2 border border-gray-300">
                     <div className="flex flex-col items-center">
-                      <img
-                        src={Box3}
-                        alt="Lay-In"
-                        className="w-32 h-20"
-                      />
+                      <img src={Box3} alt="Lay-In" className="w-32 h-20" />
                       <p>1.8mm dia. Holes 20% Open area diagonal pitch</p>
                     </div>
                   </td>
@@ -189,7 +182,7 @@ const Product_LayIn = () => {
             </ul>
           </div>
           <div className="md:w-[50%] ">
-            <img src={LayIn} alt="Lay-In" className="w-full h-auto" />
+            <img src={Lay1} alt="Lay-In" className="w-full h-auto" />
           </div>
         </div>
       </section>
