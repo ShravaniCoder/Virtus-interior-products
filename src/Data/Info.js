@@ -44,13 +44,9 @@ export const links = [
     title: "Clients",
     path: "/clients",
   },
+  
   {
     id: 8,
-    title: "Brochure",
-    path: "/download brochure",
-  },
-  {
-    id: 9,
     title: "Contact",
     path: "/contactus",
   },
