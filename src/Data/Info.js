@@ -20,14 +20,12 @@ export const links = [
     id: 3,
     title: "Products",
     path: "/products",
-    sublink: [
-     
-    ],
+    sublink: [],
   },
   {
     id: 4,
-    title: "Quality",
-    path: "/quality",
+    title: "Advantage",
+    path: "/advantage",
   },
   {
     id: 5,
@@ -36,15 +34,15 @@ export const links = [
   },
   {
     id: 6,
-    title: "Advantage",
-    path: "/advantage",
+    title: "Quality",
+    path: "/quality",
   },
   {
     id: 7,
     title: "Clients",
     path: "/clients",
   },
-  
+
   {
     id: 8,
     title: "Contact",
