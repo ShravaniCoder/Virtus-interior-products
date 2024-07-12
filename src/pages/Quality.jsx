@@ -23,7 +23,7 @@ const Quality = () => {
       </section>
       <section className="p-2 md:px-[2rem] lg:px-[2rem] xl:px-36 font-montserrat">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-10">
-          <div className="border p-4 shadow-xl rounded-br-2xl rounded-tl-2xl bg-[#fffffc]">
+          <div className="border p-4 shadow-xl rounded-br-2xl rounded-tl-2xl bg-[#fdfdf7]">
             <h1 className="font-semibold text-lg">
               Quality Assurance from Aerolite
             </h1>
@@ -31,12 +31,12 @@ const Quality = () => {
               Aerolite Industries places primary priority on maintaining high
               quality standards. The standards we maintain have helped gain the
               trust and reputation from our customers.{" "}
-              <p>
+             
                 We invest substantial resources in acquiring modern testing
                 equipment in a fully-equipped state of the art laboratory to
                 test the strength, environmental friendliness and a host of
                 physical properties of our tiles.
-              </p>
+              
             </p>
             <h1 className="font-semibold text-lg">
               Rigid Controls and Testing Methods at &quot;Aerolite&quot;
@@ -45,12 +45,12 @@ const Quality = () => {
               Aerolite Industries places primary priority on maintaining high
               quality standards. The standards we maintain have helped gain the
               trust and reputation from our customers.{" "}
-              <p>
+              
                 We invest substantial resources in acquiring modern testing
                 equipment in a fully-equipped state of the art laboratory to
                 test the strength, environmental friendliness and a host of
                 physical properties of our tiles.
-              </p>
+              
             </p>
             <h1 className="font-semibold text-lg">
               Certifications and Approvals

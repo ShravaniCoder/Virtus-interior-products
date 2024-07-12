@@ -132,7 +132,7 @@ const FilterSearch = () => {
           <section className="grid grid-cols-1 md:grid-cols-3 gap-x-4">
             {filteredTilesData.map((menu, index) => (
               <div className="my-6 px-2" key={index}>
-                <div className="border border-gray-200 shadow-md flex flex-col">
+                <div className="border border-gray-200 shadow-2xl flex flex-col">
                   <Link to={menu.link}>
                     <div className="overflow-hidden group relative">
                       <img

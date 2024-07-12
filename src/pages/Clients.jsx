@@ -83,7 +83,7 @@ const Clients = () => {
       <section className="p-4 md:px-[2rem] lg:px-[2rem] xl:px-36">
         <div className="pb-6">
           <h1 className="text-xl font-roboto">Few of our clients</h1>
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mt-2">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mt-2 md:mb-5">
             <img
               src={C1}
               alt="C1"
@@ -115,7 +115,7 @@ const Clients = () => {
               className="border w-full shadow-xl hover:transform hover:scale-110 transition-transform duration-300 ease-in-out"
             />
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mt-2">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mt-2  md:mb-5">
             <img
               src={C7}
               alt="C7"
@@ -147,7 +147,7 @@ const Clients = () => {
               className="border w-full shadow-xl hover:transform hover:scale-110 transition-transform duration-300 ease-in-out"
             />
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mt-2">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mt-2  md:mb-5">
             <img
               src={C13}
               alt="C13"
@@ -179,7 +179,7 @@ const Clients = () => {
               className="border w-full shadow-xl hover:transform hover:scale-110 transition-transform duration-300 ease-in-out"
             />
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mt-2">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mt-2  md:mb-5">
             <img
               src={C19}
               alt="C19"
@@ -211,7 +211,7 @@ const Clients = () => {
               className="border w-full shadow-xl hover:transform hover:scale-110 transition-transform duration-300 ease-in-out"
             />
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mt-2">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mt-2  md:mb-5">
             <img
               src={C25}
               alt="C25"
@@ -243,7 +243,7 @@ const Clients = () => {
               className="border w-full shadow-xl hover:transform hover:scale-110 transition-transform duration-300 ease-in-out"
             />
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mt-2">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mt-2  md:mb-5">
             <img
               src={C31}
               alt="C31"
@@ -275,7 +275,7 @@ const Clients = () => {
               className="border w-full shadow-xl hover:transform hover:scale-110 transition-transform duration-300 ease-in-out"
             />
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mt-2">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mt-2  md:mb-5">
             <img
               src={C37}
               alt="C37"
@@ -307,7 +307,7 @@ const Clients = () => {
               className="border w-full shadow-xl hover:transform hover:scale-110 transition-transform duration-300 ease-in-out"
             />
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mt-2">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mt-2  md:mb-5">
             <img
               src={C43}
               alt="C43"
@@ -339,7 +339,7 @@ const Clients = () => {
               className="border w-full shadow-xl hover:transform hover:scale-110 transition-transform duration-300 ease-in-out"
             />
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mt-2">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mt-2  md:mb-5">
             <img
               src={C49}
               alt="C49"
@@ -371,7 +371,7 @@ const Clients = () => {
               className="border w-full shadow-xl hover:transform hover:scale-110 transition-transform duration-300 ease-in-out"
             />
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mt-2">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mt-2  md:mb-5">
             <img
               src={C55}
               alt="C55"

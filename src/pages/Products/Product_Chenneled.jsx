@@ -22,9 +22,9 @@ const Product_Chenneled = () => {
               </Link>
               <div className="md:py-5 py-5 ">
                 <h2 className="md:text-xl text-lg uppercase font-semibold text-[#4F8BAD]">
-                  Standard Metal Ceiling
+                  Acoustics
                 </h2>
-                <h1 className="md:text-5xl text-4xl font-semibold pt-2 pb-4 uppercase">
+                <h1 className="md:text-5xl text-4xl text-[#445E8E] font-semibold pt-2 pb-4 uppercase">
                   AEROLITE Channeled wood works
                 </h1>
                 <div className="px-3 py-1 border-b-8 border-l-8 border-[#FAC40B] w-56 half-top-border ">
@@ -33,7 +33,7 @@ const Product_Chenneled = () => {
                   </h2>
                 </div>
 
-                <ul className="px-5 md:px-0 list-square py-4 text-lg">
+                <ul className="px-5 md:px-0 list-square py-4 text-lg text-[#3f4a5f] font-semibold">
                   <li>Auditorium</li>
                   <li>Meeting Rooms</li>
                   <li>Reception</li>
@@ -148,11 +148,11 @@ const Product_Chenneled = () => {
         <div className="flex flex-col md:items-center md:flex-row md:h-[55vh] jmd:ustify-between font-montserrat">
           <div className="md:w-[50%] w-full">
             <div className="px-3 py-1 border-b-8 border-l-8 border-[#FAC40B] w-60 half-top-border">
-              <h2 className="text-sm md:text-xl text-[#0B2B3c] mt-2 font-bold">
+              <h2 className="text-base md:text-xl text-[#0B2B3c] mt-2 font-bold">
                 Features & Benefits
               </h2>
             </div>
-            <ul className="list-square py-4 px-5 text-lg">
+            <ul className="list-square py-4 px-5 text-lg text-[#3f4a5f] font-semibold">
               <li>Enables designers to create rich and warm interiors</li>
               <li>Easy to install on Wall & Ceiling</li>
               <li>Enhanced acoustical properties with Bottle neck holes</li>

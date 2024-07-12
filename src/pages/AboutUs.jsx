@@ -59,7 +59,7 @@ const AboutUs = () => {
         >
           <motion.p
             variants={childVariants}
-            className="p-3 text-left font-extrabold text-[#455F87]"
+            className="p-3 text-left text-base md:text-lg font-extrabold text-[#455F87]"
           >
             AEROLITE OFFERS A RANGE OF MAKE IN INDIA MODULAR CEILING PRODUCTS
             PIONEERED LIGHT WEIGHT CALCIUM SILICAT, STANDARD METAL WORKS AND
@@ -78,7 +78,7 @@ const AboutUs = () => {
         >
           <motion.p
             variants={childVariants}
-            className="p-3 text-left font-extrabold text-[#455F87]"
+            className="p-3 text-left text-base md:text-lg font-extrabold text-[#455F87]"
           >
             THE COMPANY PUTS COMBINATION OF INNOVATION AND OUTSTANDING PRODUCTS
             AND SERVICES AS OUR TOP PRIORITY, CONSTRUCTIVE DIALOGUE WITH EQUALLY
