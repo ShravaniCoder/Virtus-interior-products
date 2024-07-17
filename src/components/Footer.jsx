@@ -1,19 +1,11 @@
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaLinkedin, } from "react-icons/fa";
-import ReCAPTChHA from 'react-google-recaptcha';
-import { useState } from "react";
+
 import Insta from "../../src/assets/Img/homepage/insta.png"
 
 const Footer = () => {
-  const [isVerified, setIsVerified] = useState(false);
-
-  const handleRecaptchaChange = (value) => {
-    if (value) {
-      setIsVerified(true);
-    } else {
-      setIsVerified(false);
-    }
-  };
+ 
+  
   return (
     <>
       <div className="bg-[#2B2E31] h-auto">
@@ -28,7 +20,7 @@ const Footer = () => {
                   Explore VIRTUS modular ceilings, wall panels, and grills to
                   transform your space with style and quality.
                 </p>
-                <div className="socials flex flex-row gap-4 mt-3">
+                <div className="socials flex flex-row gap-4 my-4">
                   <Link
                     href={
                       "https://www.linkedin.com/company/103939751/admin/feed/posts/"
@@ -152,17 +144,11 @@ const Footer = () => {
                     ></textarea>
                   </div>
                   <div className="">
-                    <ReCAPTChHA
-                      sitekey="6LegpbgpAAAAAD4M2jzmYcEo1VrrRHDwOUX2pimn"
-                      onChange={handleRecaptchaChange}
-                    />
                     <button
                       type="submit"
-                      className={`text-white py-2 px-6 w-[30%] mt-4 ${
-                        isVerified ? "bg-yellow-500" : "bg-yellow-600"
-                      }`}
+                      className="text-white py-2 px-4 w-[40%] mt-4 bg-yellow-600 hover:bg-[#E5901F]"
                     >
-                      SUBMIT
+                      SEND MESSAGE
                     </button>
                   </div>
                 </form>
