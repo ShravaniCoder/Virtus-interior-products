@@ -20,6 +20,7 @@ import Product_Baffle from "./pages/Products/Product_Baffle";
 import Product_Tringular from "./pages/Products/Product_Tringular";
 import Advantage from "./pages/Advantage";
 
+
 function App() {
   const router = createBrowserRouter([
     {
@@ -38,13 +39,13 @@ function App() {
     },
     //features
     {
-      path: "/features",
+      path: "/Application Areas",
       element: <Features />,
     },
     //advantage
     {
       path: "/advantage",
-      element: <Advantage />
+      element: <Advantage />,
     },
     //quality
     {

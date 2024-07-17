@@ -24,7 +24,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="bg-white text-black/70 uppercase font-lato">
+    <nav className="bg-white text-black uppercase font-playfairDisplay">
       <ul className="flex space-x-4 text-base font-semibold ">
         {links.map((link, index) => (
           <li

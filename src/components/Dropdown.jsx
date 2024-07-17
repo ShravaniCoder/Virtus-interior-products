@@ -14,13 +14,13 @@ const Dropdown = ({ options, selectedOption, onSelect }) => {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center justify-between w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded focus:outline-none focus:ring-1 focus:border-transparent"
+        className="flex items-center justify-between w-full px-4 py-2 text-base font-medium text-gray-700 bg-white border border-gray-300 focus:outline-none focus:ring-1 focus:border-transparent"
       >
         {selectedOption}
         {isOpen ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />}
       </button>
       {isOpen && (
-        <div className="absolute z-10 w-full mt-1 bg-white shadow-lg rounded border border-gray-300">
+        <div className="absolute z-10 w-full mt-1 bg-white shadow-lg  border border-gray-300">
           {options.map((option, index) => (
             <div
               key={index}

@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
-import { IoIosArrowForward } from "react-icons/io";
+import { Link } from 'react-router-dom';
+import { FaFacebook, FaLinkedin, } from "react-icons/fa";
 import ReCAPTChHA from 'react-google-recaptcha';
 import { useState } from "react";
+import Insta from "../../src/assets/Img/homepage/insta.png"
 
 const Footer = () => {
   const [isVerified, setIsVerified] = useState(false);
@@ -16,25 +17,44 @@ const Footer = () => {
   return (
     <>
       <div className="bg-[#2B2E31] h-auto">
-        <div className="px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-36">
+        <div className="px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-[4rem]">
           <div className="py-4 flex flex-col md:flex-row">
             <div className="w-full md:w-[50%] flex flex-col md:flex-row justify-between">
-              <div className="flex flex-col gap-2 px-4">
+              <div className="flex flex-col gap-2 px-4 md:w-[50%]">
                 <h1 className="uppercase font-semibold text-2xl text-[#E5901F]">
-                  Technical
+                  About Us
                 </h1>
-                <Link className="hover:text-white text-white/85 tect-xl flex gap-2 items-center mt-1 ">
-                  <IoIosArrowForward />
-                  Techincal Comparision
-                </Link>
-                <Link className="hover:text-white text-white/85 tect-xl flex gap-2 items-center">
-                  <IoIosArrowForward />
-                  Aerolite Technical Data
-                </Link>
+                <p className="text-white/85 mt-2">
+                  Explore VIRTUS modular ceilings, wall panels, and grills to
+                  transform your space with style and quality.
+                </p>
+                <div className="socials flex flex-row gap-4 mt-3">
+                  <Link
+                    href={
+                      "https://www.linkedin.com/company/103939751/admin/feed/posts/"
+                    }
+                  >
+                    <FaLinkedin className="text-[#0A66C2] text-2xl" />
+                  </Link>
+                  <Link href={"https://twitter.com/CodeCraftSherry"}>
+                    <FaFacebook className="text-blue-500 text-2xl" />
+                  </Link>
+                  <Link
+                    href={"https://www.instagram.com/shravani_chendwankar/"}
+                  >
+                    <img
+                      src={Insta}
+                      alt="socials"
+                      width={24}
+                      height={24}
+                      className="rounded-md"
+                    />
+                  </Link>
+                </div>
               </div>
-              <div className="flex flex-col px-4">
+              <div className="flex flex-col px-4 md:w-[50%]">
                 <h1 className="uppercase font-semibold text-2xl text-[#E5901F] ">
-                  Contact us
+                  Our Address
                 </h1>
                 <div className="text-white/85 mt-2">
                   <h2>VIRTUS INTERIOR PRODUCTS</h2>
@@ -43,18 +63,22 @@ const Footer = () => {
                   <p>Mumbai 400081.</p>
                 </div>
                 <div className="text-white/85 mt-4">
-                  <p>Phone: 9820324799 / 76661 17424</p>
+                  <p>Phone: 9820324799 / 7666117424</p>
                   <p>(Enquiry / Sales Support)</p>
-                  <a className="text-[#4F8BAD]">suresh.virtus@gmail.com</a>
+                  <p className="text-[#4F8BAD] py-4">suresh.virtus@gmail.com</p>
                 </div>
               </div>
             </div>
             <div className="w-full md:w-[50%]">
               <div className="flex flex-col px-4">
                 <h1 className="uppercase font-semibold text-2xl text-[#E5901F]">
-                  Enquiry
+                  Contact Us
                 </h1>
-                <form className="flex flex-col gap-4 mt-2">
+                <form
+                  className="flex flex-col gap-4 mt-2"
+                  method="POST"
+                  action="https://formspree.io/f/xovavdey"
+                >
                   <div className="flex flex-col md:flex-row gap-4 w-[100%]">
                     <div className="flex flex-col w-full md:w-[50%]">
                       <label className="block text-white mb-2" htmlFor="name">
@@ -63,8 +87,10 @@ const Footer = () => {
                       <input
                         className="w-full p-2 bg-white text-gray"
                         type="text"
-                        id="name"
-                        name="name"
+                        id="username"
+                        name="username"
+                        required
+                        autoComplete="off"
                       />
                     </div>
                     <div className="flex flex-col w-full md:w-[50%]">
@@ -73,9 +99,11 @@ const Footer = () => {
                       </label>
                       <input
                         className="w-full p-2 bg-white text-gray"
-                        type="email"
-                        id="email"
-                        name="email"
+                        type="useremail"
+                        id="useremail"
+                        name="useremail"
+                        required
+                        autoComplete="off"
                       />
                     </div>
                   </div>
@@ -89,6 +117,8 @@ const Footer = () => {
                         type="tel"
                         id="mobile"
                         name="mobile"
+                        required
+                        autoComplete="off"
                       />
                     </div>
                     <div className="flex flex-col w-full md:w-[50%]">
@@ -103,6 +133,8 @@ const Footer = () => {
                         type="text"
                         id="projectLocation"
                         name="projectLocation"
+                        required
+                        autoComplete="off"
                       />
                     </div>
                   </div>
@@ -115,6 +147,8 @@ const Footer = () => {
                       id="comments"
                       name="comments"
                       rows="3"
+                      required
+                      autoComplete="off"
                     ></textarea>
                   </div>
                   <div className="">
@@ -139,7 +173,7 @@ const Footer = () => {
         <hr className="bg-[#E5901F] h-px border-none" />
         <div className="py-6">
           <div className="px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-36">
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-center">
               <p className="text-white">
                 Copyright © 2020 Aerolite Ceiling Systems, All rights reserved.
               </p>

@@ -1,9 +1,14 @@
-import LAYIN from "../../src/assets/Img/pr0ducts/LAY_IN.png";
-import OpenCell from "../../src/assets/Img/pr0ducts/OpenCell.png";
-import ClipIn from "../../src/assets/Img/pr0ducts/ClipIn.png";
+import LAYIN from "../../src/assets/Img/pr0ducts/LayIn/IMG1.jpg";
+import OpenCell from "../../src/assets/Img/pr0ducts/OpenCell/Img1.jpg";
+import ClipIn from "../../src/assets/Img/pr0ducts/ClipIn/Img1.jpg";
 import Channeled from "../../src/assets/Img/pr0ducts/Channeled.png";
-import Baffle from "../../src/assets/Img/pr0ducts/Baffle.png";
-
+import Baffle from "../../src/assets/Img/pr0ducts/Baffle/Img1.jpg";
+import Corridor from "../../src/assets/Img/pr0ducts/Corridor/Img1.png";
+import FPlank from "../../src/assets/Img/pr0ducts/F-PlankImg.png";
+import CPlank from "../../src/assets/Img/pr0ducts/C-Plank/Img1.jpg";
+import Tringular from "../../src/assets/Img/pr0ducts/Tringular/Img1.jpg";
+import Linear from "../../src/assets/Img/pr0ducts/linear/Img1.jpg"
+import Grille from "../../src/assets/Img/pr0ducts/Grille/Img1.jpg"
 
 export const links = [
   {
@@ -29,8 +34,8 @@ export const links = [
   },
   {
     id: 5,
-    title: "Features",
-    path: "/features",
+    title: "Application Areas",
+    path: "/application Areas",
   },
   {
     id: 6,
@@ -62,33 +67,6 @@ export const tilesData = [
   },
   {
     id: 2,
-    image: "https://preetheme.com/html/bhouse/assets/img/product/2.jpg",
-    line: "Acoustics",
-    material: "Metal",
-    productType: "Aerolite wood works linear",
-    button: "View Property",
-    link: "/product_Aerolite-wood-works-linear",
-  },
-  {
-    id: 3,
-    image: "https://preetheme.com/html/bhouse/assets/img/product/3.jpg",
-    line: "Customized Metal Ceiling",
-    material: "Metal",
-    productType: "C-plancks",
-    button: "View Property",
-    link: "/product_C-planks",
-  },
-  {
-    id: 4,
-    image: OpenCell,
-    line: "Standard Metal Ceiling",
-    material: "Metal",
-    productType: "Aerolite Open Cell",
-    button: "View Property",
-    link: "/product_OpenCell",
-  },
-  {
-    id: 5,
     image: ClipIn,
     line: "Standard Metal Ceiling",
     material: "Metal",
@@ -97,16 +75,34 @@ export const tilesData = [
     link: "/product_ClipIn",
   },
   {
-    id: 6,
-    image: "https://preetheme.com/html/bhouse/assets/img/product/2.jpg",
-    line: "Acoustics",
+    id: 3,
+    image: OpenCell,
+    line: "Standard Metal Ceiling",
     material: "Metal",
-    productType: "Aerolite wood works grille",
+    productType: "Aerolite Open Cell",
     button: "View Property",
-    link: "/product_Aerolite-wood-works-grille",
+    link: "/product_OpenCell",
   },
   {
-    id: 7,
+    id: 4,
+    image: Tringular,
+    line: "Standard Metal Ceiling",
+    material: "Metal",
+    productType: "TRIANGULAR Open Cell",
+    button: "View Property",
+    link: "/product_TringularOpenCell",
+  },
+  {
+    id: 5,
+    image: Linear,
+    line: "Acoustics",
+    material: "Metal",
+    productType: "Aerolite wood works linear",
+    button: "View Property",
+    link: "/product_Aerolite-wood-works-linear",
+  },
+  {
+    id: 6,
     image: Channeled,
     line: "Acoustics",
     material: "Metal",
@@ -114,26 +110,18 @@ export const tilesData = [
     button: "View Property",
     link: "/product_Channeled-wood-works",
   },
+
+  {
+    id: 7,
+    image: Grille,
+    line: "Acoustics",
+    material: "Metal",
+    productType: "Aerolite wood works grille",
+    button: "View Property",
+    link: "/product_Aerolite-wood-works-grille",
+  },
   {
     id: 8,
-    image: "https://preetheme.com/html/bhouse/assets/img/product/3.jpg",
-    line: "Customized Metal Ceiling",
-    material: "Metal",
-    productType: "F-plancks",
-    button: "View Property",
-    link: "/product_F-Planks",
-  },
-  {
-    id: 9,
-    image: "https://preetheme.com/html/bhouse/assets/img/product/3.jpg",
-    line: "Customized Metal Ceiling",
-    material: "Metal",
-    productType: "Corridor planks",
-    button: "View Property",
-    link: "/product_Corridor-plancks",
-  },
-  {
-    id: 10,
     image: "https://preetheme.com/html/bhouse/assets/img/product/3.jpg",
     line: "Customized Metal Ceiling",
     material: "Metal",
@@ -142,21 +130,41 @@ export const tilesData = [
     link: "/product_Custom-pawl-&-hook-on-system",
   },
   {
+    id: 9,
+    image: CPlank,
+    line: "Customized Metal Ceiling",
+    material: "Metal",
+    productType: "C-plancks",
+    button: "View Property",
+    link: "/product_C-planks",
+  },
+
+  {
+    id: 10,
+    image: FPlank,
+    line: "Customized Metal Ceiling",
+    material: "Metal",
+    productType: "F-plancks",
+    button: "View Property",
+    link: "/product_F-Planks",
+  },
+  {
     id: 11,
+    image: Corridor,
+    line: "Customized Metal Ceiling",
+    material: "Metal",
+    productType: "Corridor planks",
+    button: "View Property",
+    link: "/product_Corridor-plancks",
+  },
+
+  {
+    id: 12,
     image: Baffle,
     line: "Standard Metal Ceiling",
     material: "Metal",
     productType: "Aerolite Baffle",
     button: "View Property",
     link: "/product_Baffle",
-  },
-  {
-    id: 12,
-    image: Baffle,
-    line: "Standard Metal Ceiling",
-    material: "Metal",
-    productType: "TRIANGULAR Open Cell",
-    button: "View Property",
-    link: "/product_TringularOpenCell",
   },
 ];

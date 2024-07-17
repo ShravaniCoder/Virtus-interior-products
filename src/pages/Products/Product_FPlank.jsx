@@ -4,12 +4,19 @@ import { Link } from "react-router-dom";
 import Layout from "../../components/Layout";
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
 import Fplank from "../../../src/assets/Img/pr0ducts/F-plank.png"
-import LAYIN from "../../../src/assets/Img/pr0ducts/LAY_IN.png";
+import banner from "../../../src/assets/Img/pr0ducts/F-PlankImg.png";
 
 const Product_FPlank = () => {
   return (
     <Layout>
-      <div className="bg-[#f7f7f7]">
+      <div className="">
+        <section className="mb-10 relative flex items-center bg-[#807f7c] font-lato">
+          <img
+            className="h-[30vh] md:h-[40vh] w-[100%] object-cover"
+            src={banner}
+            alt="banner"
+          />
+        </section>
         <div className="p-2 md:px-[2rem] lg:px-[2rem] xl:px-36">
           <div className="flex flex-col md:items-center py-2 md:flex-row h-auto md:justify-between font-montserrat">
             <div className="w-full md:w-[50%]">
@@ -20,18 +27,12 @@ const Product_FPlank = () => {
                 </h1>
               </Link>
               <div className="md:py-5 py-5 ">
-                <h2 className="md:text-xl text-lg uppercase font-semibold text-[#4F8BAD]">
-                  Customized Metal Ceiling
-                </h2>
-                <h1 className="md:text-5xl text-4xl text-[#445E8E] font-semibold pt-2 pb-4 ">
-                  AEROLITE F-PlANKS
-                </h1>
-                <div className="px-3 py-1 border-b-8 border-l-8 border-[#FAC40B] w-96 half-top-border ">
+                
+               
                   <h2 className="text-sm md:text-xl text-[#0B2B3c] mt-2 font-bold">
                     Rectangular panels & planks
                   </h2>
-                </div>
-
+               
                 <ul className="px-5 md:px-0 list-square py-4 text-lg text-[#3f4a5f] font-semibold">
                   <li>
                     The F-Plank is a linear metal ceiling system. F-Plank panels
@@ -46,11 +47,7 @@ const Product_FPlank = () => {
               </div>
             </div>
             <div className="md:w-[50%]">
-              <img
-                src={LAYIN}
-                alt="Lay-In"
-                className="w-full h-auto md:h-[65vh]"
-              />
+              
             </div>
           </div>
         </div>
@@ -59,11 +56,11 @@ const Product_FPlank = () => {
         <div className="p-2 md:px-[2rem] lg:px-[2rem] xl:px-36 font-montserrat">
           <div className="flex md:flex-row flex-col">
             <div className="md:w-[50%] w-full">
-              <div className="px-3 py-1 border-b-8 border-l-8 border-[#FAC40B] w-36 half-top-border">
+              
                 <h2 className="text-sm md:text-xl text-[#0B2B3c] mt-2 font-bold">
                   Plank size
                 </h2>
-              </div>
+             
               <ul className="list-square py-3 px-5 text-lg text-[#3f4a5f] font-semibold">
                 <li>100 x 2400 mm [W x L]</li>
                 <li>200 x 2400 mm [W x L]</li>
@@ -71,11 +68,11 @@ const Product_FPlank = () => {
               </ul>
             </div>
             <div className="md:w-[50%] w-full">
-              <div className="px-3 py-1 border-b-8 border-l-8 border-[#FAC40B] w-96 half-top-border">
+             
                 <h2 className="text-sm md:text-xl text-[#0B2B3c] mt-2 font-bold">
                   PERFORATION AND ACOUSTICS
                 </h2>
-              </div>
+              
               <h2 className=" font-montserrat text-[#3f4a5f] font-semibold py-3">
                 Metal panels are available perforated with acoustic fleece or
                 non-perforated. We offer the following perforations:
@@ -134,11 +131,11 @@ const Product_FPlank = () => {
       <section className="bg-[#f7f7f7] p-2 md:px-[2rem] lg:px-[2rem] xl:px-36">
         <div className="flex flex-col md:flex-row md:h-[55vh] md:justify-between font-montserrat">
           <div className="md:w-[50%] w-full">
-            <div className="px-3 py-1 border-b-8 border-l-8 border-[#FAC40B] w-36 half-top-border">
+            
               <h2 className="text-base md:text-xl text-[#0B2B3c] mt-2 font-bold">
                 SURFACE
               </h2>
-            </div>
+            
             <ul className="list-square py-4 px-5 text-lg text-[#3f4a5f] font-semibold">
               <li>
                 <span className="font-bold">
@@ -155,11 +152,11 @@ const Product_FPlank = () => {
             </ul>
           </div>
           <div className="md:w-[50%]">
-            <div className="px-3 py-1 border-b-8 border-l-8 border-[#FAC40B] w-72 half-top-border mb-2">
+            
               <h2 className="text-base md:text-xl text-[#0B2B3c] mt-2 font-bold">
                 SUSPENSION SYSTEM
               </h2>
-            </div>
+            
             <img src={Fplank} alt="Cplank" className="w-full h-auto" />
           </div>
         </div>

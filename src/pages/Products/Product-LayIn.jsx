@@ -1,18 +1,50 @@
 import { Link } from "react-router-dom";
 import Layout from "../../components/Layout";
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
-import Lay1 from "../../../src/assets/Img/pr0ducts/Lay1.png"
-import LAYIN from "../../../src/assets/Img/pr0ducts/LAY_IN.png";
+import Lay1 from "../../../src/assets/Img/pr0ducts/Lay1.png";
 import Box1 from "../../../src/assets/Img/pr0ducts/box1.png";
 import Box2 from "../../../src/assets/Img/pr0ducts/box2.png";
 import Box3 from "../../../src/assets/Img/pr0ducts/box3.png";
-
+import largeImage from "../../../src/assets/Img/pr0ducts/LayIn/IMG1.jpg";
+import smallImage from "../../../src/assets/Img/pr0ducts/LayIn/Img2.jpg";
+import banner from "../../../src/assets/Img/pr0ducts/LayIn/Img2.jpg";
 
 const Product_LayIn = () => {
   return (
     <Layout>
-      <div className="bg-[#f7f7f7]">
+      <div className="">
+        <section className="mb-10 relative flex items-center bg-[#807f7c] font-lato">
+          <img
+            className="h-[30vh] md:h-[40vh] w-[100%] object-cover"
+            src={banner}
+            alt="banner"
+          />
+        </section>
         <div className="p-2 md:px-[2rem] lg:px-[2rem] xl:px-36">
+          <div className="bg-beige flex md:min-h-screen justify-center">
+            <div className="relative w-full h-full flex items-start justify-end">
+              <img
+                src={largeImage}
+                alt="Large"
+                className="object-cover md:w-[95%] md:h-[75vh] rounded-xl shadow-md"
+              />
+              <div className="absolute top-[40%] md:top-[25%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
+                <h1 className="md:text-4xl text-sm text-[#4F8BAD] font-bold custom-text-shadow">
+                  STANDARD METAL CEILING
+                </h1>
+                <h2 className="md:text-6xl text-4xl font-bold p-4 custom-text-shadow">
+                  AEROLITE LAY IN
+                </h2>
+              </div>
+              <div className="absolute -bottom-14 left-0">
+                <img
+                  src={smallImage}
+                  alt="Small"
+                  className="rounded-2xl w-[50%]  md:w-96 md:h-80 object-cover"
+                />
+              </div>
+            </div>
+          </div>
           <div className="flex flex-col md:items-center py-2 md:flex-row h-auto md:justify-between font-montserrat">
             <div className="w-full md:w-[50%]">
               <Link to="/products">
@@ -22,17 +54,9 @@ const Product_LayIn = () => {
                 </h1>
               </Link>
               <div className="md:py-5 py-5 ">
-                <h2 className="md:text-xl text-lg uppercase font-semibold text-[#4F8BAD]">
-                  Standard Metal Ceiling
+                <h2 className="text-sm md:text-xl text-[#0B2B3c] mt-2 font-bold">
+                  Application Areas
                 </h2>
-                <h1 className="md:text-5xl text-4xl text-[#445E8E] font-semibold pt-2 pb-4 ">
-                  AEROLITE LAY IN
-                </h1>
-                <div className="px-3 py-1 border-b-8 border-l-8 border-[#FAC40B] w-56 half-top-border ">
-                  <h2 className="text-sm md:text-xl text-[#0B2B3c] mt-2 font-bold">
-                    Application Areas
-                  </h2>
-                </div>
 
                 <ul className="px-5 md:px-0 list-square py-4 text-lg text-[#3f4a5f] font-semibold">
                   <li>Transportation & Airports</li>
@@ -46,13 +70,6 @@ const Product_LayIn = () => {
                   <li>Laundry</li>
                 </ul>
               </div>
-            </div>
-            <div className="md:w-[50%]">
-              <img
-                src={LAYIN}
-                alt="Lay-In"
-                className="w-full h-auto md:h-[65vh]"
-              />
             </div>
           </div>
         </div>
@@ -164,11 +181,11 @@ const Product_LayIn = () => {
       <section className="bg-[#f7f7f7] p-2 md:px-[2rem] lg:px-[2rem] xl:px-36">
         <div className="flex flex-col md:items-center md:flex-row md:h-[55vh] jmd:ustify-between font-montserrat">
           <div className="md:w-[50%] w-full">
-            <div className="px-3 py-1 border-b-8 border-l-8 border-[#FAC40B] w-60 half-top-border">
+           
               <h2 className="text-base md:text-xl text-[#0B2B3c] mt-2 font-bold">
                 Features & Benefits
               </h2>
-            </div>
+            
             <ul className="list-square py-4 px-5 text-lg text-[#3f4a5f] font-semibold">
               <li>Durable and washable polyester powder finish.</li>
               <li>Wide range of standard perforation patterns.</li>

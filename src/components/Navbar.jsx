@@ -20,44 +20,46 @@ const Navbar = () => {
   const toggleSublink = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
+
   return (
     <>
       <div className="fixed w-full z-50 font-lato">
-        <div className="bg-[#2B2E31] font-lato">
-          <div className="flex justify-end gap-1 px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-36">
-            <button className="text-white py-1 px-3 flex items-center text-sm sm:text-base gap-x-1 hover:bg-yellow-500 hover:text-black/60 group">
-              <FaRegFilePdf className="text-yellow-500 group-hover:text-black/60" />
+        <div className=" bg-transparent border-2 font-lato">
+          <div className="flex justify-end gap-1 px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-[4rem]">
+            <button className="text-black/90 font-semibold py-1 px-3 flex items-center text-sm sm:text-base gap-x-1 hover:bg-[#E5901F] hover:text-black/60 group">
+              <FaRegFilePdf className="text-[#E5901F] font-semibold group-hover:text-black/60" />
               Brochure Download
             </button>
-
-            <button className="text-white py-1 px-3 flex items-center text-sm sm:text-base gap-x-1 hover:bg-yellow-500 hover:text-black/60 group">
-              <IoMailOpenOutline className="text-yellow-500 text-xl group-hover:text-black/60" />
+            <button className="text-black/90 font-semibold py-1 px-3 flex items-center text-sm sm:text-base gap-x-1 hover:bg-[#E5901F] hover:text-black/60 group">
+              <IoMailOpenOutline className="text-[#E5901F] font-semibold text-xl group-hover:text-black/60" />
               Enquiry
             </button>
-            <button className="text-white py-1 px-3 flex items-center text-sm sm:text-base gap-x-1 hover:bg-yellow-500 hover:text-black/60 group">
-              <FaBriefcase className="text-yellow-500 group-hover:text-black/60" />
+            <button className="text-black/90 font-semibold py-1 px-3 flex items-center text-sm sm:text-base gap-x-1 hover:bg-[#E5901F] hover:text-black/60 group">
+              <FaBriefcase className="text-[#E5901F] group-hover:text-black/60" />
               Careers
             </button>
           </div>
         </div>
-        <div className="w-full px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-36 bg-white">
-          <div className=" py-4 flex items-center justify-between">
-            <div className="flex-shrink-0">
-              <img src={logo} alt="logo" className="mx-auto h-16" />
-            </div>
-            <div className="hidden lg:block z-10">
-              <Nav />
-            </div>
-            <div className="text-center lg:hidden">
-              <IoIosMenu
-                className="shadow-md text-4xl p-1 bg-[#243240] text-white"
-                onClick={() => setOpen(!open)}
-              />
+        <div className="px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-[4rem] py-5">
+          <div className=" px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-4 bg-white shadow-2xl z-50">
+            <div className=" py-5 flex items-center justify-between">
+              <div className="flex-shrink-0">
+                <img src={logo} alt="logo" className="mx-auto h-16" />
+              </div>
+              <div className="hidden lg:block z-10">
+                <Nav />
+              </div>
+              <div className="text-center lg:hidden">
+                <IoIosMenu
+                  className="shadow-md text-4xl p-1 bg-[#243240] text-white"
+                  onClick={() => setOpen(!open)}
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="pt-[8rem] font-lato">
+      <div className=" font-playfairDisplay">
         {open && (
           <div
             className={`lg:hidden  bg-white w-[60%] z-50 fixed top-0 overflow-y-auto bottom-0 py-10 pl-4 ${
@@ -124,3 +126,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

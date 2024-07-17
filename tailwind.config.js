@@ -7,6 +7,7 @@ export default {
         roboto: ["Roboto"],
         montserrat: ["Montserrat"],
         lato: ["Lato"],
+        
       },
       borderRadius: {
         extraLarge: "7rem",
