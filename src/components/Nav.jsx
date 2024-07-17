@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { links } from "../Data/Info";
+import GoToTop from "./GoToTop";
+
 
 const Nav = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -32,6 +34,7 @@ const Nav = () => {
             className="relative hover:text-[#E5901F] hover:half-bottom-border "
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
+           onClick={GoToTop}
           >
             <NavLink
               to={link.path}

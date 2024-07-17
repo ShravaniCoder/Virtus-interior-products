@@ -22,6 +22,7 @@ import Advantage from "./pages/Advantage";
 
 
 function App() {
+  
   const router = createBrowserRouter([
     {
       path: "/",
@@ -125,7 +126,9 @@ function App() {
   ]);
   return (
     <div className="w-full overflow-hidden font-roboto">
+      
       <RouterProvider router={router} />
+      
     </div>
   );
 }

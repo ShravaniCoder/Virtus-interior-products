@@ -1,14 +1,18 @@
 import PropTypes from "prop-types";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import GoToTop from "./GoToTop";
+import ScrollToTop from "./ScrollToTop";
 
 
 
 const Layout = ({ children }) => {
   return (
     <div>
+      <ScrollToTop/>
       <Navbar />
-      <div className="">{children}</div>
+      <div>{children}</div>
+      <GoToTop />
       <Footer />
     </div>
   );
