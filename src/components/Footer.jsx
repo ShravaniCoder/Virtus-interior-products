@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+
 import { FaFacebook, FaLinkedin, } from "react-icons/fa";
 
 import Insta from "../../src/assets/Img/homepage/insta.png"
@@ -21,27 +21,33 @@ const Footer = () => {
                   transform your space with style and quality.
                 </p>
                 <div className="socials flex flex-row gap-4 my-4">
-                  <Link
-                    href={
-                      "https://www.linkedin.com/company/103939751/admin/feed/posts/"
-                    }
+                  <a
+                    href="https://www.linkedin.com/company/103939751/admin/feed/posts/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <FaLinkedin className="text-[#0A66C2] text-2xl" />
-                  </Link>
-                  <Link href={"https://twitter.com/CodeCraftSherry"}>
+                  </a>
+                  <a
+                    href="https://twitter.com/CodeCraftSherry"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaFacebook className="text-blue-500 text-2xl" />
-                  </Link>
-                  <Link
-                    href={"https://www.instagram.com/shravani_chendwankar/"}
+                  </a>
+                  <a
+                    href="https://www.instagram.com/shravani_chendwankar/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img
-                      src={Insta}
-                      alt="socials"
+                      src={Insta} // Adjust the path to your imported image
+                      alt="Instagram"
                       width={24}
                       height={24}
                       className="rounded-md"
                     />
-                  </Link>
+                  </a>
                 </div>
               </div>
               <div className="flex flex-col px-4 md:w-[50%]">

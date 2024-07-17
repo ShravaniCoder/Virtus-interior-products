@@ -27,7 +27,7 @@ const GoToTop = () => {
   return (
     isVisible && (
       <div
-        className="fixed bottom-5 right-5 bg-white text-black p-2 rounded-full border border-double cursor-pointer z-50"
+        className="fixed bottom-5 right-5 bg-white text-black p-2 rounded-extraLarge border border-double cursor-pointer z-50"
         onClick={goToBtn}
       >
         <MdKeyboardDoubleArrowUp className="text-xl font-bold" />

@@ -5,12 +5,20 @@ import WoodWork from "../../../src/assets/Img/pr0ducts/Channeled.png";
 import khaya from "../../../src/assets/Img/pr0ducts/khaya.png";
 import Asian from "../../../src/assets/Img/pr0ducts/Asian.png";
 import BavarianBeech from "../../../src/assets/Img/pr0ducts/Bavarian.png";
-import classic from "../../../src/assets/Img/pr0ducts/classic.png"
+import classic from "../../../src/assets/Img/pr0ducts/classic.png";
+import banner from "../../../src/assets/Img/pr0ducts/Channeled.png";
 
 const Product_Chenneled = () => {
   return (
     <Layout>
-      <div className="bg-[#f7f7f7]">
+      <div className="">
+        <section className="mb-10 relative flex items-center bg-[#807f7c] font-lato">
+          <img
+            className="h-[30vh] md:h-[40vh] w-[100%] object-cover"
+            src={banner}
+            alt="banner"
+          />
+        </section>
         <div className="p-2 md:px-[2rem] lg:px-[2rem] xl:px-36">
           <div className="flex flex-col md:items-center py-2 md:flex-row h-auto md:justify-between font-montserrat">
             <div className="w-full md:w-[50%]">

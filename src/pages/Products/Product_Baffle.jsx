@@ -20,13 +20,13 @@ const Product_Baffle = () => {
         </section>
         <div className="p-2 md:px-[2rem] lg:px-[2rem] xl:px-36">
           <div className="bg-beige flex md:min-h-screen justify-center">
-            <div className="relative w-full h-full flex items-start justify-end">
+            <div className="relative w-full h-full flex items-start justify-end mb-20">
               <img
                 src={largeImage}
                 alt="Large"
-                className="object-cover md:w-[95%] md:h-[75vh] rounded-xl shadow-md"
+                className="object-cover md:w-[95%] md:h-[75vh] h-[55vh] rounded-xl shadow-md"
               />
-              <div className="absolute top-[40%] md:top-[25%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
+              <div className="absolute top-[39%] md:top-[25%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
                 <h1 className="md:text-4xl text-sm text-[#4F8BAD] font-bold custom-text-shadow">
                   Customized Metal Ceiling
                 </h1>
@@ -38,7 +38,7 @@ const Product_Baffle = () => {
                 <img
                   src={smallImage}
                   alt="Small"
-                  className="rounded-2xl w-[50%]  md:w-96 md:h-80 object-cover"
+                  className="rounded-2xl w-[70%] h-72 md:w-96 md:h-80 object-cover"
                 />
               </div>
             </div>

@@ -145,7 +145,7 @@ const FilterSearch = () => {
       </div>
       <div className=" font-playfairDisplay">
         <div className="px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-36">
-          <section className="grid grid-cols-1 md:grid-cols-3 gap-x-4">
+          <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4">
             {filteredTilesData.map((menu, index) => (
               <div className="my-6 px-2" key={index}>
                 <div className="border border-gray-200 shadow-2xl flex flex-col">
