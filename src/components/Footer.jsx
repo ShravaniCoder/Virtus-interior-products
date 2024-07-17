@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="w-full md:w-[50%] flex flex-col md:flex-row justify-between">
               <div className="flex flex-col gap-2 px-4 md:w-[50%]">
                 <h1 className="uppercase font-semibold text-2xl text-[#E5901F]">
-                  About Us
+                  Follow Us
                 </h1>
                 <p className="text-white/85 mt-2">
                   Explore VIRTUS modular ceilings, wall panels, and grills to
