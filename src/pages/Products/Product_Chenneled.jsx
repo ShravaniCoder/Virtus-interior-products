@@ -1,23 +1,24 @@
 import { Link } from "react-router-dom";
 import Layout from "../../components/Layout";
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
-import WoodWork from "../../../src/assets/Img/pr0ducts/Channeled.png";
 import khaya from "../../../src/assets/Img/pr0ducts/khaya.png";
 import Asian from "../../../src/assets/Img/pr0ducts/Asian.png";
 import BavarianBeech from "../../../src/assets/Img/pr0ducts/Bavarian.png";
 import classic from "../../../src/assets/Img/pr0ducts/classic.png";
-import banner from "../../../src/assets/Img/pr0ducts/Channeled.png";
 
 const Product_Chenneled = () => {
   return (
     <Layout>
       <div className="">
         <section className="mb-10 relative flex items-center bg-[#807f7c] font-lato">
-          <img
-            className="h-[30vh] md:h-[40vh] w-[100%] object-cover"
-            src={banner}
-            alt="banner"
-          />
+          <div className="h-[30vh] md:h-[40vh] w-[100%] bg-[#F5F5F5] flex flex-col items-center justify-end">
+            <h1 className="md:text-xl text-sm uppercase text-[#4F8BAD] font-bold ">
+              Acoustics
+            </h1>
+            <h2 className="md:text-5xl text-4xl uppercase font-bold text-[#455D8B] p-4 ">
+              AEROLITE Channeled wood works
+            </h2>
+          </div>
         </section>
         <div className="p-2 md:px-[2rem] lg:px-[2rem] xl:px-36">
           <div className="flex flex-col md:items-center py-2 md:flex-row h-auto md:justify-between font-montserrat">
@@ -29,17 +30,11 @@ const Product_Chenneled = () => {
                 </h1>
               </Link>
               <div className="md:py-5 py-5 ">
-                <h2 className="md:text-xl text-lg uppercase font-semibold text-[#4F8BAD]">
-                  Acoustics
+                
+
+                <h2 className="text-sm md:text-xl text-[#0B2B3c] mt-2 font-bold">
+                  Application Areas
                 </h2>
-                <h1 className="md:text-5xl text-4xl text-[#445E8E] font-semibold pt-2 pb-4 uppercase">
-                  AEROLITE Channeled wood works
-                </h1>
-                <div className="px-3 py-1 border-b-8 border-l-8 border-[#FAC40B] w-56 half-top-border ">
-                  <h2 className="text-sm md:text-xl text-[#0B2B3c] mt-2 font-bold">
-                    Application Areas
-                  </h2>
-                </div>
 
                 <ul className="px-5 md:px-0 list-square py-4 text-lg text-[#3f4a5f] font-semibold">
                   <li>Auditorium</li>
@@ -51,13 +46,6 @@ const Product_Chenneled = () => {
                   <li>Home Theatres</li>
                 </ul>
               </div>
-            </div>
-            <div className="md:w-[50%]">
-              <img
-                src={WoodWork}
-                alt="Lay-In"
-                className="w-full h-auto md:h-[65vh]"
-              />
             </div>
           </div>
         </div>
@@ -121,11 +109,10 @@ const Product_Chenneled = () => {
             </table>
           </div>
           <div className="pt-5 ">
-            <div className="px-3 py-1 border-b-8 border-l-8 border-[#FAC40B] w-36 half-top-border mb-4">
-              <h2 className="text-sm md:text-xl text-[#0B2B3c] mt-2 font-bold">
-                Color option
-              </h2>
-            </div>
+            <h2 className="text-sm md:text-xl text-[#0B2B3c] mt-2 font-bold">
+              Color option
+            </h2>
+
             <div className="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-x-10">
               <div className="border flex items-center py-2 gap-2">
                 <img src={khaya} alt="khaya" />
@@ -155,11 +142,10 @@ const Product_Chenneled = () => {
       <section className="bg-[#f7f7f7] p-2 md:px-[2rem] lg:px-[2rem] xl:px-36">
         <div className="flex flex-col md:items-center md:flex-row md:h-[55vh] jmd:ustify-between font-montserrat">
           <div className="md:w-[50%] w-full">
-            <div className="px-3 py-1 border-b-8 border-l-8 border-[#FAC40B] w-60 half-top-border">
-              <h2 className="text-base md:text-xl text-[#0B2B3c] mt-2 font-bold">
-                Features & Benefits
-              </h2>
-            </div>
+            <h2 className="text-base md:text-xl text-[#0B2B3c] mt-2 font-bold">
+              Features & Benefits
+            </h2>
+
             <ul className="list-square py-4 px-5 text-lg text-[#3f4a5f] font-semibold">
               <li>Enables designers to create rich and warm interiors</li>
               <li>Easy to install on Wall & Ceiling</li>

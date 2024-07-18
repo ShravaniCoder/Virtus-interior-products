@@ -26,7 +26,7 @@ const Nav = () => {
 
   return (
     <nav className="bg-white text-black uppercase font-playfairDisplay">
-      <ul className="flex space-x-4 text-base font-semibold ">
+      <ul className="flex space-x-4 text-lg font-medium ">
         {links.map((link, index) => (
           <li
             key={link.id}

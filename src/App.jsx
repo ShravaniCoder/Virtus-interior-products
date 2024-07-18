@@ -35,7 +35,7 @@ function App() {
     },
     //contactus
     {
-      path: "/contactus",
+      path: "/enquiry",
       element: <ContactUs />,
     },
     //features

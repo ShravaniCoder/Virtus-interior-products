@@ -4,7 +4,7 @@ import ClipIn from "../../src/assets/Img/pr0ducts/ClipIn/Img1.jpg";
 import Channeled from "../../src/assets/Img/pr0ducts/Channeled.png";
 import Baffle from "../../src/assets/Img/pr0ducts/Baffle/Img1.jpg";
 import Corridor from "../../src/assets/Img/pr0ducts/Corridor/Img1.png";
-import FPlank from "../../src/assets/Img/pr0ducts/F-PlankImg.png";
+import FPlank from "../../src/assets/Img/pr0ducts/F-plank/Img1.jpg";
 import CPlank from "../../src/assets/Img/pr0ducts/C-Plank/Img1.jpg";
 import Tringular from "../../src/assets/Img/pr0ducts/Tringular/Img1.jpg";
 import Linear from "../../src/assets/Img/pr0ducts/linear/Img1.jpg"
@@ -50,8 +50,8 @@ export const links = [
 
   {
     id: 8,
-    title: "Contact",
-    path: "/contactus",
+    title: "Enquiry",
+    path: "/enquiry",
   },
 ];
 

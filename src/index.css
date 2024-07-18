@@ -47,7 +47,7 @@
   bottom: 0;
   left: 0;
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #E5901F;
   transition: width 0.4s ease-in-out;
 }
