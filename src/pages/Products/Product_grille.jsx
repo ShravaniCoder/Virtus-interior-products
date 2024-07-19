@@ -9,7 +9,7 @@ const Product_grille = () => {
           <h1 className="md:text-xl text-sm uppercase text-[#4F8BAD] font-bold ">
             Acoustics
           </h1>
-          <h2 className="md:text-5xl text-4xl uppercase font-bold text-[#455D8B] p-4 ">
+          <h2 className="md:text-5xl text-2xl text-center uppercase font-bold text-[#455D8B] p-4 ">
             Aerolite wood works grille
           </h2>
         </div>

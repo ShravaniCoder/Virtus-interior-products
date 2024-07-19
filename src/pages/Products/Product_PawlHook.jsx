@@ -9,7 +9,7 @@ const Product_PawlHook = () => {
           <h1 className="md:text-xl text-sm uppercase text-[#4F8BAD] font-bold ">
             Acoustics
           </h1>
-          <h2 className="md:text-4xl text-3xl uppercase font-bold text-[#455D8B] p-4 ">
+          <h2 className="md:text-4xl text-2xl text-center uppercase font-bold text-[#455D8B] p-4 ">
             Aerolite Custom pawl & hook on system
           </h2>
         </div>
