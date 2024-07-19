@@ -15,7 +15,7 @@ const Product_Tringular = () => {
             <h1 className="md:text-xl text-sm text-[#4F8BAD] font-bold ">
               STANDARD METAL CEILING
             </h1>
-            <h2 className="md:text-5xl uppercase text-4xl font-bold text-[#455D8B] p-4 ">
+            <h2 className="md:text-5xl uppercase text-2xl text-center font-bold text-[#455D8B] p-4 ">
               AEROLITE TRIANGULAR Open Cell
             </h2>
           </div>
