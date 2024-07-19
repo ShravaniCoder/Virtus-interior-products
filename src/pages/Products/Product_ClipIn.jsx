@@ -4,8 +4,8 @@ import Layout from "../../components/Layout";
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
 import Clip1 from "../../../src/assets/Img/pr0ducts/Clip1.png";
 import Box1 from "../../../src/assets/Img/pr0ducts/ClipBox1.png";
-import Box2 from "../../../src/assets/Img/pr0ducts/box2.png";
-import Box3 from "../../../src/assets/Img/pr0ducts/box3.png";
+import Box2 from "../../../src/assets/Img/pr0ducts/LayIn/box2.png";
+import Box3 from "../../../src/assets/Img/pr0ducts/LayIn/box3.png";
 import largeImage from "../../../src/assets/Img/pr0ducts/ClipIn/Img1.jpg";
 
 

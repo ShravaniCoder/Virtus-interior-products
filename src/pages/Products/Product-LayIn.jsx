@@ -3,8 +3,8 @@ import Layout from "../../components/Layout";
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
 import Lay1 from "../../../src/assets/Img/pr0ducts/Lay1.png";
 import Box1 from "../../../src/assets/Img/pr0ducts/box1.png";
-import Box2 from "../../../src/assets/Img/pr0ducts/box2.png";
-import Box3 from "../../../src/assets/Img/pr0ducts/box3.png";
+import Box2 from "../../../src/assets/Img/pr0ducts/LayIn/box2.png";
+import Box3 from "../../../src/assets/Img/pr0ducts/LayIn/box3.png";
 import largeImage from "../../../src/assets/Img/pr0ducts/LayIn/IMG1.jpg";
 
 
@@ -88,7 +88,7 @@ const Product_LayIn = () => {
                   <td className="px-4 py-2 border border-gray-300">
                     <div className="flex flex-col items-center">
                       <div className="w-12 h-12 border-2"></div>
-                      <p>No perforation</p>
+                      <p className="text-center">No perforation</p>
                     </div>
                   </td>
                   <td className="px-4 py-2 border border-gray-300">
@@ -174,14 +174,14 @@ const Product_LayIn = () => {
             </h2>
 
             <ul className="list-square py-4 px-5 text-lg text-[#3f4a5f] font-semibold">
-              <li>Durable and washable polyester powder finish.</li>
-              <li>Wide range of standard perforation patterns.</li>
-              <li>Wide range of wooden patterns.</li>
-              <li>Easy access for service maintenance.</li>
-              <li>Robust and easy to clean.</li>
-              <li>High sound absorption and sound attenuation.</li>
-              <li>Environment friendly and recyclable.</li>
-              <li>Available in 15mm & 24mm Grid Visual.</li>
+              <li>Durable and washable polyester powder finish</li>
+              <li>Wide range of standard perforation patterns</li>
+              <li>Wide range of wooden patterns</li>
+              <li>Easy access for service maintenance</li>
+              <li>Robust and easy to clean</li>
+              <li>High sound absorption and sound attenuation</li>
+              <li>Environment friendly and recyclable</li>
+              <li>Available in 15mm & 24mm Grid Visual</li>
             </ul>
           </div>
           <div className="md:w-[50%] ">

@@ -5,6 +5,7 @@ import khaya from "../../../src/assets/Img/pr0ducts/khaya.png";
 import Asian from "../../../src/assets/Img/pr0ducts/Asian.png";
 import BavarianBeech from "../../../src/assets/Img/pr0ducts/Bavarian.png";
 import classic from "../../../src/assets/Img/pr0ducts/classic.png";
+import largeImage from "../../../src/assets/Img/pr0ducts/Channeled/Channeled.png";
 
 const Product_Chenneled = () => {
   return (
@@ -21,6 +22,15 @@ const Product_Chenneled = () => {
           </div>
         </section>
         <div className="p-2 md:px-[2rem] lg:px-[2rem] xl:px-36">
+          <div className="bg-beige flex md:min-h-screen justify-center">
+            <div className="relative w-full h-full flex items-start justify-end mb-20">
+              <img
+                src={largeImage}
+                alt="Large"
+                className=" md:w-[100%] md:h-[100vh] h-[55vh] object-cover"
+              />
+            </div>
+          </div>
           <div className="flex flex-col md:items-center py-2 md:flex-row h-auto md:justify-between font-montserrat">
             <div className="w-full md:w-[50%]">
               <Link to="/products">
@@ -30,8 +40,6 @@ const Product_Chenneled = () => {
                 </h1>
               </Link>
               <div className="md:py-5 py-5 ">
-                
-
                 <h2 className="text-sm md:text-xl text-[#0B2B3c] mt-2 font-bold">
                   Application Areas
                 </h2>

@@ -8,7 +8,6 @@ const ContactUs = () => {
   return (
     <Layout>
       <section className="mb-10 relative flex items-center bg-[#807f7c] font-lato">
-        
         <img
           className="h-[30vh] md:h-[40vh] w-[100%] object-cover"
           src={banner}
@@ -36,6 +35,79 @@ const ContactUs = () => {
             </div>
           </div>
           <div></div>
+        </div>
+        <div className="py-10">
+          <h1 className="text-2xl font-bold mb-6">Get a Quote</h1>
+          <form className="space-y-4">
+            <div className="flex flex-col md:flex-row md:space-x-4">
+              <div className="flex-1 mb-4 md:mb-0">
+                <label className="block text-sm font-medium text-gray-700">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
+                />
+              </div>
+              <div className="flex-1">
+                <label className="block text-sm font-medium text-gray-700">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col md:flex-row md:space-x-4">
+              <div className="flex-1 mb-4 md:mb-0">
+                <label className="block text-sm font-medium text-gray-700">
+                  Mobile
+                </label>
+                <input
+                  type="text"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
+                />
+              </div>
+              <div className="flex-1 mb-4 md:mb-0">
+                <label className="block text-sm font-medium text-gray-700">
+                  Project Location
+                </label>
+                <input
+                  type="text"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col md:flex-row md:space-x-4">
+              <div className="flex-1">
+                <label className="block text-sm font-medium text-gray-700">
+                  Upload BOQ
+                </label>
+                <input
+                  type="file"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
+                />
+              </div>
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700">
+                Comments
+              </label>
+              <textarea
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
+                rows="4"
+              ></textarea>
+            </div>
+            <div className="flex justify-start">
+              <button
+                type="submit"
+                className="py-2 px-4 bg-yellow-500 text-white font-medium rounded-md shadow-sm hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+              >
+                SUBMIT
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </Layout>
