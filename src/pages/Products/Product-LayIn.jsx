@@ -6,7 +6,7 @@ import Box1 from "../../../src/assets/Img/pr0ducts/box1.png";
 import Box2 from "../../../src/assets/Img/pr0ducts/LayIn/box2.png";
 import Box3 from "../../../src/assets/Img/pr0ducts/LayIn/box3.png";
 import largeImage from "../../../src/assets/Img/pr0ducts/LayIn/IMG1.jpg";
-
+import smallImage from "../../../src/assets/Img/pr0ducts/LayIn/Img2.jpg";
 
 
 const Product_LayIn = () => {
@@ -58,6 +58,13 @@ const Product_LayIn = () => {
                   <li>Laundry</li>
                 </ul>
               </div>
+            </div>
+            <div className="md:w-[50%]">
+              <img
+                src={smallImage}
+                alt="Lay-In"
+                className="w-full h-auto md:h-[65vh]"
+              />
             </div>
           </div>
         </div>

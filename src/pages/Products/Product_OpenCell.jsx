@@ -7,7 +7,8 @@ import Box2 from "../../../src/assets/Img/pr0ducts/OBox1.png";
 import Box3 from "../../../src/assets/Img/pr0ducts/OBox2.png";
 import Box4 from "../../../src/assets/Img/pr0ducts/OBox3.png";
 import Box5 from "../../../src/assets/Img/pr0ducts/OBox4.png";
-import largeImage from "../../../src/assets/Img/pr0ducts/OpenCell/Img1.jpg";
+import largeImage from "../../../src/assets/Img/about/Picture3.jpg";
+import smallImage from "../../../src/assets/Img/pr0ducts/OpenCell/Img1.jpg";
 
 
 const Product_ClipIn = () => {
@@ -58,6 +59,13 @@ const Product_ClipIn = () => {
                   <li>Electrical Rooms</li>
                 </ul>
               </div>
+            </div>
+            <div className="md:w-[50%]">
+              <img
+                src={smallImage}
+                alt="Lay-In"
+                className="w-full h-auto md:h-[65vh]"
+              />
             </div>
           </div>
         </div>

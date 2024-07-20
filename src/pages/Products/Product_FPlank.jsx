@@ -5,6 +5,7 @@ import Layout from "../../components/Layout";
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
 import Fplank from "../../../src/assets/Img/pr0ducts/F-plank.png"
 import banner from "../../../src/assets/Img/pr0ducts/F-plank/Img1.jpg";
+import smallImage from "../../../src/assets/Img/pr0ducts/F-plank/Im2.jpg";
 
 const Product_FPlank = () => {
   return (
@@ -56,7 +57,13 @@ const Product_FPlank = () => {
                 </ul>
               </div>
             </div>
-            <div className="md:w-[50%]"></div>
+            <div className="md:w-[50%]">
+              <img
+                src={smallImage}
+                alt="Lay-In"
+                className="w-full h-auto md:h-[65vh]"
+              />
+            </div>
           </div>
         </div>
       </div>

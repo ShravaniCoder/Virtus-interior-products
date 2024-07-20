@@ -6,7 +6,7 @@ import Layout from "../../components/Layout";
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
 import corridor from "../../../src/assets/Img/pr0ducts/corridor.png";
 import largeImage from "../../../src/assets/Img/pr0ducts/Corridor/Img1.png";
-
+import smallImage from "../../../src/assets/Img/homepage/Img10.jpg";
 
 const Products_Corridor = () => {
   return (
@@ -58,7 +58,13 @@ const Products_Corridor = () => {
                 </ul>
               </div>
             </div>
-            
+            <div className="md:w-[50%]">
+              <img
+                src={smallImage}
+                alt="Lay-In"
+                className="w-full h-auto md:h-[65vh]"
+              />
+            </div>
           </div>
         </div>
       </div>

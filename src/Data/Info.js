@@ -1,14 +1,15 @@
 import LAYIN from "../../src/assets/Img/pr0ducts/LayIn/IMG1.jpg";
-import OpenCell from "../../src/assets/Img/pr0ducts/OpenCell/Img1.jpg";
+import OpenCell from "../../src/assets/Img/about/Picture3.jpg";
 import ClipIn from "../../src/assets/Img/pr0ducts/ClipIn/Img1.jpg";
-import Channeled from "../../src/assets/Img/pr0ducts/Channeled/Channeled.png";
-import Baffle from "../../src/assets/Img/pr0ducts/Baffle/Img1.jpg";
+import Channeled from "../../src/assets/Img/pr0ducts/Channeled/channeled.jpg";
+import Baffle from "../../src/assets/Img/about/Picture4.png";
 import Corridor from "../../src/assets/Img/pr0ducts/Corridor/Img1.png";
 import FPlank from "../../src/assets/Img/pr0ducts/F-plank/Img1.jpg";
 import CPlank from "../../src/assets/Img/pr0ducts/C-Plank/Img1.jpg";
 import Tringular from "../../src/assets/Img/pr0ducts/Tringular/Img1.jpg";
-import Linear from "../../src/assets/Img/pr0ducts/linear/Img1.jpg"
-import Grille from "../../src/assets/Img/pr0ducts/Grille/Img1.jpg"
+import Linear from "../../src/assets/Img/pr0ducts/linear/linear.webp";
+import Grille from "../../src/assets/Img/pr0ducts/Grille/grille.jpg";
+import Mesh from "../../src/assets/Img/pr0ducts/Mesh/Img1.jpg";
 
 export const links = [
   {
@@ -18,38 +19,33 @@ export const links = [
   },
   {
     id: 2,
-    title: "About",
-    path: "/about",
-  },
-  {
-    id: 3,
     title: "Products",
     path: "/products",
     sublink: [],
   },
   {
-    id: 4,
+    id: 3,
     title: "Advantage",
     path: "/advantage",
   },
   {
-    id: 5,
+    id: 4,
     title: "Application Areas",
     path: "/application Areas",
   },
   {
-    id: 6,
+    id: 5,
     title: "Quality",
     path: "/quality",
   },
   {
-    id: 7,
+    id: 6,
     title: "Clients",
     path: "/clients",
   },
 
   {
-    id: 8,
+    id: 7,
     title: "Enquiry",
     path: "/enquiry",
   },
@@ -122,12 +118,12 @@ export const tilesData = [
   },
   {
     id: 8,
-    image: "https://preetheme.com/html/bhouse/assets/img/product/3.jpg",
+    image: Mesh,
     line: "Customized Metal Ceiling",
     material: "Metal",
-    productType: "Custom pawl & hook on system",
+    productType: "Mesh Ceiling",
     button: "View Property",
-    link: "/product_Custom-pawl-&-hook-on-system",
+    link: "/product_Mesh Ceiling",
   },
   {
     id: 9,

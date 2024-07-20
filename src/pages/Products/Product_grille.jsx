@@ -1,4 +1,5 @@
 import Layout from "../../components/Layout";
+import largeImage from "../../../src/assets/Img/pr0ducts/Grille/grille.jpg";
 
 
 const Product_grille = () => {
@@ -14,6 +15,17 @@ const Product_grille = () => {
           </h2>
         </div>
       </section>
+       <div className="p-2 md:px-[2rem] lg:px-[2rem] xl:px-36">
+          <div className="bg-beige flex md:min-h-screen justify-center">
+            <div className="relative w-full h-full flex items-start justify-end mb-20">
+              <img
+                src={largeImage}
+                alt="Large"
+                className=" md:w-[100%] md:h-[100vh] h-[55vh]"
+              />
+            </div>
+        </div>
+        </div>
     </Layout>
   );
 }

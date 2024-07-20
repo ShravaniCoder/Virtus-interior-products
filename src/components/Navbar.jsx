@@ -6,6 +6,7 @@ import { RxCross2 } from "react-icons/rx";
 import { links } from "../Data/Info";
 import { IoIosMenu } from "react-icons/io";
 import logo from "../../src/assets/Img/nav/logo1.png";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -18,11 +19,15 @@ const Navbar = () => {
   const toggleSublink = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
+  const navigate = useNavigate();
+
+  const handleViewPdf = () => {
+    navigate("/Brochure.pdf");
+  };
 
   return (
     <>
       <div className="fixed w-full z-50">
-        
         <div className="px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-[4rem] py-5">
           <div className=" px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-4 bg-white shadow-2xl z-50">
             <div className=" py-5 flex items-center justify-between">
@@ -33,9 +38,11 @@ const Navbar = () => {
                 <Nav />
               </div>
               <div className="hidden lg:block z-10">
-                <button className="text-black/90 font-medium py-1 px-3 flex items-center text-sm sm:text-lg gap-x-1 hover:bg-[#E5901F] hover:text-black/60 group">
-                  <FaRegFilePdf className="text-[#E5901F] font-semibold group-hover:text-black/60" />
-                  Brochure Download
+                <button onClick={handleViewPdf}>
+                  <div className="text-black/90 font-medium py-1 px-3 flex items-center text-sm sm:text-lg gap-x-1 hover:bg-[#E5901F] hover:text-black/60 group">
+                    <FaRegFilePdf className="text-[#E5901F] font-semibold group-hover:text-black/60" />
+                    Brochure Download
+                  </div>
                 </button>
               </div>
               <div className="text-center lg:hidden">
@@ -105,9 +112,11 @@ const Navbar = () => {
                     )}
                   </li>
                 ))}
-                <button className="text-black/90 font-semibold py-1 px-3 flex items-center text-sm sm:text-base gap-x-1 hover:bg-[#E5901F] hover:text-black/60 group">
-                  <FaRegFilePdf className="text-[#E5901F] font-semibold group-hover:text-black/60" />
-                  Brochure Download
+                <button onClick={handleViewPdf}>
+                  <div className="text-black/90 font-medium py-1 px-3 flex items-center text-sm sm:text-lg gap-x-1 hover:bg-[#E5901F] hover:text-black/60 group">
+                    <FaRegFilePdf className="text-[#E5901F] font-semibold group-hover:text-black/60" />
+                    Brochure Download
+                  </div>
                 </button>
               </ul>
             </div>

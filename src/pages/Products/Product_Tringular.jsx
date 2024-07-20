@@ -3,7 +3,7 @@ import Layout from "../../components/Layout";
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
 import Tringular1 from "../../../src/assets/Img/pr0ducts/Tringular1.png";
 import largeImage from "../../../src/assets/Img/pr0ducts/Tringular/Img1.jpg";
-
+import smallImage from "../../../src/assets/Img/pr0ducts/Tringular/Img2.jpg";
 
 
 const Product_Tringular = () => {
@@ -52,6 +52,13 @@ const Product_Tringular = () => {
                   <li>Lounge Area</li>
                 </ul>
               </div>
+            </div>
+            <div className="md:w-[50%]">
+              <img
+                src={smallImage}
+                alt="Lay-In"
+                className="w-full h-auto md:h-[65vh]"
+              />
             </div>
           </div>
         </div>

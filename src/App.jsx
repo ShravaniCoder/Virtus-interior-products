@@ -1,6 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
-import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import Features from "./pages/Features";
 import Quality from "./pages/Quality";
@@ -19,6 +18,7 @@ import Product_PawlHook from "./pages/Products/Product_PawlHook";
 import Product_Baffle from "./pages/Products/Product_Baffle";
 import Product_Tringular from "./pages/Products/Product_Tringular";
 import Advantage from "./pages/Advantage";
+import BrochurePage from "./components/BrochurePage";
 
 
 function App() {
@@ -27,11 +27,6 @@ function App() {
     {
       path: "/",
       element: <Home />,
-    },
-    //about
-    {
-      path: "/about",
-      element: <AboutUs />,
     },
     //contactus
     {
@@ -110,7 +105,7 @@ function App() {
     },
     //Custom pawl & hook on system
     {
-      path: "/product_Custom-pawl-&-hook-on-system",
+      path: "/product_Mesh Ceiling",
       element: <Product_PawlHook />,
     },
     // Baffle
@@ -122,6 +117,10 @@ function App() {
     {
       path: "/product_TringularOpenCell",
       element: <Product_Tringular />,
+    },
+    {
+      path: "/Brochure.pdf",
+      element: <BrochurePage />
     },
   ]);
   return (

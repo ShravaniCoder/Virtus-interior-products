@@ -1,5 +1,3 @@
-
-import Homeimg1 from "../../src/assets/Img/homepage/HomeIMG1.jpg";
 import Layout from "../components/Layout";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -7,72 +5,161 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
-
+import Homeimg1 from "../../src/assets/Img/homepage/HomeIMG1.jpg";
+import Homeimg2 from "../../src/assets/Img/homepage/Img13.jpg";
+import Homeimg3 from "../../src/assets/Img/homepage/Img12.jpg";
+import Picture1 from "../../src/assets/Img/about/Picture1.jpg";
+import Picture2 from "../../src/assets/Img/about/Picture2.jpg";
+import Picture3 from "../../src/assets/Img/about/Picture3.jpg";
+import Picture4 from "../../src/assets/Img/about/Picture4.png";
 const Home = () => {
   const data = [
     {
       id: 1,
       bgImg: Homeimg1,
-      title: "",
-      desc: "",
+      title: "Metal Ceilings Solutions",
+      desc: "Bring your unique ideas to life in beautiful spaces",
     },
     {
       id: 2,
-      bgImg: Homeimg1,
-      title: "",
+      bgImg: Homeimg2,
+      title: "Corridor Ceilings Solutions",
       desc: "",
     },
     {
       id: 3,
-      bgImg: Homeimg1,
-      title: "",
+      bgImg: Homeimg3,
+      title: "Baffle Ceiling Solutions",
       desc: "",
     },
-   
+  ];
+
+  const dataImg = [
+    {
+      id: 1,
+      bgImg: Picture1,
+    },
+    {
+      id: 2,
+      bgImg: Picture2,
+    },
+    {
+      id: 3,
+      bgImg: Picture3,
+    },
+    {
+      id: 4,
+      bgImg: Picture4,
+    },
   ];
 
   return (
     <Layout>
-      <div className="w-screen h-screen overflow-hidden mb-10">
-        <Swiper
-          modules={[Navigation, Pagination, Scrollbar, Autoplay]}
-          spaceBetween={0}
-          slidesPerView={1}
-          loop={true}
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: false,
-          }}
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
-          className="w-full h-full"
-        >
-          {data.map((item) => (
-            <SwiperSlide
-              key={item.id}
-              className="w-full h-full relative top-0"
-              style={{
-                backgroundImage: `url(${item.bgImg})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-              }}
-            >
-              <div className="flex items-end justify-center w-full h-full">
-                <div className="flex items-center justify-center w-[90%] md:w-[50%] lg:w-[40%] h-[30vh] md:h-[35vh] bg-white">
-                  <div className="text-center text-black px-4">
-                    <h1 className="text-xl md:text-3xl lg:text-5xl font-bold animate-nav-up">
-                      Metal Ceilings <br /> Solutions
-                    </h1>
-                    <p className="mt-2 md:mt-4 text-base md:text-lg lg:text-xl animate-nav-up">
-                      Bring your unique ideas to life in beautiful spaces
-                    </p>
+      <div className="bg-[#F6F6F6]">
+        <div className="w-screen h-[98vh] overflow-hidden">
+          <Swiper
+            modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+            spaceBetween={0}
+            slidesPerView={1}
+            loop={true}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+            className="w-full h-full"
+          >
+            {data.map((item) => (
+              <SwiperSlide
+                key={item.id}
+                className="w-full h-full relative top-0"
+                style={{
+                  backgroundImage: `url(${item.bgImg})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)", // Add shadow here
+                }}
+              >
+                <div className="absolute inset-0 bg-black opacity-45 z-0"></div>{" "}
+                {/* Add this line for brightness effect */}
+                <div className="flex items-end justify-center w-full h-full relative z-10">
+                  <div className="flex items-center justify-center w-[90%] md:w-[50%] lg:w-[40%] h-[30vh] md:h-[35vh] bg-white">
+                    <div className="text-center text-black px-4">
+                      <h1 className="text-xl md:text-3xl lg:text-5xl font-bold animate-nav-up">
+                        {item.title}
+                      </h1>
+                      <p className="mt-2 md:mt-4 text-base md:text-lg lg:text-xl animate-nav-up">
+                        {item.desc}
+                      </p>
+                    </div>
                   </div>
                 </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+        <div className="py-16">
+          <div className="p-2 md:pl-[2rem] lg:pl-[2rem] xl:pl-[5rem] font-roboto">
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              <div className="mr-5">
+                <h1 className="py-7 text-5xl text-black/75">About Us</h1>
+                <h2 className="pb-5 text-3xl md:text-4xl text-[#455D8B] font-semibold">
+                  Aerolite Customised Ceiling Systems
+                </h2>
+                <p className="text-[#4F8BAD] text-xl md:text-2xl pb-5">
+                  creating BEAUTIFUL spaces
+                </p>
+                <p className="pb-5 md:text-xl text-lg text-black/70">
+                  Aerolite offers a range of make in India modular ceiling
+                  products like lightweight calcium silicate system, standard
+                  metal works and customized metal solutions for walls and
+                  ceiling. Aerolite is a leading company in modular ceiling
+                  industries since last 2.5 decades capturing the interest and
+                  imagination of leading architects, specifiers, consultants pan
+                  India.
+                </p>
+                <p className="pb-16 md:text-xl text-lg text-black/70">
+                  The company puts combination of innovative and outstanding
+                  products and services as top priority, constructive dialogue
+                  with prospective customers having diverse requirement,
+                  supported by highly qualified & technically specialized team
+                  offering advice and guidance.
+                </p>
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              <div className="relative w-full h-96 md:h-auto">
+                {" "}
+                {/* Ensure container has a height */}
+                <Swiper
+                  modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+                  spaceBetween={0}
+                  slidesPerView={1}
+                  loop={true}
+                  autoplay={{
+                    delay: 5000,
+                    disableOnInteraction: false,
+                  }}
+                  className="w-full h-full"
+                >
+                  {dataImg.map((item) => (
+                    <SwiperSlide
+                      key={item.id}
+                      className="w-full h-full"
+                      style={{
+                        backgroundImage: `url(${item.bgImg})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        backgroundRepeat: "no-repeat",
+                       
+                      }}
+                    ></SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </Layout>
   );

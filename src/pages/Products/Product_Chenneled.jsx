@@ -5,7 +5,8 @@ import khaya from "../../../src/assets/Img/pr0ducts/khaya.png";
 import Asian from "../../../src/assets/Img/pr0ducts/Asian.png";
 import BavarianBeech from "../../../src/assets/Img/pr0ducts/Bavarian.png";
 import classic from "../../../src/assets/Img/pr0ducts/classic.png";
-import largeImage from "../../../src/assets/Img/pr0ducts/Channeled/Channeled.png";
+import largeImage from "../../../src/assets/Img/pr0ducts/Channeled/channeled.jpg";
+import smallImage from "../../../src/assets/Img/pr0ducts/Channeled/Img1.jpg";
 
 const Product_Chenneled = () => {
   return (
@@ -54,6 +55,13 @@ const Product_Chenneled = () => {
                   <li>Home Theatres</li>
                 </ul>
               </div>
+            </div>
+            <div className="md:w-[50%]">
+              <img
+                src={smallImage}
+                alt="Lay-In"
+                className="w-full h-auto md:h-[65vh]"
+              />
             </div>
           </div>
         </div>
