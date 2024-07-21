@@ -100,7 +100,7 @@ function App() {
     },
     //Corridor plancks
     {
-      path: "/product_Corridor-plancks",
+      path: "/product_Corridor-planks",
       element: <Products_Corridor />,
     },
     //Custom pawl & hook on system

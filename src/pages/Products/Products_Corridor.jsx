@@ -17,8 +17,8 @@ const Products_Corridor = () => {
             <h1 className="md:text-xl text-sm text-[#4F8BAD] font-bold ">
               Customized Metal Ceiling
             </h1>
-            <h2 className="md:text-6xl text-4xl font-bold text-[#455D8B] p-4 ">
-              AEROLITE F-PlANKS
+            <h2 className="md:text-6xl text-3xl text-center uppercase font-bold text-[#455D8B] p-4 ">
+              AEROLITE Corridor-PlANKS
             </h2>
           </div>
         </section>

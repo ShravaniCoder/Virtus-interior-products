@@ -75,7 +75,7 @@ const Footer = () => {
                 <form
                   className="flex flex-col gap-4 mt-2"
                   method="POST"
-                  action="https://formspree.io/f/xovavdey"
+                  action="https://formspree.io/f/xyzgkzzv"
                 >
                   <div className="flex flex-col md:flex-row gap-4 w-[100%]">
                     <div className="flex flex-col w-full md:w-[50%]">

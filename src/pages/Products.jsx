@@ -111,9 +111,7 @@ const FilterSearch = () => {
               options={[
                 "All materials",
                 "Metal",
-                "Mineral & soft fibre",
                 "Wood Design",
-                "Wool Wool",
               ]}
               selectedOption={selectedMaterial}
               onSelect={handleMaterialChange}

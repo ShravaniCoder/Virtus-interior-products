@@ -38,7 +38,11 @@ const ContactUs = () => {
         </div>
         <div className="py-10">
           <h1 className="text-2xl font-bold mb-6">Get a Quote</h1>
-          <form className="space-y-4">
+          <form
+            className="space-y-4"
+            method="POST"
+            action="https://formspree.io/f/xldrgddz"
+          >
             <div className="flex flex-col md:flex-row md:space-x-4">
               <div className="flex-1 mb-4 md:mb-0">
                 <label className="block text-sm font-medium text-gray-700">
@@ -46,7 +50,10 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="text"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
+                  name="username"
+                  required
+                  autoComplete="off"
                 />
               </div>
               <div className="flex-1">
@@ -55,7 +62,11 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="email"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
+                  id="useremail"
+                  name="useremail"
+                  required
+                  autoComplete="off"
                 />
               </div>
             </div>
@@ -66,7 +77,11 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="text"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-300  shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
+                  id="mobile"
+                  name="mobile"
+                  required
+                  autoComplete="off"
                 />
               </div>
               <div className="flex-1 mb-4 md:mb-0">
@@ -75,7 +90,11 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="text"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-300  shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
+                  id="projectLocation"
+                  name="projectLocation"
+                  required
+                  autoComplete="off"
                 />
               </div>
             </div>
@@ -86,7 +105,9 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="file"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
+                  className="mt-1 block w-full px-3 py-2 border border-gray-300  shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
+                  required
+                  autoComplete="off"
                 />
               </div>
             </div>
@@ -95,14 +116,18 @@ const ContactUs = () => {
                 Comments
               </label>
               <textarea
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300  shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
                 rows="4"
+                required
+                autoComplete="off"
+                id="comments"
+                name="comments"
               ></textarea>
             </div>
             <div className="flex justify-start">
               <button
                 type="submit"
-                className="py-2 px-4 bg-yellow-500 text-white font-medium rounded-md shadow-sm hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+                className="py-2 px-4 bg-yellow-500 text-white font-medium shadow-sm hover:bg-[#E5901F] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
               >
                 SUBMIT
               </button>
