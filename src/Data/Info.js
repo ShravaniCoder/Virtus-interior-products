@@ -167,8 +167,8 @@ export const tilesData = [
   {
     id: 13,
     image: Soft,
-    line: "Standard Metal Ceiling",
-    material: "Acoustics",
+    line: "Acoustics",
+    material: "Metal",
     productType: "SOFT FIBRE",
     button: "View Property",
     link: "/Product_SoftFibre",

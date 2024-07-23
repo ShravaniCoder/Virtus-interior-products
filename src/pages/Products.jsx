@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 import { tilesData } from "../Data/Info";
 import Dropdown from "../components/Dropdown";
 import ProductCard from "../components/ProductCard";
@@ -36,15 +37,57 @@ const FilterSearch = () => {
   const [selectedProductType, setSelectedProductType] =
     useState("All product types");
   const [searchKeyword, setSearchKeyword] = useState("");
+  const [elementsInView, setElementsInView] = useState([]);
+
+  const productRefs = useRef([]);
+
+  useEffect(() => {
+    productRefs.current = productRefs.current.slice(0, tilesData.length);
+  }, [tilesData.length]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setElementsInView((prevElementsInView) => [
+              ...prevElementsInView,
+              entry.target,
+            ]);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    productRefs.current.forEach((ref) => {
+      if (ref) {
+        observer.observe(ref);
+      }
+    });
+
+    return () => {
+      if (productRefs.current) {
+        productRefs.current.forEach((ref) => {
+          if (ref) {
+            observer.unobserve(ref);
+          }
+        });
+      }
+    };
+  }, [tilesData.length]);
 
   const handleProductLineChange = (productLine) => {
     setSelectedProductLine(productLine);
-    setSelectedProductType("All product types"); // Reset product type on product line change
+    setSelectedProductType("All product types");
   };
 
   const handleMaterialChange = (material) => {
     setSelectedMaterial(material);
-    setSelectedProductType("All product types"); // Reset product type on material change
+    setSelectedProductType("All product types");
   };
 
   const handleProductTypeChange = (productType) => {
@@ -81,6 +124,12 @@ const FilterSearch = () => {
     }
   };
 
+  // Animation variants
+  const itemVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
   return (
     <Layout>
       <section className="mb-10 relative flex items-center bg-[#807f7c] font-lato">
@@ -90,7 +139,7 @@ const FilterSearch = () => {
           alt="banner"
         />
       </section>
-      <div className="px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-36 py-5">
+      <div className="px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-[6rem] py-5">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold animate-slide-down">
             Our Products
@@ -109,11 +158,7 @@ const FilterSearch = () => {
           </div>
           <div>
             <Dropdown
-              options={[
-                "All materials",
-                "Metal",
-                "Wood Design",
-              ]}
+              options={["All materials", "Metal", "Wood Design"]}
               selectedOption={selectedMaterial}
               onSelect={handleMaterialChange}
             />
@@ -143,10 +188,21 @@ const FilterSearch = () => {
         )}
       </div>
       <div className=" font-playfairDisplay">
-        <div className="px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-36">
-          <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4">
+        <div className="px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-[6rem]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4">
             {filteredTilesData.map((menu, index) => (
-              <div className="my-6 px-2" key={index}>
+              <motion.div
+                className="my-6 px-2"
+                key={index}
+                ref={(el) => (productRefs.current[index] = el)}
+                initial="hidden"
+                animate={
+                  elementsInView.includes(productRefs.current[index])
+                    ? "visible"
+                    : "hidden"
+                }
+                variants={itemVariants}
+              >
                 <div className="border border-gray-200 shadow-2xl flex flex-col">
                   <Link to={menu.link}>
                     <div className="overflow-hidden group relative">
@@ -166,9 +222,9 @@ const FilterSearch = () => {
                     <p className="text-xl font-medium">{menu.productType}</p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </section>
+          </div>
         </div>
       </div>
     </Layout>
