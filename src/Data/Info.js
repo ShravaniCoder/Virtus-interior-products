@@ -10,6 +10,7 @@ import Tringular from "../../src/assets/Img/pr0ducts/Tringular/Img1.jpg";
 import Linear from "../../src/assets/Img/pr0ducts/linear/linear.webp";
 import Grille from "../../src/assets/Img/pr0ducts/Grille/grille.jpg";
 import Mesh from "../../src/assets/Img/pr0ducts/Mesh/Img1.jpg";
+import Soft from "../../src/assets/Img/pr0ducts/Soft Fibre/Img1.jpg"
 
 export const links = [
   {
@@ -162,5 +163,14 @@ export const tilesData = [
     productType: "Aerolite Baffle",
     button: "View Property",
     link: "/product_Baffle",
+  },
+  {
+    id: 13,
+    image: Soft,
+    line: "Standard Metal Ceiling",
+    material: "Acoustics",
+    productType: "SOFT FIBRE",
+    button: "View Property",
+    link: "/Product_SoftFibre",
   },
 ];

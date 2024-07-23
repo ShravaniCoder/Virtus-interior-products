@@ -19,6 +19,7 @@ import Product_Baffle from "./pages/Products/Product_Baffle";
 import Product_Tringular from "./pages/Products/Product_Tringular";
 import Advantage from "./pages/Advantage";
 import BrochurePage from "./components/BrochurePage";
+import Product_SoftFibre from "./pages/Products/Product_SoftFibre";
 
 
 function App() {
@@ -120,7 +121,11 @@ function App() {
     },
     {
       path: "/Brochure.pdf",
-      element: <BrochurePage />
+      element: <BrochurePage />,
+    },
+    {
+      path: "/Product_SoftFibre",
+      element: <Product_SoftFibre />
     },
   ]);
   return (

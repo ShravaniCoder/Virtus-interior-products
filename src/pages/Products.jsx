@@ -19,6 +19,7 @@ const productTypes = {
     "Aerolite wood works linear",
     "Aerolite wood works grille",
     "Channeled wood works",
+    "SOFT FIBRE",
   ],
   "Customized Metal Ceiling": [
     "C-plancks",

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Layout from "../../components/Layout";
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
 import Baffle1 from "../../../src/assets/Img/pr0ducts/Baffle1.png";
-import Baffle from "../../../src/assets/Img/pr0ducts/Baffle.png";
+import Baffle from "../../../src/assets/Img/pr0ducts/Baffle/Img2.jpg";
 import largeImage from "../../../src/assets/Img/about/Picture4.png";
 
 

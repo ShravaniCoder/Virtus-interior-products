@@ -29,7 +29,7 @@ const Footer = () => {
                     <FaLinkedin className="text-[#0A66C2] text-2xl" />
                   </a>
                   <a
-                    href="https://twitter.com/CodeCraftSherry"
+                    href="https://www.facebook.com/profile.php?id=61560728654788"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

@@ -12,7 +12,14 @@ import Picture1 from "../../src/assets/Img/about/Picture1.jpg";
 import Picture2 from "../../src/assets/Img/about/Picture2.jpg";
 import Picture3 from "../../src/assets/Img/about/Picture3.jpg";
 import Picture4 from "../../src/assets/Img/about/Picture4.png";
+import { useNavigate } from "react-router-dom";
 const Home = () => {
+const navigate = useNavigate();
+
+const handleButtonClick = () => {
+  navigate("/products");
+};
+
   const data = [
     {
       id: 1,
@@ -55,10 +62,10 @@ const Home = () => {
 
   return (
     <Layout>
-      <div className="bg-[#F6F6F6]">
-        <div className="w-screen h-[98vh] overflow-hidden">
+      <div className="bg-white">
+        <div className="w-screen h-[97vh] overflow-hidden">
           <Swiper
-            modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+            modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={0}
             slidesPerView={1}
             loop={true}
@@ -67,7 +74,6 @@ const Home = () => {
               disableOnInteraction: false,
             }}
             pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
             className="w-full h-full"
           >
             {data.map((item) => (
@@ -82,17 +88,24 @@ const Home = () => {
                   boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)", // Add shadow here
                 }}
               >
-                <div className="absolute inset-0 bg-black opacity-45 z-0"></div>{" "}
+                <div className=""></div>{" "}
                 {/* Add this line for brightness effect */}
                 <div className="flex items-end justify-center w-full h-full relative z-10">
-                  <div className="flex items-center justify-center w-[90%] md:w-[50%] lg:w-[40%] h-[30vh] md:h-[35vh] bg-white">
-                    <div className="text-center text-black px-4">
-                      <h1 className="text-xl md:text-3xl lg:text-5xl font-bold animate-nav-up">
-                        {item.title}
-                      </h1>
-                      <p className="mt-2 md:mt-4 text-base md:text-lg lg:text-xl animate-nav-up">
+                  <div className="flex items-center justify-center w-[90%] md:w-[50%] lg:w-[40%] h-[25vh] md:h-[32vh] bg-white">
+                    <div className="text-center px-2">
+                      <p className="mt-5 text-base text-black/75 md:text-lg lg:text-xl animate-nav-up">
                         {item.desc}
                       </p>
+                      <h1 className="text-2xl mt-5 text-[#455D8B] md:text-3xl lg:text-5xl font-bold animate-nav-up">
+                        {item.title}
+                      </h1>
+
+                      <button
+                        className="mt-5 border py-2 px-6 font-lato mb-2 border-[#4F8BAD] text-[#4F8BAD] hover:text-[#E5901F] hover:border-[#E5901F]"
+                        onClick={handleButtonClick}
+                      >
+                        View More
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -151,7 +164,6 @@ const Home = () => {
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                         backgroundRepeat: "no-repeat",
-                       
                       }}
                     ></SwiperSlide>
                   ))}

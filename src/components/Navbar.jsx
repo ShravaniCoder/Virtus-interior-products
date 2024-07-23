@@ -39,7 +39,7 @@ const Navbar = () => {
               </div>
               <div className="hidden lg:block z-10">
                 <button onClick={handleViewPdf}>
-                  <div className="text-black/90 font-medium py-1 px-3 flex items-center text-sm sm:text-lg gap-x-1 hover:bg-[#E5901F] hover:text-black/60 group">
+                  <div className="text-black/90 font-medium py-1 px-3 flex items-center text-sm sm:text-lg gap-x-1 hover:bg-[#fcaf49] hover:text-black/60 group">
                     <FaRegFilePdf className="text-[#E5901F] font-semibold group-hover:text-black/60" />
                     Brochure Download
                   </div>
@@ -113,7 +113,7 @@ const Navbar = () => {
                   </li>
                 ))}
                 <button onClick={handleViewPdf}>
-                  <div className="text-black/90 font-medium py-1 px-3 flex items-center text-sm sm:text-lg gap-x-1 hover:bg-[#E5901F] hover:text-black/60 group">
+                  <div className="text-black/90 font-medium py-1 px-3 flex items-center text-sm sm:text-lg gap-x-1 hover:bg-[#fcaf49] hover:text-black/60 group">
                     <FaRegFilePdf className="text-[#E5901F] font-semibold group-hover:text-black/60" />
                     Brochure Download
                   </div>
