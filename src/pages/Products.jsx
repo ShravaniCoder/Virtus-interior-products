@@ -127,7 +127,14 @@ const FilterSearch = () => {
   // Animation variants
   const itemVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    visible: (index) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        delay: index * 0.1, // Add delay based on index
+      },
+    }),
   };
 
   return (
@@ -139,7 +146,7 @@ const FilterSearch = () => {
           alt="banner"
         />
       </section>
-      <div className="px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-[6rem] py-5">
+      <div className="px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-36 py-5">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold animate-slide-down">
             Our Products
@@ -188,7 +195,7 @@ const FilterSearch = () => {
         )}
       </div>
       <div className=" font-playfairDisplay">
-        <div className="px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-[6rem]">
+        <div className="px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-36">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4">
             {filteredTilesData.map((menu, index) => (
               <motion.div
@@ -202,6 +209,7 @@ const FilterSearch = () => {
                     : "hidden"
                 }
                 variants={itemVariants}
+                custom={index} // Pass the index to the variants
               >
                 <div className="border border-gray-200 shadow-2xl flex flex-col">
                   <Link to={menu.link}>
