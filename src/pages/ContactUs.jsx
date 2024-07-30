@@ -3,7 +3,6 @@ import { PiPhoneTransferFill } from "react-icons/pi";
 import { BiLogoGmail } from "react-icons/bi";
 import banner from "../../src/assets/Img/homepage/Img2.png";
 
-
 const ContactUs = () => {
   return (
     <Layout>
@@ -137,6 +136,6 @@ const ContactUs = () => {
       </div>
     </Layout>
   );
-}
+};
 
 export default ContactUs;

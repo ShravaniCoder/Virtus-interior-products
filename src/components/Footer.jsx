@@ -1,11 +1,33 @@
-
-import { FaFacebook, FaLinkedin, } from "react-icons/fa";
-
-import Insta from "../../src/assets/Img/homepage/insta.png"
+import { useRef } from "react";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import Insta from "../../src/assets/Img/homepage/insta.png";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Footer = () => {
- 
-  
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_j1j6vh1U", "template_63xzv2g", form.current, {
+        publicKey: "B4LhwcBjKcQIwZ9sk",
+      })
+      .then(
+        (result) => {
+          console.log(result); // Log result for debugging
+          toast.success("Message sent successfully!");
+          form.current.reset();
+        },
+        (error) => {
+          console.log(error); // Log error for debugging
+          toast.error("Failed to send message, please try again.");
+        }
+      );
+  };
+
   return (
     <>
       <div className="bg-[#2B2E31] h-auto">
@@ -36,12 +58,12 @@ const Footer = () => {
                     <FaFacebook className="text-blue-500 text-2xl" />
                   </a>
                   <a
-                    href="https://www.instagram.com/shravani_chendwankar/"
+                    href="https://www.instagram.com/virtus.interior.products/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <img
-                      src={Insta} // Adjust the path to your imported image
+                      src={Insta}
                       alt="Instagram"
                       width={24}
                       height={24}
@@ -73,13 +95,16 @@ const Footer = () => {
                   Contact Us
                 </h1>
                 <form
+                  ref={form}
                   className="flex flex-col gap-4 mt-2"
-                  method="POST"
-                  action="https://formspree.io/f/xyzgkzzv"
+                  onSubmit={sendEmail}
                 >
                   <div className="flex flex-col md:flex-row gap-4 w-[100%]">
                     <div className="flex flex-col w-full md:w-[50%]">
-                      <label className="block text-white mb-2" htmlFor="name">
+                      <label
+                        className="block text-white mb-2"
+                        htmlFor="username"
+                      >
                         Name
                       </label>
                       <input
@@ -88,20 +113,25 @@ const Footer = () => {
                         id="username"
                         name="username"
                         required
-                        autoComplete="off"
+                       
+                        
                       />
                     </div>
                     <div className="flex flex-col w-full md:w-[50%]">
-                      <label className="block text-white mb-2" htmlFor="email">
+                      <label
+                        className="block text-white mb-2"
+                        htmlFor="useremail"
+                      >
                         Email
                       </label>
                       <input
                         className="w-full p-2 bg-white text-gray"
-                        type="useremail"
+                        type="email"
                         id="useremail"
                         name="useremail"
                         required
-                        autoComplete="off"
+                       
+                        
                       />
                     </div>
                   </div>
@@ -116,7 +146,8 @@ const Footer = () => {
                         id="mobile"
                         name="mobile"
                         required
-                        autoComplete="off"
+                       
+                        
                       />
                     </div>
                     <div className="flex flex-col w-full md:w-[50%]">
@@ -132,7 +163,8 @@ const Footer = () => {
                         id="projectLocation"
                         name="projectLocation"
                         required
-                        autoComplete="off"
+                       
+                        
                       />
                     </div>
                   </div>
@@ -146,7 +178,8 @@ const Footer = () => {
                       name="comments"
                       rows="3"
                       required
-                      autoComplete="off"
+                     
+                      
                     ></textarea>
                   </div>
                   <div className="">
@@ -162,7 +195,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr className="bg-[#E5901F] h-px border-none" />
+        <hr className="bg-[#777777] h-px border-none" />
         <div className="py-6">
           <div className="px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-36">
             <div className="flex items-center justify-center">
@@ -173,6 +206,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </>
   );
 };

@@ -7,7 +7,6 @@ export default {
         roboto: ["Roboto"],
         montserrat: ["Montserrat"],
         lato: ["Lato"],
-        
       },
       borderRadius: {
         extraLarge: "7rem",
@@ -18,6 +17,9 @@ export default {
         decimal: "decimal",
         square: "square",
         roman: "upper-roman",
+      },
+      fontSize: {
+        xxs: "0.625rem", // 10px
       },
     },
   },

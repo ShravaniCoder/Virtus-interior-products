@@ -24,19 +24,25 @@ const handleButtonClick = () => {
     {
       id: 1,
       bgImg: Homeimg1,
-      title: "Metal Ceilings Solutions",
+      title: "Customized Ceiling",
       desc: "Bring your unique ideas to life in beautiful spaces",
     },
     {
       id: 2,
       bgImg: Homeimg2,
-      title: "Corridor Ceilings Solutions",
+      title: "Expansion Joint Cover",
       desc: "",
     },
     {
       id: 3,
       bgImg: Homeimg3,
-      title: "Baffle Ceiling Solutions",
+      title: "Partition",
+      desc: "",
+    },
+    {
+      id: 4,
+      bgImg: Homeimg3,
+      title: "Flooring",
       desc: "",
     },
   ];

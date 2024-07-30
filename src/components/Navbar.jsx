@@ -30,9 +30,13 @@ const Navbar = () => {
       <div className="fixed w-full z-50">
         <div className="px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-[4rem] py-5">
           <div className=" px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-4 bg-white shadow-2xl z-50">
-            <div className=" py-5 flex items-center justify-between">
-              <div className="flex-shrink-0">
+            <div className=" py-3 flex items-center justify-between">
+              <div className="flex flex-col">
                 <img src={logo} alt="logo" className="mx-auto h-16" />
+                <h1 className="text-xxs font-normal text-[#5A7B9E]">
+                  Customized Ceiling | Expansion Joint Cover | Partition |
+                  Flooring
+                </h1>
               </div>
               <div className="hidden lg:block z-10">
                 <Nav />

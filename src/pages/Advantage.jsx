@@ -60,7 +60,6 @@ const Advantage = () => {
       </section>
       <section className="p-2 md:px-[2rem] lg:px-[2rem] xl:px-36 font-roboto">
         <div className="flex md:flex-row flex-col">
-          
           <div className=" bg-white relative">
             <div className="bg-white bg-opacity-75 p-6 rounded-md shadow-lg text-left">
               <h1 className=" text-lg">

@@ -7,8 +7,6 @@ import Corridor from "../../src/assets/Img/pr0ducts/Corridor/Img1.png";
 import FPlank from "../../src/assets/Img/pr0ducts/F-plank/Img1.jpg";
 import CPlank from "../../src/assets/Img/pr0ducts/C-Plank/Img1.jpg";
 import Tringular from "../../src/assets/Img/pr0ducts/Tringular/Img1.jpg";
-import Linear from "../../src/assets/Img/pr0ducts/linear/linear.webp";
-import Grille from "../../src/assets/Img/pr0ducts/Grille/grille.jpg";
 import Mesh from "../../src/assets/Img/pr0ducts/Mesh/Img1.jpg";
 import Soft from "../../src/assets/Img/pr0ducts/Soft Fibre/Img1.jpg"
 
@@ -31,8 +29,8 @@ export const links = [
   },
   {
     id: 4,
-    title: "Application Areas",
-    path: "/application Areas",
+    title: "Gallery",
+    path: "/ourGallery",
   },
   {
     id: 5,
@@ -91,15 +89,6 @@ export const tilesData = [
   },
   {
     id: 5,
-    image: Linear,
-    line: "Acoustics",
-    material: "Wood Design",
-    productType: "Aerolite wood works linear",
-    button: "View Property",
-    link: "/product_Aerolite-wood-works-linear",
-  },
-  {
-    id: 6,
     image: Channeled,
     line: "Acoustics",
     material: "Wood Design",
@@ -107,18 +96,8 @@ export const tilesData = [
     button: "View Property",
     link: "/product_Channeled-wood-works",
   },
-
   {
-    id: 7,
-    image: Grille,
-    line: "Acoustics",
-    material: "Wood Design",
-    productType: "Aerolite wood works grille",
-    button: "View Property",
-    link: "/product_Aerolite-wood-works-grille",
-  },
-  {
-    id: 8,
+    id: 6,
     image: Mesh,
     line: "Customized Metal Ceiling",
     material: "Metal",
@@ -127,7 +106,7 @@ export const tilesData = [
     link: "/product_Mesh Ceiling",
   },
   {
-    id: 9,
+    id: 7,
     image: CPlank,
     line: "Customized Metal Ceiling",
     material: "Metal",
@@ -137,7 +116,7 @@ export const tilesData = [
   },
 
   {
-    id: 10,
+    id: 8,
     image: FPlank,
     line: "Customized Metal Ceiling",
     material: "Metal",
@@ -146,7 +125,7 @@ export const tilesData = [
     link: "/product_F-Planks",
   },
   {
-    id: 11,
+    id: 9,
     image: Corridor,
     line: "Customized Metal Ceiling",
     material: "Metal",
@@ -156,7 +135,7 @@ export const tilesData = [
   },
 
   {
-    id: 12,
+    id: 10,
     image: Baffle,
     line: "Standard Metal Ceiling",
     material: "Metal",
@@ -165,12 +144,21 @@ export const tilesData = [
     link: "/product_Baffle",
   },
   {
-    id: 13,
+    id: 11,
     image: Soft,
     line: "Acoustics",
     material: "Metal",
     productType: "SOFT FIBRE",
     button: "View Property",
     link: "/Product_SoftFibre",
+  },
+  {
+    id: 12,
+    image: Soft,
+    line: "Acoustics",
+    material: "Metal",
+    productType: "Entrance Mats",
+    button: "View Property",
+    link: "/product_EntranceMats",
   },
 ];

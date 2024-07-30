@@ -1,16 +1,13 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import ContactUs from "./pages/ContactUs";
-import Features from "./pages/Features";
 import Quality from "./pages/Quality";
 import Clients from "./pages/Clients";
 import Products from "./pages/Products";
 import Product_LayIn from "./pages/Products/Product-LayIn";
-import Product_linear from "./pages/Products/Product_linear";
 import Product_CPlank from "./pages/Products/Product_CPlank";
 import Product_OpenCell from "./pages/Products/Product_OpenCell";
 import Product_ClipIn from "./pages/Products/Product_ClipIn";
-import Product_grille from "./pages/Products/Product_grille";
 import Product_Chenneled from "./pages/Products/Product_Chenneled";
 import Product_FPlank from "./pages/Products/Product_FPlank";
 import Products_Corridor from "./pages/Products/Products_Corridor";
@@ -20,6 +17,8 @@ import Product_Tringular from "./pages/Products/Product_Tringular";
 import Advantage from "./pages/Advantage";
 import BrochurePage from "./components/BrochurePage";
 import Product_SoftFibre from "./pages/Products/Product_SoftFibre";
+import OurGallery from "./pages/OurGallery";
+import Product_EntranceMats from "./pages/Products/Product_EntranceMats";
 
 
 function App() {
@@ -34,10 +33,10 @@ function App() {
       path: "/enquiry",
       element: <ContactUs />,
     },
-    //features
+    //ourGallery
     {
-      path: "/Application Areas",
-      element: <Features />,
+      path: "/ourGallery",
+      element: <OurGallery />,
     },
     //advantage
     {
@@ -64,11 +63,6 @@ function App() {
       path: "/product_LayIn",
       element: <Product_LayIn />,
     },
-    //Linear
-    {
-      path: "/product_Aerolite-wood-works-linear",
-      element: <Product_linear />,
-    },
     //C-planks
     {
       path: "/product_C-planks",
@@ -83,11 +77,6 @@ function App() {
     {
       path: "/product_ClipIn",
       element: <Product_ClipIn />,
-    },
-    // grille
-    {
-      path: "/product_Aerolite-wood-works-grille",
-      element: <Product_grille />,
     },
     //Channeled
     {
@@ -125,8 +114,12 @@ function App() {
     },
     {
       path: "/Product_SoftFibre",
-      element: <Product_SoftFibre />
+      element: <Product_SoftFibre />,
     },
+    {
+      path: "/product_EntranceMats",
+      element: <Product_EntranceMats />
+    }
   ]);
   return (
     <div className="w-full overflow-hidden font-roboto">
