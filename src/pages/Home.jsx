@@ -5,9 +5,10 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
-import Homeimg1 from "../../src/assets/Img/homepage/HomeIMG1.jpg";
-import Homeimg2 from "../../src/assets/Img/homepage/Img13.jpg";
-import Homeimg3 from "../../src/assets/Img/homepage/Img12.jpg";
+import Homeimg1 from "../../src/assets/Img/homepage/Corridor.jpg";
+import Homeimg2 from "../../src/assets/Img/pr0ducts/Expansion Joints Cover/Expansion Joints Cover.jpg";
+import Homeimg3 from "../../src/assets/Img/pr0ducts/Partition/Glass.jpg";
+import Homeimg4 from "../../src/assets/Img/pr0ducts/Flooring/Flooring.jpg";
 import Picture1 from "../../src/assets/Img/about/Picture1.jpg";
 import Picture2 from "../../src/assets/Img/about/Picture2.jpg";
 import Picture3 from "../../src/assets/Img/about/Picture3.jpg";
@@ -41,7 +42,7 @@ const handleButtonClick = () => {
     },
     {
       id: 4,
-      bgImg: Homeimg3,
+      bgImg: Homeimg4,
       title: "Flooring",
       desc: "",
     },

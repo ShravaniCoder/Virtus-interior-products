@@ -2,7 +2,7 @@
 import Layout from "../components/Layout";
 import banner from "../../src/assets/Img/homepage/Img7.jpg";
 
-const OurGallery = () => {
+const OurProjects = () => {
   return (
     <Layout>
       <section className="mb-10 relative flex items-center bg-[#807f7c] font-lato">
@@ -17,4 +17,4 @@ const OurGallery = () => {
   );
 };
 
-export default OurGallery;
+export default OurProjects;

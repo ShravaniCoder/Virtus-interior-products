@@ -174,7 +174,7 @@ const Product_LayIn = () => {
       </div>
 
       <section className="bg-[#f7f7f7] p-2 md:px-[2rem] lg:px-[2rem] xl:px-36">
-        <div className="flex flex-col md:items-center md:flex-row md:h-[55vh] jmd:ustify-between font-montserrat">
+        <div className="flex flex-col md:items-center md:flex-row md:h-[55vh] md:justify-between font-montserrat">
           <div className="md:w-[50%] w-full">
             <h2 className="text-base md:text-xl text-[#0B2B3c] mt-2 font-bold">
               Features & Benefits

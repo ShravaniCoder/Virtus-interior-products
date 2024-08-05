@@ -8,7 +8,11 @@ import FPlank from "../../src/assets/Img/pr0ducts/F-plank/Img1.jpg";
 import CPlank from "../../src/assets/Img/pr0ducts/C-Plank/Img1.jpg";
 import Tringular from "../../src/assets/Img/pr0ducts/Tringular/Img1.jpg";
 import Mesh from "../../src/assets/Img/pr0ducts/Mesh/Img1.jpg";
-import Soft from "../../src/assets/Img/pr0ducts/Soft Fibre/Img1.jpg"
+import Soft from "../../src/assets/Img/pr0ducts/Soft Fibre/Img1.jpg";
+import Flooring from "../../src/assets/Img/pr0ducts/Flooring/Flooring.jpg";
+import Entrance from "../../src/assets/Img/pr0ducts/Entrance Mats/Entrance Mats.jpg";
+import Glass from "../../src/assets/Img/pr0ducts/Partition/Glass.jpg";
+import Parking from "../../src/assets/Img/pr0ducts/Expansion Joints Cover/Expansion Joints Cover.jpg";
 
 export const links = [
   {
@@ -29,8 +33,8 @@ export const links = [
   },
   {
     id: 4,
-    title: "Gallery",
-    path: "/ourGallery",
+    title: "Projects",
+    path: "/ourProjects",
   },
   {
     id: 5,
@@ -154,11 +158,38 @@ export const tilesData = [
   },
   {
     id: 12,
-    image: Soft,
+    image: Flooring,
+    line: "Acoustics",
+    material: "Metal",
+    productType: "Flooring",
+    button: "View Property",
+    link: "/product_Flooring",
+  },
+  {
+    id: 13,
+    image: Parking,
+    line: "Acoustics",
+    material: "Metal",
+    productType: "Parking",
+    button: "View Property",
+    link: "/product_Parking",
+  },
+  {
+    id: 14,
+    image: Entrance,
     line: "Acoustics",
     material: "Metal",
     productType: "Entrance Mats",
     button: "View Property",
     link: "/product_EntranceMats",
+  },
+  {
+    id: 15,
+    image: Glass,
+    line: "Acoustics",
+    material: "Metal",
+    productType: "Glass Partition",
+    button: "View Property",
+    link: "/product_Glass",
   },
 ];

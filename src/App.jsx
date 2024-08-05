@@ -17,8 +17,11 @@ import Product_Tringular from "./pages/Products/Product_Tringular";
 import Advantage from "./pages/Advantage";
 import BrochurePage from "./components/BrochurePage";
 import Product_SoftFibre from "./pages/Products/Product_SoftFibre";
-import OurGallery from "./pages/OurGallery";
 import Product_EntranceMats from "./pages/Products/Product_EntranceMats";
+import Product_Glass from "./pages/Products/Product_Glass";
+import Product_Flooring from "./pages/Products/Product_Flooring";
+import OurProjects from "./pages/Projects";
+import Product_Parking from "./pages/Products/Product_Parking";
 
 
 function App() {
@@ -33,10 +36,10 @@ function App() {
       path: "/enquiry",
       element: <ContactUs />,
     },
-    //ourGallery
+    //ourProjects
     {
-      path: "/ourGallery",
-      element: <OurGallery />,
+      path: "/ourProjects",
+      element: <OurProjects />,
     },
     //advantage
     {
@@ -118,8 +121,20 @@ function App() {
     },
     {
       path: "/product_EntranceMats",
-      element: <Product_EntranceMats />
-    }
+      element: <Product_EntranceMats />,
+    },
+    {
+      path: "/product_Glass",
+      element: <Product_Glass />,
+    },
+    {
+      path: "/product_Flooring",
+      element: <Product_Flooring />,
+    },
+    {
+      path: "/product_Parking",
+      element: <Product_Parking />,
+    },
   ]);
   return (
     <div className="w-full overflow-hidden font-roboto">
