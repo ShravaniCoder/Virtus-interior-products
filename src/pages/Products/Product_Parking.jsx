@@ -11,7 +11,7 @@ const Product_Parking = () => {
               Joints Cover System
             </h1>
             <h2 className="md:text-6xl text-4xl font-bold text-[#455D8B] p-4 ">
-              Parking
+              Expansion Joint Cover
             </h2>
           </div>
         </section>
@@ -25,7 +25,7 @@ const Product_Parking = () => {
               />
             </div>
           </div>
-          <div className=" font-montserrat">
+          <div className=" font-montserrat border-b shadow p-2">
             <h1 className="text-3xl font-semibold py-4 text-[#455D8B]">
               PARKING
             </h1>
@@ -56,7 +56,7 @@ const Product_Parking = () => {
               </ul>
             </div>
           </div>
-          <div className=" font-montserrat">
+          <div className=" font-montserrat border-b shadow p-2">
             <span className="py-6">
               <h1 className="text-2xl font-semibold py-4 text-[#4F8BAD]">
                 PPDS Series | 50mm joints | 30-90mm recess mounted | aluminum
@@ -86,7 +86,7 @@ const Product_Parking = () => {
               </ul>
             </div>
           </div>
-          <div className=" font-montserrat">
+          <div className=" font-montserrat border-b shadow p-2">
             <span className="py-6">
               <h1 className="text-2xl font-semibold py-4 text-[#4F8BAD]">
                 PHB Series | 25-100mm joints | flush surface mounted | EPDM
@@ -114,7 +114,7 @@ const Product_Parking = () => {
               </ul>
             </div>
           </div>
-          <div className=" font-montserrat">
+          <div className=" font-montserrat border-b shadow p-2">
             <span className="py-6">
               <h1 className="text-2xl font-semibold py-4 text-[#4F8BAD]">
                 PPTC Series | 150-250mm joints | 38mm recess | metal seismic

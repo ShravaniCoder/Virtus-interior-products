@@ -6,7 +6,7 @@ const CloudDropdown = ({ title, content, isOpen, image, onClick }) => {
   return (
     <div>
       <button
-        className={`items border-solid border-b border-t w-full p-5 flex justify-between ${
+        className={`items border-solid border-b rounded-sm border-t w-full p-5 flex justify-between ${
           isOpen ? "bg-[#F5A41D] text-white" : "bg-white text-black"
         } hover:bg-[#F5A41D] hover:text-white`}
         onClick={onClick}
@@ -15,7 +15,7 @@ const CloudDropdown = ({ title, content, isOpen, image, onClick }) => {
         <span className="plus-icon">{isOpen ? <FaMinus /> : <FaPlus />}</span>
       </button>
       {isOpen && (
-        <div className="flex flex-col md:flex-row border-solid border-2">
+        <div className="flex flex-col md:flex-row border-solid border-2 rounded-sm">
           <div className="md:w-[70%] w-full">
             <ul className=" p-6 mb-2 list-disc">
               {content.map((item, index) => (
@@ -29,7 +29,11 @@ const CloudDropdown = ({ title, content, isOpen, image, onClick }) => {
             </ul>
           </div>
           <div className="md:w-[30%] w-full flex justify-center items-center p-4">
-            <img src={image} alt="Illustration" className="w-full" />
+            <img
+              src={image}
+              alt="Illustration"
+              className="w-full rounded-md"
+            />
           </div>
         </div>
       )}

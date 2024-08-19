@@ -1,11 +1,13 @@
 import { useState } from "react";
 import Layout from "../components/Layout";
-import banner from "../../src/assets/Img/advantage/banner (3).png";
+import banner from "../../src/assets/Img/homepage/HomeIMG1.jpg";
 import humidity from "../../src/assets/Img/advantage/humidy.jpg";
 import acoustic from "../../src/assets/Img/advantage/acoustic.jpg";
 import terminate from "../../src/assets/Img/advantage/terminate.jpg";
 import CloudDropdown from "../../src/components/AdvantageDropdown";
-
+import light from "../../src/assets/Img/advantage/light.jpg";
+import durability from "../../src/assets/Img/advantage/durability.jpg";
+ 
 const Advantage = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -34,19 +36,21 @@ const Advantage = () => {
       content: [
         "AEROLITE METALWORKS HAVE HIGH FLEXURAL STRENGTH, AS A RESULT OF THEIR COMPOSITION AND MANUFACTURING PROCESS. AEROLITE METALWORKS MINIMIZES DAMAGE IN HANDLING, TRANSPORT, STORAGE AND INSTALLATION OF THE TILES, BESIDES FACILITATING DEMOUNTABILITY AS PER SERVICE REQUIREMENTS.",
       ],
+      image: durability,
     },
     {
       title: "4. LIGHT REFLECTANCE",
       content: [
         "THE EXCELLENT LIGHT REFLECTANCE OF AEROLITE METALWORKS HELPS TO MINIMIZE LIGHTING OPERATING EXPENSES BESIDES ENSURING MAXIMUM EFFECTIVENESS OF INDIRECT LIGHTING.",
       ],
+      image: light,
     },
     {
       title: "5. TERMITE RESISTANCE",
       content: [
         "AEROLITE CEILINGS ARE MADE FROM INORGANIC MATERIALS AND ARE IMMUNE TO TERMITE ATTACK.",
       ],
-      image : terminate,
+      image: terminate,
     },
   ];
   return (

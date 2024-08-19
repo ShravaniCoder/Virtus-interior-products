@@ -27,7 +27,7 @@ const Product_Flooring = () => {
               />
             </div>
           </div>
-          <div className=" font-montserrat">
+          <div className=" font-montserrat border-b shadow p-2">
             <h1 className="text-3xl font-semibold py-4 text-[#455D8B]">
               FLOOR
             </h1>
@@ -49,7 +49,7 @@ const Product_Flooring = () => {
                 cleaning operations.
               </p>
               <h1 className="text-xl font-semibold py-4">APPLICATION AREAS</h1>
-              <ul className="list-square px-5 ">
+              <ul className="list-square px-5">
                 <li>
                   New Constructions, Environments with hygienic requirements
                 </li>
@@ -60,7 +60,7 @@ const Product_Flooring = () => {
               </ul>
             </div>
           </div>
-          <div className=" font-montserrat">
+          <div className=" font-montserrat border-b shadow p-2">
             <span className="py-6">
               <h1 className="text-2xl font-semibold py-4 text-[#4F8BAD]">
                 PJP Series | 25-400mm joints | 38mm recess mounted | full
@@ -87,7 +87,7 @@ const Product_Flooring = () => {
               </ul>
             </div>
           </div>
-          <div className=" font-montserrat">
+          <div className=" font-montserrat border-b shadow p-2">
             <span className="py-6">
               <h1 className="text-2xl font-semibold py-4 text-[#4F8BAD]">
                 PPF Series | 25-100mm joints | 25-50mm recess mounted | full
@@ -117,7 +117,7 @@ const Product_Flooring = () => {
               </ul>
             </div>
           </div>
-          <div className=" font-montserrat">
+          <div className=" font-montserrat border-b shadow p-2">
             <span className="py-6">
               <h1 className="text-2xl font-semibold py-4 text-[#4F8BAD]">
                 PJ HD Series | 100-200mm joints | 36mm recess mounted | full
@@ -148,7 +148,7 @@ const Product_Flooring = () => {
               </ul>
             </div>
           </div>
-          <div className=" font-montserrat">
+          <div className=" font-montserrat border-b shadow p-2">
             <span className="py-6">
               <h1 className="text-2xl font-semibold py-4 text-[#4F8BAD]">
                 PSR Series | 50-250mm joints | 57mm recess mounted | full
@@ -180,7 +180,7 @@ const Product_Flooring = () => {
               </ul>
             </div>
           </div>
-          <div className=" font-montserrat mb-10">
+          <div className=" font-montserrat mb-10 border-b shadow p-2">
             <span className="py-6">
               <h1 className="text-2xl font-semibold py-4 text-[#4F8BAD]">
                 PLS Series | 50-100mm joints | 25mm recess mounted | full
@@ -209,8 +209,6 @@ const Product_Flooring = () => {
               </ul>
             </div>
           </div>
-
-         
         </div>
       </div>
     </Layout>

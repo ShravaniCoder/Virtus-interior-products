@@ -22,6 +22,8 @@ import Product_Glass from "./pages/Products/Product_Glass";
 import Product_Flooring from "./pages/Products/Product_Flooring";
 import OurProjects from "./pages/Projects";
 import Product_Parking from "./pages/Products/Product_Parking";
+import Admin from "./pages/Admin";
+import Dashboard from "./pages/Dashboard";
 
 
 function App() {
@@ -134,6 +136,14 @@ function App() {
     {
       path: "/product_Parking",
       element: <Product_Parking />,
+    },
+    {
+      path: "/admin",
+      element: <Admin />,
+    },
+    {
+      path: "/dashboard",
+      element: <Dashboard />,
     },
   ]);
   return (

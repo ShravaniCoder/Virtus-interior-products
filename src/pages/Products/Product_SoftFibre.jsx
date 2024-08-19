@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Layout from "../../components/Layout";
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
 import Soft1 from "../../../src/assets/Img/pr0ducts/Soft Fibre/Img2.png";
-import Baffle from "../../../src/assets/Img/pr0ducts/Baffle/Img2.jpg";
+import Soft2 from "../../../src/assets/Img/pr0ducts/Soft Fibre/Img2.jpg";
 import largeImage from "../../../src/assets/Img/pr0ducts/Soft Fibre/Img1.jpg";
 
 
@@ -56,7 +56,7 @@ const Product_SoftFibre = () => {
             </div>
             <div className="md:w-[50%]">
               <img
-                src={Baffle}
+                src={Soft2}
                 alt="Lay-In"
                 className="w-full h-auto md:h-[65vh]"
               />

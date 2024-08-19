@@ -2,7 +2,7 @@ import Layout from "../../components/Layout"
 import { Link } from "react-router-dom";
 import largeImage from "../../../src/assets/Img/pr0ducts/Mesh/Img1.jpg";
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
-import smallImage from "../../../src/assets/Img/pr0ducts/Mesh/Img4.png";
+import smallImage from "../../../src/assets/Img/pr0ducts/Mesh/Img2.jpg";
 import MeshS from "../../../src/assets/Img/pr0ducts/Mesh/Img2.png";
 import Mesh2 from "../../../src/assets/Img/pr0ducts/Mesh/Img3.png";
 

@@ -170,7 +170,7 @@ export const tilesData = [
     image: Parking,
     line: "Acoustics",
     material: "Metal",
-    productType: "Parking",
+    productType: "Expansion Joint Cover",
     button: "View Property",
     link: "/product_Parking",
   },

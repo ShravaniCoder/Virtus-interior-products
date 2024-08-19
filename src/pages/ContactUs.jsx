@@ -26,11 +26,11 @@ const ContactUs = () => {
             <p className="text-black/70">Mumbai 400081.</p>
             <div className="flex items-center gap-4 py-2">
               <PiPhoneTransferFill className="text-sky-600" />
-              <p className="text-black/70">Phone: 9820324799 / 76661 17424</p>
+              <p className="text-black/70">Phone : 98203 24799 / 76661 17424</p>
             </div>
             <div className="flex items-center gap-4">
               <BiLogoGmail className="text-orange-600" />
-              <p className="text-black/70">Email: suresh.virtus@gmail.com</p>
+              <p className="text-black/70">Email : suresh.virtus@gmail.com</p>
             </div>
           </div>
           <div></div>
@@ -49,7 +49,7 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="text"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
+                  className="mt-1 block w-full px-6 py-2 border border-gray-300 rounded-3xl shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
                   name="username"
                   required
                   autoComplete="off"
@@ -61,7 +61,7 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="email"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
+                  className="mt-1 block w-full px-6 rounded-3xl py-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
                   id="useremail"
                   name="useremail"
                   required
@@ -76,7 +76,7 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="text"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300  shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
+                  className="mt-1 block w-full px-6 rounded-3xl py-2 border border-gray-300  shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
                   id="mobile"
                   name="mobile"
                   required
@@ -89,7 +89,7 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="text"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300  shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
+                  className="mt-1 block w-full px-6 rounded-3xl py-2 border border-gray-300  shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
                   id="projectLocation"
                   name="projectLocation"
                   required
@@ -104,7 +104,7 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="file"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300  shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
+                  className="mt-1 block w-full px-6 rounded-3xl py-2 border border-gray-300  shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
                   required
                   autoComplete="off"
                 />
@@ -115,7 +115,7 @@ const ContactUs = () => {
                 Comments
               </label>
               <textarea
-                className="mt-1 block w-full px-3 py-2 border border-gray-300  shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
+                className="mt-1 block w-full px-6 rounded-3xl py-2 border border-gray-300  shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
                 rows="4"
                 required
                 autoComplete="off"
@@ -126,9 +126,9 @@ const ContactUs = () => {
             <div className="flex justify-start">
               <button
                 type="submit"
-                className="py-2 px-4 bg-yellow-500 text-white font-medium shadow-sm hover:bg-[#E5901F] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+                className="py-2 px-10 bg-yellow-500 rounded-full text-white/90 font-medium shadow-sm hover:bg-[#F8CE06] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
               >
-                SUBMIT
+                Submit
               </button>
             </div>
           </form>

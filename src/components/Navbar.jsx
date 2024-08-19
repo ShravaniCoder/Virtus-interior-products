@@ -29,7 +29,7 @@ const Navbar = () => {
     <>
       <div className="fixed w-full z-50">
         <div className="px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-[4rem] py-5">
-          <div className=" px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-4 bg-white shadow-2xl z-50">
+          <div className=" px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-4 bg-white rounded-sm shadow-2xl z-50">
             <div className=" py-3 flex items-center justify-between">
               <div className="flex flex-col">
                 <img src={logo} alt="logo" className="mx-auto h-16" />
@@ -43,7 +43,7 @@ const Navbar = () => {
               </div>
               <div className="hidden lg:block z-10">
                 <button onClick={handleViewPdf}>
-                  <div className="text-black/90 font-medium py-1 px-3 flex items-center text-sm sm:text-lg gap-x-1 hover:bg-[#fcaf49] hover:text-black/60 group">
+                  <div className="text-black/90 font-medium py-1 px-3 flex items-center text-sm sm:text-lg gap-x-1 rounded-sm hover:bg-[#fcaf49] hover:text-black/60 group">
                     <FaRegFilePdf className="text-[#E5901F] font-semibold group-hover:text-black/60" />
                     Brochure Download
                   </div>

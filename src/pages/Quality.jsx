@@ -1,7 +1,7 @@
 
 import Layout from "../components/Layout";
-import banner from "../../src/assets/Img/homepage/Img8.png";
-import Quality1 from "../../src/assets/Img/quality/Quality.png"
+import banner from "../../src/assets/Img/about/Picture4.png";
+import Quality1 from "../../src/assets/Img/quality/Quality.png";
 
 const Quality = () => {
   return (

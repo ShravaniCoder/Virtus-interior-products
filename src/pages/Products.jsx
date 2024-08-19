@@ -151,7 +151,7 @@ const FilterSearch = () => {
           <h1 className="text-4xl font-bold animate-slide-down">
             Our Products
           </h1>
-          <p className="text-gray-600 mt-2 animate-slide-down">
+          <p className="text-gray-600 mt-2 text-xl animate-slide-down">
             Discover our wide range of products to meet your needs.
           </p>
         </div>
@@ -183,7 +183,7 @@ const FilterSearch = () => {
               placeholder="Product name"
               value={searchKeyword}
               onChange={handleSearchChange}
-              className="w-full pl-10 pr-4 py-2 text-base border border-gray-300 focus:outline-none focus:ring-1 focus:border-transparent"
+              className="w-full pl-10 pr-4 py-2 text-base border rounded-sm border-gray-300 focus:outline-none focus:ring-1 focus:border-transparent"
             />
             <FaSearch className="absolute top-1/2 left-3 transform -translate-y-1/2 text-gray-400" />
           </div>
@@ -211,13 +211,13 @@ const FilterSearch = () => {
                 variants={itemVariants}
                 custom={index} // Pass the index to the variants
               >
-                <div className="border border-gray-200 shadow-2xl flex flex-col">
+                <div className="border border-gray-200 rounded-sm shadow-2xl flex flex-col">
                   <Link to={menu.link}>
                     <div className="overflow-hidden group relative">
                       <img
                         src={menu.image}
                         alt={`Property ${index}`}
-                        className="object-cover h-[35vh] p-2 w-full object-center transition-transform duration-300 ease-in-out transform group-hover:scale-110"
+                        className="object-cover h-[35vh] p-2 w-full rounded-sm object-center transition-transform duration-300 ease-in-out transform group-hover:scale-110"
                       />
                       <div className="absolute inset-0 flex items-center justify-center opacity-0 bg-[rgba(68,94,142,0.5)] group-hover:opacity-100 transition-opacity duration-300">
                         <h1 className="text-[#EEF0FA] hover:underline font-roboto text-lg md:text-xl">

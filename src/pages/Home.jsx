@@ -5,6 +5,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
+import Homeimg0 from "../../src/assets/Img/homepage/HomeImg0.jpg";
 import Homeimg1 from "../../src/assets/Img/homepage/Corridor.jpg";
 import Homeimg2 from "../../src/assets/Img/pr0ducts/Expansion Joints Cover/Expansion Joints Cover.jpg";
 import Homeimg3 from "../../src/assets/Img/pr0ducts/Partition/Glass.jpg";
@@ -14,37 +15,49 @@ import Picture2 from "../../src/assets/Img/about/Picture2.jpg";
 import Picture3 from "../../src/assets/Img/about/Picture3.jpg";
 import Picture4 from "../../src/assets/Img/about/Picture4.png";
 import { useNavigate } from "react-router-dom";
-const Home = () => {
-const navigate = useNavigate();
 
-const handleButtonClick = () => {
-  navigate("/products");
-};
+const Home = () => {
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate("/products");
+  };
 
   const data = [
     {
       id: 1,
-      bgImg: Homeimg1,
-      title: "Customized Ceiling",
+      bgImg: Homeimg0,
+      title: "Standard Metal Ceiling",
       desc: "Bring your unique ideas to life in beautiful spaces",
+      backgroundPosition: "center center", // Customize this value as needed
     },
     {
       id: 2,
-      bgImg: Homeimg2,
-      title: "Expansion Joint Cover",
-      desc: "",
+      bgImg: Homeimg1,
+      title: "Customized Ceiling",
+      desc: "Elevate your space with custom made ceilings.",
+      backgroundPosition: "center top", // Customize this value as needed
     },
     {
       id: 3,
-      bgImg: Homeimg3,
-      title: "Partition",
-      desc: "",
+      bgImg: Homeimg2,
+      title: "Expansion Joint Cover",
+      desc: "Expansion joints that keep you connected.",
+      backgroundPosition: "center center", // Customize this value as needed
     },
     {
       id: 4,
+      bgImg: Homeimg3,
+      title: "Glass Partition",
+      desc: "Partitions that reflect modern design.",
+      backgroundPosition: "center left", // Customize this value as needed
+    },
+    {
+      id: 5,
       bgImg: Homeimg4,
       title: "Flooring",
-      desc: "",
+      desc: "Step up to superior flooring solutions.",
+      backgroundPosition: "center bottom", // Customize this value as needed
     },
   ];
 
@@ -52,18 +65,22 @@ const handleButtonClick = () => {
     {
       id: 1,
       bgImg: Picture1,
+      backgroundPosition: "center center", // Customize this value as needed
     },
     {
       id: 2,
       bgImg: Picture2,
+      backgroundPosition: "center top", // Customize this value as needed
     },
     {
       id: 3,
       bgImg: Picture3,
+      backgroundPosition: "center bottom", // Customize this value as needed
     },
     {
       id: 4,
       bgImg: Picture4,
+      backgroundPosition: "center left", // Customize this value as needed
     },
   ];
 
@@ -90,25 +107,23 @@ const handleButtonClick = () => {
                 style={{
                   backgroundImage: `url(${item.bgImg})`,
                   backgroundSize: "cover",
-                  backgroundPosition: "center",
+                  backgroundPosition: item.backgroundPosition,
                   backgroundRepeat: "no-repeat",
                   boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)", // Add shadow here
                 }}
               >
-                <div className=""></div>{" "}
-                {/* Add this line for brightness effect */}
                 <div className="flex items-end justify-center w-full h-full relative z-10">
-                  <div className="flex items-center justify-center w-[90%] md:w-[50%] lg:w-[40%] h-[25vh] md:h-[32vh] bg-white">
+                  <div className="flex items-center justify-center w-[90%] md:w-[50%] lg:w-[40%] h-[25vh] md:h-[32vh] bg-white/75 rounded-sm">
                     <div className="text-center px-2">
-                      <p className="mt-5 text-base text-black/75 md:text-lg lg:text-xl animate-nav-up">
+                      <p className="mt-5 text-base text-black md:text-xl lg:text-2xl animate-nav-up">
                         {item.desc}
                       </p>
-                      <h1 className="text-2xl mt-5 text-[#455D8B] md:text-3xl lg:text-5xl font-bold animate-nav-up">
+                      <h1 className="text-2xl mt-5 text-[#455D8B] md:text-3xl lg:text-5xl font-semibold animate-nav-up">
                         {item.title}
                       </h1>
 
                       <button
-                        className="mt-5 border py-2 px-6 font-lato mb-2 border-[#4F8BAD] text-[#4F8BAD] hover:text-[#E5901F] hover:border-[#E5901F]"
+                        className="mt-5 border-2 font-semibold py-2 px-6 font-lato mb-5 border-[#4F8BAD] rounded-sm text-[#4F8BAD] hover:text-[#E5901F] hover:border-[#E5901F]"
                         onClick={handleButtonClick}
                       >
                         View More
@@ -165,11 +180,11 @@ const handleButtonClick = () => {
                   {dataImg.map((item) => (
                     <SwiperSlide
                       key={item.id}
-                      className="w-full h-full"
+                      className="w-full h-full rounded-sm"
                       style={{
                         backgroundImage: `url(${item.bgImg})`,
                         backgroundSize: "cover",
-                        backgroundPosition: "center",
+                        backgroundPosition: item.backgroundPosition,
                         backgroundRepeat: "no-repeat",
                       }}
                     ></SwiperSlide>

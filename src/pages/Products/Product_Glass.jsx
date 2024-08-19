@@ -1,9 +1,10 @@
 
-
 import Layout from "../../components/Layout";
 import banner from "../../../src/assets/Img/pr0ducts/Partition/Glass.jpg";
 import STL2 from "../../../src/assets/Img/pr0ducts/Partition/STL 25.jpg";
 import STL4 from "../../../src/assets/Img/pr0ducts/Partition/STL 45.jpg";
+import SWL from "../../../src/assets/Img/pr0ducts/Partition/SWL.jpg";
+import S2G from "../../../src/assets/Img/pr0ducts/Partition/S2G.jpg";
 
 const Product_Glass = () => {
   return (
@@ -36,7 +37,7 @@ const Product_Glass = () => {
                   <img
                     src={STL2}
                     alt="contactus"
-                    className="lg:w-full"
+                    className="lg:w-full md:h-[55vh]"
                   />
                   <div className="p-4">
                     <h1 className="text-2xl font-bold py-4">STL - 25</h1>
@@ -65,7 +66,7 @@ const Product_Glass = () => {
                   <img
                     src={STL4}
                     alt="contactus"
-                    className="lg:w-full"
+                    className="lg:w-full md:h-[55vh]"
                   />
                   <div className="p-4">
                     <h1 className="text-2xl font-bold py-4">STL - 45</h1>
@@ -92,9 +93,9 @@ const Product_Glass = () => {
               <div className="bg-white border rounded">
                 <div className="relative">
                   <img
-                    src="https://preetheme.com/html/bhouse/assets/img/blog/2.jpg"
+                    src={SWL}
                     alt="contactus"
-                    className="lg:w-full"
+                    className="lg:w-full md:h-[55vh]"
                   />
                   <div className="p-4">
                     <h1 className="text-2xl font-bold py-4">SWL - 75</h1>
@@ -122,9 +123,9 @@ const Product_Glass = () => {
               <div className="bg-white border rounded">
                 <div className="relative">
                   <img
-                    src="https://preetheme.com/html/bhouse/assets/img/blog/2.jpg"
+                    src={S2G}
                     alt="contactus"
-                    className="lg:w-full"
+                    className="lg:w-full md:h-[55vh]"
                   />
                   <div className="p-4">
                     <h1 className="text-2xl font-bold py-4">S2G - 75</h1>

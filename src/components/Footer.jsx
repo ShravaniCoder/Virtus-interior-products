@@ -108,13 +108,11 @@ const Footer = () => {
                         Name
                       </label>
                       <input
-                        className="w-full p-2 bg-white text-gray"
+                        className="w-full p-2 bg-white text-gray rounded"
                         type="text"
                         id="username"
                         name="username"
                         required
-                       
-                        
                       />
                     </div>
                     <div className="flex flex-col w-full md:w-[50%]">
@@ -125,13 +123,11 @@ const Footer = () => {
                         Email
                       </label>
                       <input
-                        className="w-full p-2 bg-white text-gray"
+                        className="w-full p-2 bg-white text-gray rounded"
                         type="email"
                         id="useremail"
                         name="useremail"
                         required
-                       
-                        
                       />
                     </div>
                   </div>
@@ -141,13 +137,11 @@ const Footer = () => {
                         Mobile
                       </label>
                       <input
-                        className="w-full p-2 bg-white text-gray"
+                        className="w-full p-2 bg-white text-gray rounded"
                         type="tel"
                         id="mobile"
                         name="mobile"
                         required
-                       
-                        
                       />
                     </div>
                     <div className="flex flex-col w-full md:w-[50%]">
@@ -158,13 +152,11 @@ const Footer = () => {
                         Project Location
                       </label>
                       <input
-                        className="w-full p-2 bg-white text-gray"
+                        className="w-full p-2 bg-white text-gray rounded"
                         type="text"
                         id="projectLocation"
                         name="projectLocation"
                         required
-                       
-                        
                       />
                     </div>
                   </div>
@@ -173,19 +165,17 @@ const Footer = () => {
                       Comments
                     </label>
                     <textarea
-                      className="w-full p-3 bg-white text-black"
+                      className="w-full p-3 bg-white text-black rounded"
                       id="comments"
                       name="comments"
                       rows="3"
                       required
-                     
-                      
                     ></textarea>
                   </div>
                   <div className="">
                     <button
                       type="submit"
-                      className="text-white py-2 px-4 w-[40%] mt-4 bg-yellow-600 hover:bg-[#E5901F]"
+                      className="text-white py-2 px-4 w-[40%] mt-4 bg-yellow-600 hover:bg-[#E5901F] rounded"
                     >
                       SEND MESSAGE
                     </button>
