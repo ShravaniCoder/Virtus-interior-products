@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 
 const List = () => {
 
-    const url = "http://localhost:4000";
+    const url = "https://virtus-interior-products-backend.onrender.com/";
     const [list, setList] = useState([]);
     const fetchList = async () => {
         const response = await axios.get(`${url}/api/project/list`);
