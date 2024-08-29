@@ -4,7 +4,7 @@ import axios from "axios";
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = ({ children }) => {
-  const url = "http://localhost:4000";
+  const url = "https://virtus-interior-products-backend.onrender.com";
   const [project_list, setProjectList] = useState([]);
 
   const fetchProjectList = async () => {
@@ -17,7 +17,10 @@ const StoreContextProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    fetchProjectList();
+    async function loadData() {
+      await fetchProjectList();
+    }
+    loadData();
   }, []);
 
   const contextValue = {
