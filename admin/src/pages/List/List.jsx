@@ -46,10 +46,10 @@ const List = () => {
               {list.map((item, index) => {
                   return (
                       <div key={index} className="list-table-format">
-                          <img src={`${url}/images/` + item.image} alt="project" />
+                          <img src={`${url}/images/` + item.image} alt="" />
                           <p>{item.name}</p>
                           <p>{item.description}</p>
-                          <p onClick={() => removeProject(item._id)} className=" cursor-pointer">Delete</p>
+                          <p onClick={() => removeProject(item._id)} className=" cursor-pointer text-red-500">Delete</p>
                       </div>
                   )
               })}
