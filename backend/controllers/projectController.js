@@ -33,8 +33,8 @@ const listProject = async (req, res) => {
 //remove project
 const removeProject = async (req, res) => {
     try {
-        const food = await projectModel.findById(req.body.id);
-        fs.unlink(`uploads/${food.image}`, () => { })
+        const project = await projectModel.findById(req.body.id);
+        fs.unlink(`uploads/${project.image}`, () => { })
 
         await projectModel.findByIdAndDelete(req.body.id);
 
