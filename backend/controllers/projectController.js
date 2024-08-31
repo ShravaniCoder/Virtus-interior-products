@@ -32,17 +32,29 @@ const listProject = async (req, res) => {
 
 //remove project
 const removeProject = async (req, res) => {
-    try {
-        const project = await projectModel.findById(req.body.id);
-        fs.unlink(`uploads/${project.image}`, () => { })
+  try {
+    const project = await projectModel.findById(req.body.id);
 
-        await projectModel.findByIdAndDelete(req.body.id);
-
-        res.json({success:true, message: "Project Removed"})
-    } catch (error) {
-        console.log(error);
-        res.json({success:false, message:"Error"})
+    if (!project) {
+      return res.json({ success: false, message: "Project not found" });
     }
-}
+
+    if (project.image) {
+      fs.unlink(`uploads/${project.image}`, (err) => {
+        if (err) {
+          console.log("Error deleting image:", err);
+        }
+      });
+    }
+
+    await projectModel.findByIdAndDelete(req.body.id);
+
+    res.json({ success: true, message: "Project Removed" });
+  } catch (error) {
+    console.log(error);
+    res.json({ success: false, message: "Error" });
+  }
+};
+
 
 export { addProject, listProject, removeProject };
