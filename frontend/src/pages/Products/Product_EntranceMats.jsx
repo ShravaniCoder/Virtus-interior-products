@@ -8,9 +8,7 @@ const Product_EntranceMats = () => {
       <div className="">
         <section className="mb-10 relative flex items-center bg-[#807f7c] font-lato">
           <div className="h-[30vh] md:h-[40vh] w-[100%] bg-[#F5F5F5] flex flex-col items-center justify-end">
-            <h1 className="md:text-xl text-sm text-[#4F8BAD] font-bold ">
-              Expansion Joint Cover
-            </h1>
+            
             <h2 className="md:text-6xl text-4xl font-bold text-[#455D8B] p-4 ">
               ENTRANCE MATS
             </h2>
@@ -37,21 +35,7 @@ const Product_EntranceMats = () => {
                   your project and eventually reduce maintenance costs while
                   keeping your building occupants safe.{" "}
                 </p>
-                <h1 className="text-2xl font-semibold py-4 text-[#4F8BAD]">
-                  Expansion Joint Systems
-                </h1>
-                <p>
-                  Thermal and seismic expansion joint cover systems for floors,
-                  walls and ceilings, exterior facades and car parks. Pinnacle
-                  also has a brand of Glass & Partition System “Sonic”.
-                </p>
-                <p>
-                  At Pinnacle we provide solutions and ensure successful
-                  installation over a spectrum of business sectors across the
-                  country like Education, Retail, Airports & Train Stations,
-                  Commercial Healthcare, Shopping Centers, Car Parks, Sports &
-                  Leisure Housing and Hotels.
-                </p>
+                
               </div>
             </div>
           </div>

@@ -96,7 +96,7 @@ const Product_Chenneled = () => {
                 <tr>
                   <td className="px-4 py-2 border border-gray-300">NRC</td>
                   <td className="px-4 py-2 border border-gray-300">
-                    0.40 / 0.85*
+                    0.40 / 0.85*(with glass wool backing)
                   </td>
                 </tr>
                 <tr>

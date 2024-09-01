@@ -76,7 +76,7 @@ export const tilesData = [
   {
     id: 3,
     image: OpenCell,
-    line: "Standard Metal Ceiling",
+    line: "Customized Metal Ceiling",
     material: "Metal",
     productType: "Aerolite Open Cell",
     button: "View Property",
@@ -85,7 +85,7 @@ export const tilesData = [
   {
     id: 4,
     image: Tringular,
-    line: "Standard Metal Ceiling",
+    line: "Customized Metal Ceiling",
     material: "Metal",
     productType: "Aerolite Tringular Open Cell",
     button: "View Property",
@@ -159,7 +159,7 @@ export const tilesData = [
   {
     id: 12,
     image: Flooring,
-    line: "Acoustics",
+    line: "All products",
     material: "Metal",
     productType: "Flooring",
     button: "View Property",
@@ -168,7 +168,7 @@ export const tilesData = [
   {
     id: 13,
     image: Parking,
-    line: "Acoustics",
+    line: "All products",
     material: "Metal",
     productType: "Expansion Joint Cover",
     button: "View Property",
@@ -177,7 +177,7 @@ export const tilesData = [
   {
     id: 14,
     image: Entrance,
-    line: "Acoustics",
+    line: "All products",
     material: "Metal",
     productType: "Entrance Mats",
     button: "View Property",
@@ -186,7 +186,7 @@ export const tilesData = [
   {
     id: 15,
     image: Glass,
-    line: "Acoustics",
+    line: "All products",
     material: "Metal",
     productType: "Glass Partition",
     button: "View Property",

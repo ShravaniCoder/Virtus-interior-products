@@ -27,6 +27,7 @@ const Home = () => {
     {
       id: 1,
       bgImg: Homeimg0,
+      heading: "A Project Matrix and Vitus Interior Products ",
       title: "Standard Metal Ceiling",
       desc: "Bring your unique ideas to life in beautiful spaces",
       backgroundPosition: "center center", // Customize this value as needed
@@ -34,6 +35,7 @@ const Home = () => {
     {
       id: 2,
       bgImg: Homeimg1,
+      heading: "A Project Matrix and Vitus Interior Products ",
       title: "Customized Ceiling",
       desc: "Elevate your space with custom made ceilings.",
       backgroundPosition: "center top", // Customize this value as needed
@@ -41,6 +43,7 @@ const Home = () => {
     {
       id: 3,
       bgImg: Homeimg2,
+      heading: "A Project Matrix and Vitus Interior Products ",
       title: "Expansion Joint Cover",
       desc: "Expansion joints that keep you connected.",
       backgroundPosition: "center center", // Customize this value as needed
@@ -48,6 +51,7 @@ const Home = () => {
     {
       id: 4,
       bgImg: Homeimg3,
+      heading: "A Project Matrix and Vitus Interior Products ",
       title: "Glass Partition",
       desc: "Partitions that reflect modern design.",
       backgroundPosition: "center left", // Customize this value as needed
@@ -55,6 +59,7 @@ const Home = () => {
     {
       id: 5,
       bgImg: Homeimg4,
+      heading: "A Project Matrix and Vitus Interior Products ",
       title: "Flooring",
       desc: "Step up to superior flooring solutions.",
       backgroundPosition: "center bottom", // Customize this value as needed
@@ -113,12 +118,15 @@ const Home = () => {
                 }}
               >
                 <div className="flex items-end justify-center w-full h-full relative z-10">
-                  <div className="flex items-center justify-center w-[90%] md:w-[50%] lg:w-[40%] h-[25vh] md:h-[32vh] bg-white/75 rounded-sm">
+                  <div className="flex items-center justify-center w-[90%] md:w-[50%] lg:w-[42%] h-[25vh] md:h-[40vh] bg-white/75 rounded-sm">
                     <div className="text-center px-2">
-                      <p className="mt-5 text-base text-black md:text-xl lg:text-2xl animate-nav-up">
+                      <p className="text-2xl md:text-3xl  text-[#4F8BAD]">
+                        {item.heading}
+                      </p>
+                      <p className="mt-5 text-base text-black md:text-xl lg:text-xl animate-nav-up">
                         {item.desc}
                       </p>
-                      <h1 className="text-2xl mt-5 text-[#455D8B] md:text-3xl lg:text-5xl font-semibold animate-nav-up">
+                      <h1 className="text-2xl mt-5 text-[#455D8B] md:text-3xl lg:text-3xl font-semibold animate-nav-up">
                         {item.title}
                       </h1>
 
@@ -136,17 +144,31 @@ const Home = () => {
           </Swiper>
         </div>
         <div className="py-16">
-          <div className="p-2 md:pl-[2rem] lg:pl-[2rem] xl:pl-[5rem] font-roboto">
+          <div className="p-2 md:pl-[2rem] lg:pl-[2rem] xl:pl-[4rem] font-roboto">
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div className="mr-5">
                 <h1 className="py-7 text-5xl text-black/75">About Us</h1>
-                <h2 className="pb-5 text-3xl md:text-4xl text-[#455D8B] font-semibold">
-                  Aerolite Customised Ceiling Systems
-                </h2>
-                <p className="text-[#4F8BAD] text-xl md:text-2xl pb-5">
+                <p className=" text-[#455D8B] text-lg md:text-xl pb-5 font-semibold">
                   creating BEAUTIFUL spaces
                 </p>
-                <p className="pb-5 md:text-xl text-lg text-black/70">
+                <p className="pb-5 md:text-lg text-base text-black/70">
+                  A Project Matrix and Vitus Interior Products are channel
+                  partner for Aerolite Industries Pvt Ltd. Over Maharashtra ,
+                  Gujrat , Goa . We are also sole marketing partners of standard
+                  metal ceiling and customized metal products for western India.
+                </p>
+                <p className="pb-5 md:text-lg text-base text-black/70">
+                  Our sister concern A Project Matrix are contractors and
+                  dealers for all leading false ceiling companies cooperating in
+                  India since 15 years . Our expertise is to render service to
+                  all leading companies in India in healthcare, Infraprojects,
+                  Office spaces, Education, auditoriums, Industries.
+                </p>
+                <h2 className="pb-5 text-2xl md:text-3xl text-[#4F8BAD]">
+                  Aerolite Customised Ceiling Systems
+                </h2>
+
+                <p className="pb-5 md:text-lg text-base text-black/70">
                   Aerolite offers a range of make in India modular ceiling
                   products like lightweight calcium silicate system, standard
                   metal works and customized metal solutions for walls and
@@ -155,7 +177,7 @@ const Home = () => {
                   imagination of leading architects, specifiers, consultants pan
                   India.
                 </p>
-                <p className="pb-16 md:text-xl text-lg text-black/70">
+                <p className="pb-16 md:text-lg text-base text-black/70">
                   The company puts combination of innovative and outstanding
                   products and services as top priority, constructive dialogue
                   with prospective customers having diverse requirement,

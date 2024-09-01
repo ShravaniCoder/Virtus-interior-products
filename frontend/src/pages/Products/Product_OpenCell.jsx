@@ -76,7 +76,9 @@ const Product_ClipIn = () => {
             <table className="min-w-full bg-white border border-gray-300">
               <thead>
                 <tr>
-                  <th className="px-4 py-2 border border-gray-300">CLIP IN</th>
+                  <th className="px-4 py-2 border border-gray-300">
+                    Lay-in grid ceiling
+                  </th>
                   <th className="px-4 py-2 ">Open Cell</th>
                 </tr>
               </thead>
@@ -90,25 +92,25 @@ const Product_ClipIn = () => {
                   <td className="px-4 py-2 border border-gray-300">
                     <div className="flex flex-col items-center">
                       <img src={Box2} alt="Lay-In" className="w-32 h-20" />
-                      <p>75mm</p>
+                      <p>75*75mm</p>
                     </div>
                   </td>
                   <td className="px-4 py-2 border border-gray-300">
                     <div className="flex flex-col items-center">
                       <img src={Box3} alt="Lay-In" className="w-32 h-20" />
-                      <p>105mm</p>
+                      <p>100*100mm</p>
                     </div>
                   </td>
                   <td className="px-4 py-2 border border-gray-300">
                     <div className="flex flex-col items-center">
                       <img src={Box4} alt="Lay-In" className="w-32 h-20" />
-                      <p>150mm</p>
+                      <p>100*150mm</p>
                     </div>
                   </td>
                   <td className="px-4 py-2 border border-gray-300">
                     <div className="flex flex-col items-center">
                       <img src={Box5} alt="Lay-In" className="w-32 h-20" />
-                      <p>200mm</p>
+                      <p>100*200mm</p>
                     </div>
                   </td>
                 </tr>
@@ -117,7 +119,7 @@ const Product_ClipIn = () => {
                     colSpan="4"
                     className="px-4 py-2 border border-gray-300 text-center"
                   >
-                    ALUMINIUM
+                    GI LAY-IN GRID CEILING
                   </td>
                 </tr>
                 {["600 x 600 x 0.5mm"].map((size) => (
@@ -144,10 +146,10 @@ const Product_ClipIn = () => {
                     colSpan="4"
                     className="px-4 py-2 border border-gray-300 text-center"
                   >
-                    GALVANIZED STEEL
+                    ALUMINIUM LAY-IN GRID CEILING
                   </td>
                 </tr>
-                {["600 x 600 x 0.5mm"].map((size) => (
+                {["600 x 600 x 0.7mm"].map((size) => (
                   <tr key={size}>
                     <td className="px-4 py-2 border border-gray-300 text-center">
                       {size}

@@ -68,8 +68,8 @@ const Product_PawlHook = () => {
         <div className="p-2 md:px-[2rem] lg:px-[2rem] xl:px-36 font-montserrat">
           <div className="flex md:flex-row flex-col">
             <div className="md:w-[50%] w-full">
-              <h2 className="text-sm md:text-xl text-[#0B2B3c] mt-2 font-bold">
-                MESH SELECTION
+              <h2 className="text-sm md:text-xl uppercase text-[#0B2B3c] mt-2 font-bold">
+                MESH Customized
               </h2>
 
               <h2 className=" font-montserrat text-[#3f4a5f] font-semibold py-3">

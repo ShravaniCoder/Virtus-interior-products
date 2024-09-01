@@ -78,6 +78,7 @@ const Product_Baffle = () => {
             <li>50 x 100mm</li>
             <li>75 x 75mm</li>
             <li>25 x 75mm</li>
+            <li>Customized as per requirement with minimum MOQ.</li>
           </ul>
         </div>
       </div>

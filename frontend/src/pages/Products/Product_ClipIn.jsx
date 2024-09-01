@@ -117,7 +117,7 @@ const Product_ClipIn = () => {
                     colSpan="4"
                     className="px-4 py-2 border border-gray-300 text-center"
                   >
-                    GALVANIZED STEEL
+                    GI CLIP-IN
                   </td>
                 </tr>
                 {[
@@ -145,7 +145,7 @@ const Product_ClipIn = () => {
                     colSpan="4"
                     className="px-4 py-2 border border-gray-300 text-center"
                   >
-                    ALUMINIUM
+                    ALUMINIUM CLIP-IN
                   </td>
                 </tr>
                 {[

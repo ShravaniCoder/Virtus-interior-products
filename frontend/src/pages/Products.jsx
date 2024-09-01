@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import banner from "../../src/assets/Img/homepage/Img6.jpg";
 
 const productTypes = {
+  "Light Weight Calcium Silicate": ["Light Weight Calcium Silicate"],
   "Standard Metal Ceiling": [
     "Aerolite Lay In",
     "Aerolite Clip In",
@@ -17,8 +18,6 @@ const productTypes = {
     "TRIANGULAR Open Cell",
   ],
   Acoustics: [
-    "Aerolite wood works linear",
-    "Aerolite wood works grille",
     "Channeled wood works",
     "SOFT FIBRE",
   ],
@@ -27,6 +26,8 @@ const productTypes = {
     "F-plancks",
     "Corridor planks",
     "Custom pawl & hook on system",
+    "Aerolite Open Cell",
+    "TRIANGULAR Open Cell",
   ],
 };
 
