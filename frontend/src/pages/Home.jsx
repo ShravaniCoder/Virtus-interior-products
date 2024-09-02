@@ -153,8 +153,8 @@ const Home = () => {
                 </p>
                 <p className="pb-5 md:text-lg text-base text-black/70">
                   A Project Matrix and Virtus Interior Products are channel
-                  partner for Aerolite Industries Pvt Ltd. Over Maharashtra ,
-                  Gujrat , Goa . We are also sole marketing partners of standard
+                  partner for Aerolite Industries Pvt Ltd. Over Maharashtra,
+                  Gujrat, Goa. We are also sole marketing partners of standard
                   metal ceiling and customized metal products for western India.
                 </p>
                 <p className="pb-5 md:text-lg text-base text-black/70">
