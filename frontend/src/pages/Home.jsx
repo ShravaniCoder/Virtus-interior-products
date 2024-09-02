@@ -27,7 +27,7 @@ const Home = () => {
     {
       id: 1,
       bgImg: Homeimg0,
-      heading: "A Project Matrix and Vitus Interior Products ",
+      heading: "A Project Matrix and Virtus Interior Products ",
       title: "Standard Metal Ceiling",
       desc: "Bring your unique ideas to life in beautiful spaces",
       backgroundPosition: "center center", // Customize this value as needed
@@ -35,7 +35,7 @@ const Home = () => {
     {
       id: 2,
       bgImg: Homeimg1,
-      heading: "A Project Matrix and Vitus Interior Products ",
+      heading: "A Project Matrix and Virtus Interior Products ",
       title: "Customized Ceiling",
       desc: "Elevate your space with custom made ceilings.",
       backgroundPosition: "center top", // Customize this value as needed
@@ -43,7 +43,7 @@ const Home = () => {
     {
       id: 3,
       bgImg: Homeimg2,
-      heading: "A Project Matrix and Vitus Interior Products ",
+      heading: "A Project Matrix and Virtus Interior Products ",
       title: "Expansion Joint Cover",
       desc: "Expansion joints that keep you connected.",
       backgroundPosition: "center center", // Customize this value as needed
@@ -51,7 +51,7 @@ const Home = () => {
     {
       id: 4,
       bgImg: Homeimg3,
-      heading: "A Project Matrix and Vitus Interior Products ",
+      heading: "A Project Matrix and Virtus Interior Products ",
       title: "Glass Partition",
       desc: "Partitions that reflect modern design.",
       backgroundPosition: "center left", // Customize this value as needed
@@ -59,7 +59,7 @@ const Home = () => {
     {
       id: 5,
       bgImg: Homeimg4,
-      heading: "A Project Matrix and Vitus Interior Products ",
+      heading: "A Project Matrix and Virtus Interior Products ",
       title: "Flooring",
       desc: "Step up to superior flooring solutions.",
       backgroundPosition: "center bottom", // Customize this value as needed
@@ -152,7 +152,7 @@ const Home = () => {
                   creating BEAUTIFUL spaces
                 </p>
                 <p className="pb-5 md:text-lg text-base text-black/70">
-                  A Project Matrix and Vitus Interior Products are channel
+                  A Project Matrix and Virtus Interior Products are channel
                   partner for Aerolite Industries Pvt Ltd. Over Maharashtra ,
                   Gujrat , Goa . We are also sole marketing partners of standard
                   metal ceiling and customized metal products for western India.
