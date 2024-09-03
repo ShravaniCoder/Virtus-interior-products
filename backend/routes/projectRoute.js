@@ -9,12 +9,17 @@ import { bucket } from "../firebase/firebase.js";
 
 const projectRouter = express.Router();
 
-const storage = multer.memoryStorage();
+const storage = multer.memoryStorage(); // Use memory storage for uploading to Firebase
 const upload = multer({ storage: storage });
 
 projectRouter.post("/add", upload.single("image"), async (req, res) => {
   const file = req.file;
-  const blob = bucket.file(`${Date.now()}-${file.originalname}`);
+  if (!file) {
+    return res.status(400).send("No file uploaded.");
+  }
+
+  const fileName = `${Date.now()}-${file.originalname}`;
+  const blob = bucket.file(fileName);
   const blobStream = blob.createWriteStream({
     metadata: {
       contentType: file.mimetype,
@@ -22,23 +27,16 @@ projectRouter.post("/add", upload.single("image"), async (req, res) => {
   });
 
   blobStream.on("error", (err) => {
-    console.error(err);
-    res.status(500).send("Error uploading file");
+    res.status(500).send("Error uploading file.");
   });
 
   blobStream.on("finish", async () => {
     try {
-      // Make the file public
       await blob.makePublic();
-
-      // The public URL of the image
-      const publicUrl = `gs://virtus-interior.appspot.com/${bucket.name}/${blob.name}`;
-
-      // Call your addProject function with the public URL
-      await addProject(req, res, publicUrl);
+      const publicUrl = `https://firebasestorage.googleapis.com/v0/b/virtus-interior.appspot.com/${bucket.name}/${fileName}`;
+      await addProject(req, res, publicUrl); // Pass the public URL to your controller
     } catch (error) {
-      console.error("Error making file public:", error);
-      res.status(500).send("Error making file public");
+      res.status(500).send("Error making file public.");
     }
   });
 
