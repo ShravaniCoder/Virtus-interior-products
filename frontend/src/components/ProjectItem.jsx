@@ -4,10 +4,15 @@ import { StoreContext } from "../context/StoreContext";
 
 const ProjectItem = ({ id, name, description, image }) => {
   const { url } = useContext(StoreContext);
+
   return (
     <div className="bg-white rounded-lg shadow-lg flex flex-col gap-4" key={id}>
       <div>
-        <img src={url+"/images/"+image} className="h-[320px] w-full" alt="project" />
+        <img
+          src={image.startsWith("http") ? image : `${url}/images/${image}`}
+          className="h-[320px] w-full object-cover"
+          alt={name}
+        />
       </div>
       <div>
         <h2 className="text-xl font-semibold mx-4">{name}</h2>
