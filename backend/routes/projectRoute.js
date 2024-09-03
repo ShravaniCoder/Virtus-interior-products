@@ -5,11 +5,11 @@ import {
   listProject,
   removeProject,
 } from "../controllers/projectController.js";
-import { bucket } from "../firebase/firebase.js"; // Import the initialized bucket
+import { bucket } from "../firebase/firebase.js"; 
 
 const projectRouter = express.Router();
 
-const storage = multer.memoryStorage(); // Store the image in memory temporarily
+const storage = multer.memoryStorage(); 
 const upload = multer({ storage: storage });
 
 projectRouter.post("/add", upload.single("image"), async (req, res) => {
