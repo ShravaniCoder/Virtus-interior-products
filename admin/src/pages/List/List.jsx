@@ -31,7 +31,7 @@ const List = () => {
         toast.success(response.data.message);
         await fetchList(); // Refresh list after removal
       } else {
-        toast.error("Error removing project");
+        toast.error("removing project");
       }
     } catch (error) {
       console.error("removing project:", error); // Log the error
