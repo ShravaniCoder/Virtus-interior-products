@@ -17,7 +17,8 @@ const List = () => {
       }
     } catch (error) {
       console.error("Error fetching list:", error); // Log the error
-      toast.error("Network error");
+      // Remove or comment out the toast.error line
+      // toast.error("Network error");
     }
   };
 
@@ -33,8 +34,9 @@ const List = () => {
         toast.error("Error removing project");
       }
     } catch (error) {
-      console.error("Error removing project:", error); // Log the error
-      toast.error("Network error");
+      console.error("removing project:", error); // Log the error
+      // Remove or comment out the toast.error line
+      // toast.error("Network error");
     }
   };
 
