@@ -1,6 +1,7 @@
 import admin from "firebase-admin";
 import { getStorage } from "firebase-admin/storage";
-import serviceAccount from "../config/virtus-interior-firebase-adminsdk-65yo0-380f3a35b3.json"; // Replace with the path to your service account key
+import serviceAccount from "../config/firebase-service-account-key.json" assert { type: "json" };
+ // Replace with the path to your service account key
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
