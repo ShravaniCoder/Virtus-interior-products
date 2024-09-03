@@ -55,7 +55,7 @@ const Add = () => {
             <img
               src={image ? URL.createObjectURL(image) : assets.uploadArea}
               alt="upload"
-              style={{ width: "100%", height: "auto" }} // Adjust image size if needed
+             
             />
           </label>
           <input
