@@ -22,23 +22,24 @@ const List = () => {
     }
   };
 
-  const removeProject = async (projectId) => {
-    try {
-      const response = await axios.post(`${url}/api/project/remove`, {
-        id: projectId,
-      });
-      if (response.data.success) {
-        toast.success(response.data.message);
-        await fetchList(); // Refresh list after removal
-      } else {
-        toast.error("removing project");
-      }
-    } catch (error) {
-      console.error("removing project:", error); // Log the error
-      // Remove or comment out the toast.error line
-      // toast.error("Network error");
-    }
-  };
+ const removeProject = async (projectId) => {
+   try {
+     const response = await axios.post(`${url}/api/project/remove`, {
+       id: projectId,
+     });
+     if (response.data.success) {
+       toast.success(response.data.message);
+       setList((prevList) => prevList.filter((item) => item._id !== projectId)); // Update the list state
+     } else {
+       toast.error("Error removing project");
+     }
+   } catch (error) {
+     console.error("Error removing project:", error);
+     // Remove or comment out the toast.error line
+     // toast.error("Network error");
+   }
+ };
+
 
   useEffect(() => {
     fetchList();
