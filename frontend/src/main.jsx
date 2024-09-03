@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
 import "./scrollbar.css";
-import StoreContextProvider from './context/StoreContext.jsx';
+import  { StoreProvider } from './context/StoreContext.jsx';
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <StoreContextProvider>
+    <StoreProvider>
       <App />
-    </StoreContextProvider>
+    </StoreProvider>
   </React.StrictMode>
 );
