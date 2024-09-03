@@ -33,7 +33,10 @@ projectRouter.post("/add", upload.single("image"), async (req, res) => {
   blobStream.on("finish", async () => {
     try {
       await blob.makePublic();
-      const publicUrl = `https://firebasestorage.googleapis.com/v0/b/virtus-interior.appspot.com/${bucket.name}/${fileName}`;
+      // Correct URL format
+      const publicUrl = `https://firebasestorage.googleapis.com/v0/b/${
+        bucket.name
+      }/o/${encodeURIComponent(fileName)}?alt=media`;
       await addProject(req, res, publicUrl); // Pass the public URL to your controller
     } catch (error) {
       res.status(500).send("Error making file public.");
