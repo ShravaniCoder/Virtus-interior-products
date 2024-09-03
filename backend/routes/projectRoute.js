@@ -27,6 +27,9 @@ projectRouter.post("/add", upload.single("image"), async (req, res) => {
   });
 
   blobStream.on("finish", async () => {
+    // Make the file public
+    await blob.makePublic();
+
     // The public URL of the image
     const publicUrl = `gs://virtus-interior.appspot.com/${bucket.name}/${blob.name}`;
 
