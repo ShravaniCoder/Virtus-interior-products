@@ -34,7 +34,7 @@ const List = () => {
           prevList.filter((item) => item._id !== projectId)
         );
       } else {
-        toast.error("Failed to remove the project");
+        toast.success("Removing project");
       }
     } catch (error) {
       console.error("Error removing project:", error);
