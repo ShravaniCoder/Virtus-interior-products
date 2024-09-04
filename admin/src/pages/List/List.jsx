@@ -31,7 +31,7 @@ const List = () => {
        toast.success(response.data.message);
        setList((prevList) => prevList.filter((item) => item._id !== projectId)); // Update the list state
      } else {
-       toast.success(response.data.message);
+       toast.success("Removing project");
      }
    } catch (error) {
      console.error("Error removing project:", error);
