@@ -10,16 +10,15 @@ const List = () => {
   const fetchList = async () => {
     try {
       const response = await axios.get(`${url}/api/project/list`);
-      console.log("Fetched Data:", response.data); // Log the fetched data
-
       if (response.data.success) {
         setList(response.data.data);
       } else {
         toast.error("Error fetching projects");
       }
     } catch (error) {
-      console.error("Error fetching list:", error);
-      toast.error("Network error or failed to connect to the backend");
+      console.error("Error fetching list:", error); // Log the error
+      // Remove or comment out the toast.error line
+      // toast.error("Network error");
     }
   };
 
@@ -29,22 +28,23 @@ const List = () => {
         id: projectId,
       });
       if (response.data.success) {
-        toast.success("Project removed successfully");
+        toast.success(response.data.message);
         setList((prevList) =>
           prevList.filter((item) => item._id !== projectId)
-        );
+        ); // Update the list state
       } else {
-        toast.error("Failed to remove the project");
+        toast.error("Error removing project");
       }
     } catch (error) {
       console.error("Error removing project:", error);
-      toast.error("Network error or failed to connect to the backend");
+      // Remove or comment out the toast.error line
+      // toast.error("Network error");
     }
   };
 
   useEffect(() => {
-    fetchList(); // Fetch the list when the component mounts
-  }, []); // Empty dependency array means this runs once when the component mounts
+    fetchList();
+  }, []);
 
   return (
     <div className="list add">
@@ -56,23 +56,19 @@ const List = () => {
           <b>Description</b>
           <b>Action</b>
         </div>
-        {list.length > 0 ? (
-          list.map((item, index) => (
-            <div key={index} className="list-table-format">
-              <img src={item.image} alt={item.name} />
-              <p>{item.name}</p>
-              <p>{item.description}</p>
-              <p
-                onClick={() => removeProject(item._id)}
-                className="cursor-pointer text-red-500"
-              >
-                Delete
-              </p>
-            </div>
-          ))
-        ) : (
-          <p>No projects found.</p> // Handle case where no data is fetched
-        )}
+        {list.map((item, index) => (
+          <div key={index} className="list-table-format">
+            <img src={item.image} alt={item.name} />
+            <p>{item.name}</p>
+            <p>{item.description}</p>
+            <p
+              onClick={() => removeProject(item._id)}
+              className="cursor-pointer text-red-500"
+            >
+              Delete
+            </p>
+          </div>
+        ))}
       </div>
     </div>
   );
