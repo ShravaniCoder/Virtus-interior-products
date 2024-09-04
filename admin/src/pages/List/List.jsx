@@ -38,7 +38,7 @@ const List = () => {
       }
     } catch (error) {
       console.error("Error removing project:", error);
-      toast.error("Network error or failed to connect to the backend");
+      
     }
   };
 
