@@ -6,11 +6,12 @@ import { toast } from "react-toastify";
 const List = () => {
   const url = "https://virtus-interior-products-backend.onrender.com";
   const [list, setList] = useState([]);
-  const [isRemoving, setIsRemoving] = useState(false); // Track removal status
 
   const fetchList = async () => {
     try {
       const response = await axios.get(`${url}/api/project/list`);
+      console.log("Fetched Data:", response.data); // Log the fetched data
+
       if (response.data.success) {
         setList(response.data.data);
       } else {
@@ -18,33 +19,32 @@ const List = () => {
       }
     } catch (error) {
       console.error("Error fetching list:", error);
+      toast.error("Network error or failed to connect to the backend");
     }
   };
 
   const removeProject = async (projectId) => {
     try {
-      setIsRemoving(true); // Set removal status to true
       const response = await axios.post(`${url}/api/project/remove`, {
         id: projectId,
       });
       if (response.data.success) {
-        toast.success(response.data.message);
+        toast.success("Project removed successfully");
         setList((prevList) =>
           prevList.filter((item) => item._id !== projectId)
         );
       } else {
-        toast.success("Removing project");
+        toast.error("Failed to remove the project");
       }
     } catch (error) {
       console.error("Error removing project:", error);
-    } finally {
-      setIsRemoving(false); // Set removal status back to false
+      toast.error("Network error or failed to connect to the backend");
     }
   };
 
   useEffect(() => {
-    fetchList();
-  }, []);
+    fetchList(); // Fetch the list when the component mounts
+  }, []); // Empty dependency array means this runs once when the component mounts
 
   return (
     <div className="list add">
@@ -56,22 +56,23 @@ const List = () => {
           <b>Description</b>
           <b>Action</b>
         </div>
-        {list.map((item, index) => (
-          <div key={index} className="list-table-format">
-            <img src={item.image} alt={item.name} />
-            <p>{item.name}</p>
-            <p>{item.description}</p>
-            <p
-              onClick={() => !isRemoving && removeProject(item._id)} // Prevent action while removing
-              className={`cursor-pointer text-red-500 ${
-                isRemoving ? "opacity-50" : ""
-              }`}
-            >
-              {isRemoving ? "Removing..." : "Delete"}{" "}
-              {/* Show "Removing..." when in progress */}
-            </p>
-          </div>
-        ))}
+        {list.length > 0 ? (
+          list.map((item, index) => (
+            <div key={index} className="list-table-format">
+              <img src={item.image} alt={item.name} />
+              <p>{item.name}</p>
+              <p>{item.description}</p>
+              <p
+                onClick={() => removeProject(item._id)}
+                className="cursor-pointer text-red-500"
+              >
+                Delete
+              </p>
+            </div>
+          ))
+        ) : (
+          <p>No projects found.</p> // Handle case where no data is fetched
+        )}
       </div>
     </div>
   );
