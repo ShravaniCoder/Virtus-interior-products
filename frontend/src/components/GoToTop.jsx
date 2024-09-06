@@ -10,7 +10,6 @@ const GoToTop = () => {
 
   const toggleVisibility = () => {
     if (window.pageYOffset > 300) {
-      // Adjust this value as needed
       setIsVisible(true);
     } else {
       setIsVisible(false);
@@ -27,10 +26,12 @@ const GoToTop = () => {
   return (
     isVisible && (
       <div
-        className="fixed bottom-5 right-5 bg-white text-black p-2 rounded-extraLarge border border-double cursor-pointer z-50"
+        className="fixed bottom-5 right-5 bg-white text-black p-3 rounded-extraLarge border border-double cursor-pointer z-50
+        transition-all duration-300 ease-in-out transform hover:bg-black hover:text-white hover:scale-110 hover:rotate-12 hover:shadow-2xl
+        "
         onClick={goToBtn}
       >
-        <MdKeyboardDoubleArrowUp className="text-xl font-bold" />
+        <MdKeyboardDoubleArrowUp className="text-2xl font-bold" />
       </div>
     )
   );

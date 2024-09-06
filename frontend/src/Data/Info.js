@@ -151,7 +151,7 @@ export const tilesData = [
     image: Soft,
     line: "Acoustics",
     material: "Metal",
-    productType: "SOFT FIBRE",
+    productType: "Soft Fibre",
     link: "/Product_SoftFibre",
   },
   {
