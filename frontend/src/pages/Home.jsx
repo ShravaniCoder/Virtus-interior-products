@@ -118,9 +118,9 @@ const Home = () => {
                 }}
               >
                 <div className="flex items-end justify-center w-full h-full relative z-10">
-                  <div className="flex items-center justify-center w-[90%] md:w-[50%] lg:w-[40%] h-[25vh] md:h-[40vh] bg-white/75 rounded-sm">
+                  <div className="flex items-center justify-center w-[95%] md:w-[50%] lg:w-[40%] h-[30vh] md:h-[40vh] bg-white/75 rounded-sm">
                     <div className="text-center px-2">
-                      <p className="text-2xl md:text-3xl italic font-lato font-medium text-[#4F8BAD]">
+                      <p className="text-xl md:text-3xl italic font-lato font-medium text-[#4F8BAD]">
                         {item.heading}
                       </p>
                       <p className="mt-5 text-base italic text-black md:text-xl lg:text-xl animate-nav-up">
