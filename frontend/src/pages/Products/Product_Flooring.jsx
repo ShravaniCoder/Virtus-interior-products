@@ -3,7 +3,8 @@ import banner from "../../../src/assets/Img/pr0ducts/Flooring/Flooring.jpg";
 import { Link } from "react-router-dom";
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
 import Baffle from "../../../src/assets/Img/pr0ducts/Flooring/Img1.jpg";
-
+import home1 from "../../../src/assets/Img/pr0ducts/Flooring/hom1.jpg";
+import home2 from "../../../src/assets/Img/pr0ducts/Flooring/hom2.jpg";
 
 const Product_Flooring = () => {
   return (
@@ -48,7 +49,6 @@ const Product_Flooring = () => {
                   <li>Hi-Rise & Office</li>
                   <li>Malls & Residential</li>
                   <li>Transportation</li>
-                  
                 </ul>
               </div>
             </div>
@@ -62,6 +62,52 @@ const Product_Flooring = () => {
           </div>
         </div>
       </div>
+      <section className="bg-white p-2 md:px-[2rem] lg:px-[2rem] xl:px-36">
+        <div className="flex flex-col md:items-center md:flex-row md:h-[55vh] md:justify-between font-montserrat">
+          <div className="md:w-[50%] ">
+            <img src={home1} alt="Lay-In" className="w-full h-auto" />
+          </div>
+          <div className="md:w-[50%] w-full md:pl-10">
+            <h2 className="text-base md:text-2xl text-[#0B2B3c] mt-2 font-bold">
+              Homogeneous Flooring – Directional
+            </h2>
+
+            <ul className="list-square py-4 px-5 text-lg text-[#3f4a5f] font-semibold">
+              <li>
+                Homogeneous vinyl flooring is in standard 2mm*2m*20m sheet form,
+                whose pattern is directional design.
+              </li>
+              <li>
+                Floor surface adopt PUR protect treatment which increase anti
+                pollution performance, wear resistance can reach P-T class.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section className="bg-white p-2 md:px-[2rem] lg:px-[2rem] xl:px-36">
+        <div className="flex flex-col md:items-center md:flex-row md:h-[55vh] md:justify-between font-montserrat">
+          <div className="md:w-[50%] w-full">
+            <h2 className="text-base md:text-2xl capitalize text-[#0B2B3c] mt-2 font-bold">
+              Homogeneous Flooring – Non-Directional
+            </h2>
+
+            <ul className="list-square py-4 px-5 text-lg text-[#3f4a5f] font-semibold">
+              <li>
+                Homogeneous vinyl flooring is in standard 2mm*2m*20m sheet form,
+                whose pattern is non-directional design.
+              </li>
+              <li>
+                Floor surface adopt PUR protect treatment which increase anti
+                pollution performance, wearing resistance can reach P-T class.
+              </li>
+            </ul>
+          </div>
+          <div className="md:w-[50%]">
+            <img src={home2} alt="Lay-In" className="w-full h-auto" />
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 };
