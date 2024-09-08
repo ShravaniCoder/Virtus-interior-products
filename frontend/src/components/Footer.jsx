@@ -189,7 +189,7 @@ const Footer = () => {
         <div className="py-6">
           <div className="px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-36">
             <div className="flex items-center justify-center">
-              <p className="text-white">
+              <p className="text-white text-center">
                 Copyright © 2020 Aerolite Ceiling Systems, All rights reserved.
               </p>
             </div>

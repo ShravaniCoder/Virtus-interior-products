@@ -145,8 +145,8 @@ const Home = () => {
         </div>
         <div className="py-16">
           <div className="p-2 md:pl-[2rem] lg:pl-[2rem] xl:pl-[4rem] font-roboto">
-            <div className="grid grid-cols-1 md:grid-cols-2">
-              <div className="mr-5">
+            <div className="grid grid-cols-1  md:grid-cols-2">
+              <div className="md:mr-5 px-4">
                 <h1 className="py-7 text-5xl text-black/75">About Us</h1>
                 <p className=" text-[#455D8B] text-lg md:text-xl pb-5 font-semibold">
                   creating BEAUTIFUL spaces
