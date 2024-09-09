@@ -6,16 +6,16 @@ import Quality1 from "../../src/assets/Img/quality/Quality.png";
 const Quality = () => {
   return (
     <Layout>
-      <section className="mb-10 relative flex items-center bg-[#807f7c] font-lato">
+      <section className="relative flex items-center bg-[#807f7c] font-lato">
         <img
           className="h-[30vh] md:h-[40vh] w-[100%] object-cover"
           src={banner}
           alt="banner"
         />
       </section>
-      <section className="p-2 md:px-[2rem] lg:px-[2rem] xl:px-36 font-montserrat">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-10 border shadow-2xl rounded-2xl">
-          <div className="border-r p-5 shadow-2xl rounded-bl-2xl rounded-tl-2xl bg-[#fdfdf7]">
+      <section className="p-2 md:px-[2rem] lg:px-[2rem] xl:px-36 font-montserrat  bg-[#fdfdf7]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-10 my-10 bg-white border shadow-2xl rounded-2xl">
+          <div className="border-r p-10 rounded-bl-2xl rounded-tl-2xl ">
             <h1 className="font-semibold text-lg">
               Quality Assurance from A Project Matrix and Virtus Interior
               Products from Aerolite
@@ -50,7 +50,7 @@ const Quality = () => {
               the quality of its product and its manufacturing process.
             </p>
           </div>
-          <div>
+          <div className="flex items-center justify-center">
             <img src={Quality1} alt="quality" className="h-auto rounded-2xl" />
           </div>
         </div>

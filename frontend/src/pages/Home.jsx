@@ -143,7 +143,7 @@ const Home = () => {
             ))}
           </Swiper>
         </div>
-        <div className="py-16">
+        <div className="py-16 bg-[#fdfdf7]">
           <div className="p-2 md:pl-[2rem] lg:pl-[2rem] xl:pl-[4rem] font-roboto">
             <div className="grid grid-cols-1  md:grid-cols-2">
               <div className="md:mr-5 px-4">

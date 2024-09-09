@@ -65,17 +65,16 @@ import C60 from "../../src/assets/Img/clientsimg/C60.png";
 const Clients = () => {
   return (
     <Layout>
-      <section className="mb-7 relative flex items-center bg-[#807f7c] font-lato">
-       
+      <section className="relative flex items-center bg-[#807f7c] font-lato">
         <img
           className="h-[30vh] md:h-[40vh] w-[100%] object-cover"
           src={banner}
           alt="banner"
         />
       </section>
-      <section className="p-4 md:px-[2rem] lg:px-[2rem] xl:px-36">
-        <div className="pb-6">
-          <h1 className="text-xl font-roboto">Few of our clients</h1>
+      <section className="p-4 md:px-[2rem] lg:px-[2rem]  xl:px-36">
+        <div className="py-10">
+          <h1 className="text-2xl font-roboto mb-4">Few of our clients</h1>
           <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mt-2 md:mb-5">
             <img
               src={C1}

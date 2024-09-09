@@ -140,7 +140,7 @@ const FilterSearch = () => {
 
   return (
     <Layout>
-      <section className="mb-10 relative flex items-center bg-[#807f7c] font-lato">
+      <section className="mb-10 relative flex items-center font-lato">
         <img
           className="h-[30vh] md:h-[40vh] w-[100%] object-cover"
           src={banner}
@@ -195,7 +195,7 @@ const FilterSearch = () => {
           </div>
         )}
       </div>
-      <div className=" font-playfairDisplay">
+      <div className=" bg-white font-playfairDisplay">
         <div className="px-4 sm:px-10 md:px-[2rem] lg:px-[2rem] xl:px-36">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4">
             {filteredTilesData.map((menu, index) => (
