@@ -101,7 +101,7 @@ export const tilesData = [
     image: Channeled,
     line: "Acoustics",
     material: "Wood Design",
-    productType: "Aerolite Channeled wood works",
+    productType: "Aerolite Channeled Wood Works",
     link: "/product_Channeled-wood-works",
   },
   {
@@ -117,7 +117,7 @@ export const tilesData = [
     image: CPlank,
     line: "Customized Metal Ceiling",
     material: "Metal",
-    productType: "C-planks",
+    productType: "C Planks",
     link: "/product_C-planks",
   },
 
@@ -126,7 +126,7 @@ export const tilesData = [
     image: FPlank,
     line: "Customized Metal Ceiling",
     material: "Metal",
-    productType: "F-planks",
+    productType: "F Planks",
     link: "/product_F-Planks",
   },
   {
@@ -134,7 +134,7 @@ export const tilesData = [
     image: Corridor,
     line: "Customized Metal Ceiling",
     material: "Metal",
-    productType: "Corridor planks",
+    productType: "Corridor Planks",
     link: "/product_Corridor-planks",
   },
 

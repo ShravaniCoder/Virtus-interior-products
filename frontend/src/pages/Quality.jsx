@@ -14,8 +14,8 @@ const Quality = () => {
         />
       </section>
       <section className="p-2 md:px-[2rem] lg:px-[2rem] xl:px-36 font-montserrat">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-10">
-          <div className="border p-4 shadow-xl rounded-br-2xl rounded-tl-2xl bg-[#fdfdf7]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-10 border shadow-2xl rounded-2xl">
+          <div className="border-r p-5 shadow-2xl rounded-bl-2xl rounded-tl-2xl bg-[#fdfdf7]">
             <h1 className="font-semibold text-lg">
               Quality Assurance from A Project Matrix and Virtus Interior
               Products from Aerolite
@@ -51,7 +51,7 @@ const Quality = () => {
             </p>
           </div>
           <div>
-            <img src={Quality1} alt="quality" className="h-auto" />
+            <img src={Quality1} alt="quality" className="h-auto rounded-2xl" />
           </div>
         </div>
       </section>
