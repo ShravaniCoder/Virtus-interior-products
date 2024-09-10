@@ -73,8 +73,8 @@ const Navbar = () => {
               {/* PDF download button */}
               <div className="hidden lg:block z-10">
                 <button onClick={handleViewPdf}>
-                  <div className="text-black/90 font-medium py-1 px-3 flex items-center text-sm sm:text-lg gap-x-1 rounded-sm hover:bg-[#fcaf49] hover:text-black/60 group">
-                    <FaRegFilePdf className="text-[#E5901F] font-semibold group-hover:text-black/60" />
+                  <div className="text-black/60 font-medium py-1 px-3 flex items-center text-sm sm:text-lg gap-x-1 rounded-sm shadow-[-7px_7px_0px_#E79B1A] border border-[#E79B1A] hover:text-black/80 group">
+                    <FaRegFilePdf className="text-[#E5901F] font-semibold " />
                     Brochure Download
                   </div>
                 </button>
