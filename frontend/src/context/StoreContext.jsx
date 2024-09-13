@@ -7,7 +7,7 @@ export const StoreContext = createContext();
 // Create the StoreProvider component
 export const StoreProvider = ({ children }) => {
   const [project_list, setProjectList] = useState([]);
-  const url = "https://virtus-interior-products-backend.onrender.com"; // Define the URL
+ const url = import.meta.env.VITE_BACKEND_URL;
 
   // Function to fetch the projects from the API
   const fetchProjects = async () => {

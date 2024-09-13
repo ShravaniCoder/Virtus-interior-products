@@ -4,7 +4,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const List = () => {
-  const url = "https://virtus-interior-products-backend.onrender.com";
+  const url = import.meta.env.VITE_BACKEND_URL;
   const [list, setList] = useState([]);
   const [loading, setLoading] = useState(true); // Add loading state
 

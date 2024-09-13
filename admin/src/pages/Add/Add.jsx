@@ -5,7 +5,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 const Add = () => {
-  const url = "https://virtus-interior-products-backend.onrender.com";
+  const url = import.meta.env.VITE_BACKEND_URL;
   const [image, setImage] = useState(null);
   const [data, setData] = useState({
     name: "",
