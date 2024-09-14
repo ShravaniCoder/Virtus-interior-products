@@ -57,4 +57,29 @@ const removeProject = async (req, res) => {
   }
 };
 
-export { addProject, listProject, removeProject };
+const editProject = async (req, res) => {
+  const { id, name, description, image } = req.body;
+
+  try {
+    const project = await projectModel.findById(id);
+
+    if (!project) {
+      return res.json({ success: false, message: "Project not found" });
+    }
+
+    // Update the project details
+    project.name = name || project.name;
+    project.description = description || project.description;
+    project.image = image || project.image;
+
+    await project.save();
+
+    res.json({ success: true, message: "Project Updated" });
+  } catch (error) {
+    console.log(error);
+    res.json({ success: false, message: "Error updating project" });
+  }
+};
+
+export { addProject, listProject, removeProject, editProject };
+
