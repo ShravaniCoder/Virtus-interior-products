@@ -58,7 +58,7 @@ const List = () => {
           prevList.filter((item) => item._id !== projectId)
         );
       } else {
-        toast.error("Error removing project");
+        toast.success("Removing project");
       }
     } catch (error) {
       console.error("Error removing project:", error);
@@ -100,27 +100,34 @@ const List = () => {
           list.map((item, index) => (
             <div key={index} className="list-table-format">
               {editMode && currentProject._id === item._id ? (
-                <div className="edit-form">
+                <div className="edit-form flex items-center justify-between gap-10 ml-24">
                   <input
                     type="text"
                     name="name"
+                    className="border px-3"
                     value={currentProject.name}
                     onChange={handleInputChange}
                   />
                   <input
                     type="text"
                     name="description"
+                    className="border px-3"
                     value={currentProject.description}
                     onChange={handleInputChange}
                   />
-                  <input
-                    type="text"
-                    name="image"
-                    value={currentProject.image}
-                    onChange={handleInputChange}
-                  />
-                  <button onClick={handleEditSubmit}>Save</button>
-                  <button onClick={() => setEditMode(false)}>Cancel</button>
+
+                  <button
+                    onClick={handleEditSubmit}
+                    className="bg-green-500 text-white rounded-lg px-5"
+                  >
+                    Save
+                  </button>
+                  <button
+                    onClick={() => setEditMode(false)}
+                    className="bg-red-500 text-white rounded-lg px-5"
+                  >
+                    Cancel
+                  </button>
                 </div>
               ) : (
                 <>
@@ -128,16 +135,16 @@ const List = () => {
                   <p>{item.name}</p>
                   <p>{item.description}</p>
                   <p
-                    onClick={() => removeProject(item._id)}
-                    className="cursor-pointer text-red-500"
-                  >
-                    Delete
-                  </p>
-                  <p
                     onClick={() => handleEditClick(item)}
                     className="cursor-pointer text-blue-500"
                   >
                     Edit
+                  </p>
+                  <p
+                    onClick={() => removeProject(item._id)}
+                    className="cursor-pointer text-red-500"
+                  >
+                    Delete
                   </p>
                 </>
               )}
