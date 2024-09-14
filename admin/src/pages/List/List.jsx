@@ -100,7 +100,7 @@ const List = () => {
           list.map((item, index) => (
             <div key={index} className="list-table-format">
               {editMode && currentProject._id === item._id ? (
-                <div className="edit-form flex items-center justify-between gap-10 ml-24">
+                <div className="edit-form flex items-center justify-between gap-4 ml-24">
                   <input
                     type="text"
                     name="name"
@@ -108,12 +108,14 @@ const List = () => {
                     value={currentProject.name}
                     onChange={handleInputChange}
                   />
-                  <input
+                  <textarea
                     type="text"
                     name="description"
                     className="border px-3"
                     value={currentProject.description}
                     onChange={handleInputChange}
+                    cols={60}
+                    
                   />
 
                   <button
