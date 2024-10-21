@@ -6,27 +6,58 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Footer = () => {
-  const form = useRef();
+const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+const sendEmail = (e) => {
+  e.preventDefault();
 
-    emailjs
-      .sendForm("service_j1j6vh1U", "template_63xzv2g", form.current, {
-        publicKey: "B4LhwcBjKcQIwZ9sk",
-      })
-      .then(
-        (result) => {
-          console.log(result); // Log result for debugging
-          toast.success("Message sent successfully!");
-          form.current.reset();
-        },
-        (error) => {
-          console.log(error); // Log error for debugging
-          toast.error("Failed to send message, please try again.");
-        }
-      );
-  };
+  // Send email via Email.js
+  emailjs
+    .sendForm(
+      "service_j1j6vh1U", // Your Email.js service ID
+      "template_63xzv2g", // Your Email.js template ID
+      form.current,
+      "B4LhwcBjKcQIwZ9sk" // Your Email.js publicKey
+    )
+    .then(
+      (result) => {
+        console.log(result); // Log result for debugging
+        toast.success("Message sent successfully!");
+        form.current.reset();
+
+        // Extract form data
+        const formData = new FormData(form.current);
+        const name = formData.get("username");
+        const email = formData.get("useremail");
+        const mobile = formData.get("mobile");
+        const location = formData.get("projectLocation");
+        const comments = formData.get("comments");
+
+        // Construct WhatsApp message and encode properly
+        const whatsappMessage = `*Name:* ${encodeURIComponent(
+          name
+        )}%0A*Email:* ${encodeURIComponent(
+          email
+        )}%0A*Mobile:* ${encodeURIComponent(
+          mobile
+        )}%0A*Project Location:* ${encodeURIComponent(
+          location
+        )}%0A*Comments:* ${encodeURIComponent(comments)}`;
+
+        // WhatsApp number (replace with your own)
+        const whatsappNumber = "918097036352"; // Your WhatsApp number with country code
+
+        // Open WhatsApp URL in a new tab
+        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+        window.open(whatsappUrl, "_blank");
+      },
+      (error) => {
+        console.log(error); // Log error for debugging
+        toast.error("Failed to send message, please try again.");
+      }
+    );
+};
+
 
   return (
     <>

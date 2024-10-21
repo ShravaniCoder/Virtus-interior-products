@@ -2,8 +2,42 @@ import Layout from "../components/Layout";
 import { PiPhoneTransferFill } from "react-icons/pi";
 import { BiLogoGmail } from "react-icons/bi";
 import banner from "../../src/assets/Img/homepage/Img2.png";
+import { useState } from "react";
 
 const ContactUs = () => {
+    const [formData, setFormData] = useState({
+      username: "",
+      useremail: "",
+      mobile: "",
+      projectLocation: "",
+      comments: "",
+    });
+
+    const handleChange = (e) => {
+      const { name, value } = e.target;
+      setFormData({ ...formData, [name]: value });
+    };
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+
+      // Send data to WhatsApp
+      const { username, useremail, mobile, projectLocation, comments } =
+        formData;
+      const phoneNumber = "918097036352"; // Your WhatsApp number (91 is the country code for India)
+
+      // Prepare the message content
+      const message = `Name: ${username}%0AEmail: ${useremail}%0AMobile: ${mobile}%0AProject Location: ${projectLocation}%0AComments: ${comments}`;
+
+      // WhatsApp URL
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+
+      // Open WhatsApp link in a new tab
+      window.open(whatsappUrl, "_blank");
+
+      // Also submit form to Formspree
+      e.target.submit();
+    };
   return (
     <Layout>
       <section className="mb-10 relative flex items-center bg-[#807f7c] font-lato">
@@ -41,6 +75,7 @@ const ContactUs = () => {
             className="space-y-4"
             method="POST"
             action="https://formspree.io/f/xldrgddz"
+            onSubmit={handleSubmit}
           >
             <div className="flex flex-col md:flex-row md:space-x-4">
               <div className="flex-1 mb-4 md:mb-0">
@@ -53,6 +88,8 @@ const ContactUs = () => {
                   name="username"
                   required
                   autoComplete="off"
+                  value={formData.username}
+                  onChange={handleChange}
                 />
               </div>
               <div className="flex-1">
@@ -62,10 +99,11 @@ const ContactUs = () => {
                 <input
                   type="email"
                   className="mt-1 block w-full px-6 rounded-3xl py-2 border border-gray-300 shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
-                  id="useremail"
                   name="useremail"
                   required
                   autoComplete="off"
+                  value={formData.useremail}
+                  onChange={handleChange}
                 />
               </div>
             </div>
@@ -77,10 +115,11 @@ const ContactUs = () => {
                 <input
                   type="text"
                   className="mt-1 block w-full px-6 rounded-3xl py-2 border border-gray-300  shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
-                  id="mobile"
                   name="mobile"
                   required
                   autoComplete="off"
+                  value={formData.mobile}
+                  onChange={handleChange}
                 />
               </div>
               <div className="flex-1 mb-4 md:mb-0">
@@ -90,10 +129,11 @@ const ContactUs = () => {
                 <input
                   type="text"
                   className="mt-1 block w-full px-6 rounded-3xl py-2 border border-gray-300  shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
-                  id="projectLocation"
                   name="projectLocation"
                   required
                   autoComplete="off"
+                  value={formData.projectLocation}
+                  onChange={handleChange}
                 />
               </div>
             </div>
@@ -118,9 +158,9 @@ const ContactUs = () => {
                 className="mt-1 block w-full px-6 rounded-3xl py-2 border border-gray-300  shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500"
                 rows="4"
                 required
-                autoComplete="off"
-                id="comments"
                 name="comments"
+                value={formData.comments}
+                onChange={handleChange}
               ></textarea>
             </div>
             <div className="flex justify-start">

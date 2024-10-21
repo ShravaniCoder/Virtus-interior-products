@@ -1,7 +1,11 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+
+dotenv.config(); // Initialize dotenv
 
 export const connectDB = async () => {
-    await mongoose.connect(
-      "mongodb+srv://sureshmundargi:9820327499@cluster0.owwjq.mongodb.net/virtus-interior-products"
-    ).then(()=> console.log("DB connected"));
-}
+  await mongoose
+    .connect(process.env.MONGO_URI)
+    .then(() => console.log("DB connected"))
+    .catch((error) => console.log("DB connection error:", error));
+};
