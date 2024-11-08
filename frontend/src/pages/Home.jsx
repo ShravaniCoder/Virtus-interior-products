@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
 import Homeimg0 from "../../src/assets/Img/homepage/HomeImg0.jpg";
-import Homeimg1 from "../../src/assets/Img/homepage/Corridor.jpg";
+import Homeimg1 from "../../src/assets/Img/about/Picture1.jpg";
 import Homeimg2 from "../../src/assets/Img/pr0ducts/Expansion Joints Cover/Expansion Joints Cover.jpg";
 import Homeimg3 from "../../src/assets/Img/pr0ducts/Partition/Glass.jpg";
 import Homeimg4 from "../../src/assets/Img/pr0ducts/Flooring/Flooring.jpg";
@@ -38,7 +38,7 @@ const Home = () => {
       heading: "A Project Matrix & Virtus Interior Products ",
       title: "Customized Ceiling",
       desc: "Elevate your space with custom made ceilings.",
-      backgroundPosition: "center top", // Customize this value as needed
+      backgroundPosition: "top bottom", // Customize this value as needed
     },
     {
       id: 3,
