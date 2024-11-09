@@ -38,7 +38,7 @@ const Home = () => {
       heading: "A Project Matrix & Virtus Interior Products ",
       title: "Customized Ceiling",
       desc: "Elevate your space with custom made ceilings.",
-      backgroundPosition: "top bottom", // Customize this value as needed
+      backgroundPosition: "center bottom", // Customize this value as needed
     },
     {
       id: 3,
