@@ -15,11 +15,11 @@ const Product_LayIn = () => {
       <div className="">
         <section className="mb-10 relative flex items-center bg-[#807f7c] font-lato">
           <div className="h-[30vh] md:h-[40vh] w-[100%] bg-[#F5F5F5] flex flex-col items-center justify-end">
-            <h1 className="md:text-xl text-sm text-[#4F8BAD] font-bold ">
-              STANDARD METAL CEILING
+            <h1 className="md:text-2xl text-sm text-[#4F8BAD] font-bold ">
+              AEROLITE
             </h1>
             <h2 className="md:text-6xl text-4xl font-bold text-[#455D8B] p-4 ">
-              AEROLITE LAY IN
+              COSTOMIZED LAY IN
             </h2>
           </div>
         </section>

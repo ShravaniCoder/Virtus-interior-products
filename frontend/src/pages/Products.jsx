@@ -228,8 +228,10 @@ const FilterSearch = () => {
                     </div>
                   </Link>
                   <div className="px-4 py-3 bg-white">
-                    <p className="text-lg font-medium">{menu.name}</p>
-                    <p className="text-xl">{menu.productType}</p>
+                    <p className="text-lg font-medium text-[#4F8BAD] uppercase">
+                      {menu.name}
+                    </p>
+                    <p className="text-xl text-[#455D8B] font-bold uppercase">{menu.productType}</p>
                   </div>
                 </div>
               </motion.div>

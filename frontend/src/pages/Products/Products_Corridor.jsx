@@ -14,11 +14,11 @@ const Products_Corridor = () => {
       <div className="">
         <section className="mb-10 relative flex items-center bg-[#807f7c] font-lato">
           <div className="h-[30vh] md:h-[40vh] w-[100%] bg-[#F5F5F5] flex flex-col items-center justify-end">
-            <h1 className="md:text-xl text-sm text-[#4F8BAD] font-bold ">
-              Customized Metal Ceiling
+            <h1 className="md:text-2xl uppercase text-sm text-[#4F8BAD] font-bold ">
+              Plumage
             </h1>
             <h2 className="md:text-6xl text-3xl text-center uppercase font-bold text-[#455D8B] p-4 ">
-              AEROLITE Corridor-PlANKS
+              Corridor-PlANKS
             </h2>
           </div>
         </section>
