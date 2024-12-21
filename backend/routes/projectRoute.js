@@ -28,9 +28,11 @@ projectRouter.post("/add", upload.single("image"), async (req, res) => {
     },
   });
 
-  blobStream.on("error", (err) => {
-    res.status(500).send("Error uploading file.");
-  });
+ blobStream.on("error", (err) => {
+   console.error("Blob stream error:", err); // Log detailed error to server console
+   return res.status(500).send("Error uploading file: " + err.message);
+ });
+
 
   blobStream.on("finish", async () => {
     try {
@@ -38,9 +40,16 @@ projectRouter.post("/add", upload.single("image"), async (req, res) => {
       const publicUrl = `https://firebasestorage.googleapis.com/v0/b/${
         bucket.name
       }/o/${encodeURIComponent(fileName)}?alt=media`;
-      await addProject(req, res, publicUrl);
+      await addProject(req, res, publicUrl); // Ensure this function sends a response or logs an error
+
+      // Send a response if addProject doesn't handle it internally
+      res.status(200).send({
+        message: "Project uploaded successfully",
+        url: publicUrl,
+      });
     } catch (error) {
-      res.status(500).send("Error making file public.");
+      console.error("Error making file public:", error);
+      return res.status(500).send("Error making file public: " + error.message);
     }
   });
 
@@ -68,7 +77,8 @@ projectRouter.post("/edit", upload.single("image"), async (req, res) => {
     });
 
     blobStream.on("error", (err) => {
-      return res.status(500).send("Error uploading file.");
+      console.error("Blob stream error:", err);
+      return res.status(500).send("Error uploading file: " + err.message);
     });
 
     blobStream.on("finish", async () => {
@@ -78,15 +88,34 @@ projectRouter.post("/edit", upload.single("image"), async (req, res) => {
           bucket.name
         }/o/${encodeURIComponent(fileName)}?alt=media`;
         await editProject(req, res, publicUrl); // Pass publicUrl to editProject if there's a new file
+
+        // Send a response if editProject doesn't handle it internally
+        res.status(200).send({
+          message: "Project updated successfully",
+          url: publicUrl,
+        });
       } catch (error) {
-        return res.status(500).send("Error making file public.");
+        console.error("Error making file public:", error);
+        return res
+          .status(500)
+          .send("Error making file public: " + error.message);
       }
     });
 
     blobStream.end(file.buffer);
   } else {
     // If no new file is uploaded, proceed with just updating the name/description
-    await editProject(req, res, null); // No new image
+    try {
+      await editProject(req, res, null); // No new image
+
+      // Send a response if editProject doesn't handle it internally
+      res.status(200).send({
+        message: "Project updated successfully (no image change)",
+      });
+    } catch (error) {
+      console.error("Error updating project without a new image:", error);
+      return res.status(500).send("Error updating project: " + error.message);
+    }
   }
 });
 

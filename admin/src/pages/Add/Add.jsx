@@ -30,6 +30,12 @@ const Add = () => {
     formData.append("name", data.name);
     formData.append("description", data.description);
 
+    // Debugging: Log form data
+    console.log("Form data before sending:");
+    for (let [key, value] of formData.entries()) {
+      console.log(`${key}:`, value);
+    }
+
     try {
       const response = await axios.post(`${url}/api/project/add`, formData);
       if (response.data.success) {
@@ -44,6 +50,9 @@ const Add = () => {
       }
     } catch (error) {
       console.error("Error uploading project:", error);
+      if (error.response) {
+        console.error("Response data:", error.response.data);
+      }
       toast.error("Error uploading project");
     } finally {
       setLoading(false); // Hide loader after the submission is complete
@@ -68,6 +77,7 @@ const Add = () => {
               onChange={(e) => setImage(e.target.files[0])}
               type="file"
               id="image"
+              accept="image/*" // Restrict to image files only
               hidden
               required
             />
@@ -93,6 +103,7 @@ const Add = () => {
               rows="6"
               placeholder="Write Content Here...."
               className="border w-full"
+              required
             ></textarea>
           </div>
           <button
