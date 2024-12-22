@@ -40,3 +40,11 @@ projectRouter.get("/test", (req, res) => {
 });
 
 
+app.get("/test", (req, res, next) => {
+  try {
+    res.status(200).send("Server is working");
+  } catch (error) {
+    next(error); // Pass the error to the global error handler
+  }
+});
+
