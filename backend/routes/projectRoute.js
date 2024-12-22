@@ -7,37 +7,25 @@ import {
   editProject,
 } from "../controllers/projectController.js";
 import { bucket } from "../firebase/firebase.js";
-import path from "path";
+
+const projectRouter = express.Router();
+import path from 'path';
 
 // Set up the destination and filename for uploaded images
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, "public/images"); // Destination folder for uploaded files
+    cb(null, 'public/images'); // Destination folder for uploaded files
   },
   filename: (req, file, cb) => {
-    const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9);
+    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
     cb(null, uniqueSuffix + path.extname(file.originalname)); // Ensure the file has a unique name
   },
 });
 
-// Validate file types (optional)
-const fileFilter = (req, file, cb) => {
-  const allowedTypes = ["image/jpeg", "image/png", "image/gif"];
-  if (allowedTypes.includes(file.mimetype)) {
-    cb(null, true);
-  } else {
-    cb(
-      new Error("Invalid file type, only JPEG, PNG, and GIF are allowed!"),
-      false
-    );
-  }
-};
+const upload = multer({ storage: storage });
 
-const upload = multer({
-  storage: storage,
-  limits: { fileSize: 10 * 1024 * 1024 }, // Limit file size to 10MB
-  fileFilter: fileFilter,
-});
+// Use upload.single('image') to handle image uploads
+
 
 // Helper function for uploading files to Firebase
 const uploadFileToFirebase = async (file) => {
@@ -70,6 +58,9 @@ const uploadFileToFirebase = async (file) => {
   });
 };
 
+
+
+
 // Add project route
 projectRouter.post("/add", upload.single("image"), async (req, res) => {
   console.log("Received file:", req.file); // Log the uploaded file
@@ -80,7 +71,7 @@ projectRouter.post("/add", upload.single("image"), async (req, res) => {
       return res.status(400).send("No file uploaded.");
     }
 
-    // Process the file and save the project
+    // Process the file
     const publicUrl = await uploadFileToFirebase(req.file);
     await addProject(req, res, publicUrl);
   } catch (error) {
@@ -88,6 +79,9 @@ projectRouter.post("/add", upload.single("image"), async (req, res) => {
     res.status(500).send("Internal Server Error.");
   }
 });
+
+
+
 
 // Edit project route
 projectRouter.post("/edit", upload.single("image"), async (req, res) => {
