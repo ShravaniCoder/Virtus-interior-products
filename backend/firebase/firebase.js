@@ -1,7 +1,13 @@
 import admin from "firebase-admin";
 import { getStorage } from "firebase-admin/storage";
-import serviceAccount from "../config/firebase-service-account-key.json" assert { type: "json" };
- // Replace with the path to your service account key
+import fs from "fs";
+
+// Load the service account key dynamically
+const serviceAccount = JSON.parse(
+  fs.readFileSync(
+    new URL("../config/firebase-service-account-key.json", import.meta.url)
+  )
+);
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
