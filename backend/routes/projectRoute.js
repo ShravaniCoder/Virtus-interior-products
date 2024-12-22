@@ -7,7 +7,6 @@ import {
   editProject,
 } from "../controllers/projectController.js";
 import { bucket } from "../firebase/firebase.js";
-
 const projectRouter = express.Router();
 import path from 'path';
 
