@@ -23,32 +23,45 @@ const Add = () => {
     event.preventDefault();
     setLoading(true); // Show loader when the form is being submitted
 
-    const formData = new FormData();
-    if (image) {
-      formData.append("image", image);
-    }
-    formData.append("name", data.name);
-    formData.append("description", data.description);
+   const formData = new FormData();
+   if (image) {
+     console.log("Image:", image); // Ensure image is correctly assigned
+     formData.append("image", image);
+   } else {
+     console.log("No image attached");
+   }
+   formData.append("name", data.name);
+   formData.append("description", data.description);
+
+   // Log the FormData before sending
+   console.log("FormData:", formData);
 
     try {
-      const response = await axios.post(`${url}/api/project/add`, formData);
+      const response = await axios.post(`${url}/api/project/add`, formData, {
+        headers: {
+          "Content-Type": "multipart/form-data", // Correct content type for file upload
+        },
+      });
+
       if (response.data.success) {
-        setData({
-          name: "",
-          description: "",
-        });
+        setData({ name: "", description: "" });
         setImage(null);
         toast.success(response.data.message);
       } else {
-        toast.error(response.data.message);
+        toast.error(response.data.message || "An error occurred.");
       }
     } catch (error) {
-      console.error("Error uploading project:", error);
-      toast.error("Error uploading project");
+      console.error(
+        "Error uploading project:",
+        error.response?.data || error.message
+      );
+      toast.error(error.response?.data?.message || "Error uploading project");
     } finally {
-      setLoading(false); // Hide loader after the submission is complete
+      setLoading(false);
     }
+
   };
+
 
   return (
     <div className="add">
